@@ -1,0 +1,33 @@
+{
+  "cong_cung_bay_sang_chitchat": 4,
+  "cong_cung_manual_sang_control": 0,
+  "do_tre_ms": {
+    "classify": {
+      "p50": 1851.8,
+      "p95": 1893.2
+    },
+    "sinh": {
+      "p50": 1020.0,
+      "p95": 1734.3
+    },
+    "tong": {
+      "p50": 2870.4,
+      "p95": 3590.1
+    }
+  },
+  "ma_tran": {
+    "chitchat->chitchat": 30,
+    "chitchat->control": 4,
+    "chitchat->manual": 1,
+    "control->chitchat": 4,
+    "control->control": 5,
+    "control->manual": 2,
+    "manual->manual": 7
+  },
+  "n": 53,
+  "n_chitchat_that": 30,
+  "qua_cong": {
+    "loi:ReadTimeout": 1,
+    "qua": 33
+  }
+}

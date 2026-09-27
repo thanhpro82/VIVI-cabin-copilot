@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.vivi.dev/schemas/vehicle-state-snapshot-v1.json",
+  "title": "VehicleStateSnapshot",
+  "description": "Published retained by the simulator to v1/vehicles/{id}/state/snapshot. Minus schema_version this must equal data.vehicle_state from GET /api/v1/vehicle/state exactly.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "vehicle_id",
+    "state_version",
+    "observed_at",
+    "motion",
+    "hvac",
+    "windows",
+    "doors",
+    "media",
+    "navigation",
+    "seat",
+    "lights",
+    "trunk"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "vehicle_id": {"type": "string", "minLength": 1},
+    "state_version": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Increments by exactly 1 per accepted transition"
+    },
+    "observed_at": {"type": "string", "format": "date-time"},
+    "motion": {"$ref": "vehicle-state-domains-v1.json#/$defs/motion"},
+    "hvac": {"$ref": "vehicle-state-domains-v1.json#/$defs/hvac"},
+    "windows": {"$ref": "vehicle-state-domains-v1.json#/$defs/windows"},
+    "doors": {"$ref": "vehicle-state-domains-v1.json#/$defs/doors"},
+    "media": {"$ref": "vehicle-state-domains-v1.json#/$defs/media"},
+    "navigation": {"$ref": "vehicle-state-domains-v1.json#/$defs/navigation"},
+    "seat": {"$ref": "vehicle-state-domains-v1.json#/$defs/seat"},
+    "lights": {"$ref": "vehicle-state-domains-v1.json#/$defs/lights"},
+    "trunk": {"$ref": "vehicle-state-domains-v1.json#/$defs/trunk"}
+  }
+}

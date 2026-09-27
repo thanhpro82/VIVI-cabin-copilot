@@ -1,0 +1,7 @@
+Pretrained openWakeWord Feature Models
+
+melspectrogram.onnx and embedding_model.onnx are vendored, unmodified
+pretrained weights from the openWakeWord project (frozen; never
+retrained by this repository). See the openWakeWord project for the
+upstream license terms. Only vivi-wake-classifier.onnx, produced by
+scripts/wake_word/train.py, is a VIVI-specific trained artifact.

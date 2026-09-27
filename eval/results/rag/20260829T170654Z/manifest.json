@@ -1,0 +1,19 @@
+{
+  "run_id": "20260829T170654Z",
+  "suite": "rag",
+  "dataset": "eval\\datasets\\manual\\v1\\cases.jsonl",
+  "index_dir": "data\\rag\\vf9_2026_vi",
+  "graded_by": "dap_an_khoa",
+  "metrics_keys": [
+    "citation_validity",
+    "grounded_rate",
+    "hallucination_rate",
+    "hardware_tier",
+    "min_overlap",
+    "min_score",
+    "negatives",
+    "positives",
+    "recall_at_k"
+  ],
+  "note": "Cham bang dap an khoa (answer_keys.jsonl), khong qua ASR."
+}

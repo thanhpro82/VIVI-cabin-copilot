@@ -1,0 +1,235 @@
+{
+  "ca": {
+    "BL-N1-001": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N1-002": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N1-003": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N1-005": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N1-006": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N1-007": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N1-009": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N1-010": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-001": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-002": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-003": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-004": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-005": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-006": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-007": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-008": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-009": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-010": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-012": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-013": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-014": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-015": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-016": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-017": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-018": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-019": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-020": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-021": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-022": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N2-023": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-005": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-006": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-007": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-008": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-010": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-011": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-012": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-013": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-014": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-015": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-016": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-018": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-019": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-020": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N3-021": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    },
+    "BL-N4-001": {
+      "commit": "05eea2b",
+      "promoted_at": "2026-08-27",
+      "run_id": "20260827T050223.721328Z"
+    }
+  },
+  "mo_ta": "Ca `hong` đã được xác nhận pass và từ đó là cổng hồi quy: tái hỏng thì `di_lui` khác rỗng và CI đỏ. Sinh bằng `--mode bao-loi --promote`; đừng sửa tay."
+}

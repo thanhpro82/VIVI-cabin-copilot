@@ -1,0 +1,9 @@
+{
+  "case_count": 77,
+  "dataset": "eval/datasets/agent/bao-loi-2408/cases.jsonl",
+  "moc": "develop @ bab0fc6, src/agents/router.py @ 6e0b523, đo 2026-08-25",
+  "note": "Router luật, không gọi model. Không phải bằng chứng chất lượng SLM.",
+  "router": "DeterministicControlRouter",
+  "run_id": "20260825T170542.339324Z",
+  "slm_used": false
+}

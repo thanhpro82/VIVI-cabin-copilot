@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.vivi.dev/schemas/vehicle-state-domains-v1.json",
+  "title": "VehicleStateDomains",
+  "description": "Shared domain shapes referenced by vehicle-state-snapshot-v1.json and domain-state-v1.json. Defined once so the two can never drift apart.",
+  "$defs": {
+    "motion": {
+      "title": "MotionState",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["speed_kph", "gear", "ignition"],
+      "properties": {
+        "speed_kph": {"type": "number", "minimum": 0},
+        "gear": {"enum": ["P", "R", "N", "D"]},
+        "ignition": {"enum": ["OFF", "ACC", "ON"]}
+      }
+    },
+    "hvac": {
+      "title": "HvacState",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["power", "temperature_c", "fan_level"],
+      "properties": {
+        "power": {"type": "boolean"},
+        "temperature_c": {
+          "type": "number",
+          "minimum": 16,
+          "maximum": 30,
+          "description": "Range mirrors set_hvac_temperature in docs/agent_spec.md. Team-defined, not sourced from the VF9 manual."
+        },
+        "fan_level": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3,
+          "description": "Range mirrors set_hvac_fan_level in docs/agent_spec.md. Team-defined, not sourced from the VF9 manual. Writable since issue #65 (ADR-019); it was read-only and unbounded at P0."
+        }
+      }
+    },
+    "windows": {
+      "title": "WindowsState",
+      "description": "Percent open: 0 fully closed, 100 fully open",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["front_left", "front_right", "rear_left", "rear_right"],
+      "properties": {
+        "front_left": {"$ref": "#/$defs/windowPercent"},
+        "front_right": {"$ref": "#/$defs/windowPercent"},
+        "rear_left": {"$ref": "#/$defs/windowPercent"},
+        "rear_right": {"$ref": "#/$defs/windowPercent"}
+      }
+    },
+    "doors": {
+      "title": "DoorsState",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["front_left", "front_right", "rear_left", "rear_right"],
+      "properties": {
+        "front_left": {"$ref": "#/$defs/doorState"},
+        "front_right": {"$ref": "#/$defs/doorState"},
+        "rear_left": {"$ref": "#/$defs/doorState"},
+        "rear_right": {"$ref": "#/$defs/doorState"}
+      }
+    },
+    "media": {
+      "title": "MediaState",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "volume", "track"],
+      "properties": {
+        "status": {"enum": ["playing", "paused"]},
+        "volume": {"type": "integer", "minimum": 0, "maximum": 100},
+        "track": {"type": ["string", "null"], "minLength": 1}
+      }
+    },
+    "navigation": {
+      "title": "NavigationState",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "destination_id"],
+      "properties": {
+        "status": {"enum": ["idle", "active"]},
+        "destination_id": {"type": ["string", "null"], "minLength": 1}
+      }
+    },
+    "seat": {
+      "title": "SeatState",
+      "description": "Added relative to docs/data_model.md so set_seat_heating and set_seat_position have somewhere to land. See Open question 1 in docs/mqtt_spec.md.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["front_left", "front_right"],
+      "properties": {
+        "front_left": {"$ref": "#/$defs/singleSeat"},
+        "front_right": {"$ref": "#/$defs/singleSeat"}
+      }
+    },
+    "lights": {
+      "title": "LightsState",
+      "description": "headlight is a mode enum, not a boolean. No 'off': UNECE R48 forbids a manual off position on vehicles with daytime running lamps. Fog lamps are out of scope at P0 because the VF9 manual marks them 'if equipped'. See ADR-020.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["headlight", "interior"],
+      "properties": {
+        "headlight": {"enum": ["auto", "low_beam", "high_beam"]},
+        "interior": {"type": "boolean"}
+      }
+    },
+    "trunk": {
+      "title": "TrunkState",
+      "description": "No 'locked' at P0 — same deferral and same reason as doors, see Open question 4 in docs/mqtt_spec.md. P1 adds locked to both at once.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["position"],
+      "properties": {
+        "position": {"$ref": "#/$defs/doorState"}
+      }
+    },
+    "windowPercent": {"type": "integer", "minimum": 0, "maximum": 100},
+    "doorState": {"enum": ["open", "closed"]},
+    "singleSeat": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["heating", "fore_aft", "recline", "height"],
+      "properties": {
+        "heating": {"type": "integer", "minimum": 0, "maximum": 3},
+        "fore_aft": {"type": "integer", "minimum": 0, "maximum": 100},
+        "recline": {"type": "integer", "minimum": 0, "maximum": 100},
+        "height": {"type": "integer", "minimum": 0, "maximum": 100}
+      }
+    }
+  }
+}

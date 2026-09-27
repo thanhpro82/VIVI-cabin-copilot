@@ -1,0 +1,76 @@
+{
+  "by_ac": {
+    "AC1-chain": {
+      "duration_s": 3.776,
+      "failed": 0,
+      "passed": 66,
+      "skipped": 0,
+      "total": 66
+    },
+    "AC1-chain+AC2-topic": {
+      "duration_s": 0.093,
+      "failed": 0,
+      "passed": 12,
+      "skipped": 0,
+      "total": 12
+    },
+    "AC2-schema": {
+      "duration_s": 0.474,
+      "failed": 0,
+      "passed": 7,
+      "skipped": 0,
+      "total": 7
+    },
+    "AC3-idempotency": {
+      "duration_s": 0.484,
+      "failed": 0,
+      "passed": 14,
+      "skipped": 0,
+      "total": 14
+    },
+    "AC3-realtime": {
+      "duration_s": 0.094,
+      "failed": 0,
+      "passed": 6,
+      "skipped": 0,
+      "total": 6
+    },
+    "AC3-stale": {
+      "duration_s": 0.343,
+      "failed": 0,
+      "passed": 18,
+      "skipped": 0,
+      "total": 18
+    },
+    "AC3-state_version": {
+      "duration_s": 0.046,
+      "failed": 0,
+      "passed": 25,
+      "skipped": 0,
+      "total": 25
+    }
+  },
+  "by_layer": {
+    "L0-unit": {
+      "duration_s": 0.054,
+      "failed": 0,
+      "passed": 31,
+      "skipped": 0,
+      "total": 31
+    },
+    "L1-inmemory": {
+      "duration_s": 5.256,
+      "failed": 0,
+      "passed": 117,
+      "skipped": 0,
+      "total": 117
+    }
+  },
+  "overall": {
+    "duration_s": 5.31,
+    "failed": 0,
+    "passed": 148,
+    "skipped": 0,
+    "total": 148
+  }
+}

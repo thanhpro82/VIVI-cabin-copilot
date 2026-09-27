@@ -1,0 +1,10 @@
+{
+  "suite": "cau-dan",
+  "commit": "43f34e1b8d9a5f56576388bb6929348b03eec335",
+  "branch": "feat/ba-truc",
+  "hardware": {
+    "tier": "cpu",
+    "ngoai_le": "qwen3b chay tren Radeon RX 5500M qua Vulkan"
+  },
+  "machine": "AMD64"
+}

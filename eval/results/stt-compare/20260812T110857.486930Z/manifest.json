@@ -1,0 +1,10 @@
+{
+  "run_id": "20260812T110857.486930Z",
+  "dataset": "eval\\datasets\\poc\\v1\\audio\\manifest.jsonl",
+  "case_count": 24,
+  "engines": [
+    "phowhisper-base",
+    "zipformer-30m-rnnt-6000h"
+  ],
+  "note": "Phase 1 quick eval — audio provenance (synthetic vs. real, speaker count) is whatever eval/datasets/poc/v1/audio/manifest.jsonl's noise_condition/speaker_code fields say per entry; not a generalization claim. See docs/superpowers/specs/2026-08-12-stt-domain-eval-design.md."
+}

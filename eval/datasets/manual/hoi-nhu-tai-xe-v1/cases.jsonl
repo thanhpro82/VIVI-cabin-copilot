@@ -1,0 +1,42 @@
+{"case_id": "TX-001", "section": "Ghế và hệ thống an toàn / Dây đai an toàn", "question": "Dây an toàn kêu bíp bíp mãi thì tắt kiểu gì"}
+{"case_id": "TX-002", "section": "Ghế và hệ thống an toàn / Ghế trẻ em", "question": "Lắp ghế cho con nhỏ vào đâu thì an toàn nhất"}
+{"case_id": "TX-003", "section": "Ghế và hệ thống an toàn / Túi khí", "question": "Túi khí có bung khi va chạm nhẹ không"}
+{"case_id": "TX-004", "section": "Hỗ trợ người lái nâng cao / Hệ thống cảnh báo va chạm", "question": "Xe tự phanh khi sắp đâm phải không"}
+{"case_id": "TX-005", "section": "Hỗ trợ người lái nâng cao / Hỗ trợ đỗ xe", "question": "Lùi chuồng thì xe có tự đánh lái giúp không"}
+{"case_id": "TX-006", "section": "Hỗ trợ người lái nâng cao / Kiểm soát hành trình", "question": "Chạy đường dài muốn giữ ga cố định thì làm sao"}
+{"case_id": "TX-007", "section": "Hỗ trợ người lái nâng cao / Trợ giúp lái xe", "question": "Xe có tự giữ làn đường không"}
+{"case_id": "TX-008", "section": "Lái xe / Dừng và phanh xe", "question": "Đỗ dốc thì kéo phanh tay kiểu gì"}
+{"case_id": "TX-009", "section": "Lái xe / Gương", "question": "Gương chiếu hậu gập vào lúc khoá xe được không"}
+{"case_id": "TX-010", "section": "Lái xe / Gạt nước rửa kính", "question": "Trời mưa lất phất muốn gạt nước chậm lại"}
+{"case_id": "TX-011", "section": "Lái xe / Khởi động/dừng", "question": "Không mang chìa thì nổ máy kiểu gì"}
+{"case_id": "TX-012", "section": "Lái xe / Tiết kiệm và thân thiện môi trường", "question": "Đi thế nào cho đỡ tốn điện"}
+{"case_id": "TX-013", "section": "Lái xe / Truyền động", "question": "Về số lùi mà xe chưa dừng hẳn thì sao"}
+{"case_id": "TX-014", "section": "Lái xe / Vô lăng", "question": "Vô lăng chỉnh cao thấp được không"}
+{"case_id": "TX-015", "section": "Lái xe / Đèn nội thất", "question": "Đèn trong xe cứ sáng hoài không tắt"}
+{"case_id": "TX-016", "section": "Màn hình, Kết nối và Điều hòa / Màn hình Head Up", "question": "Xem tốc độ ngay trên kính lái được không"}
+{"case_id": "TX-017", "section": "Màn hình, Kết nối và Điều hòa / Màn hình cảm ứng", "question": "Màn hình đơ thì khởi động lại kiểu gì"}
+{"case_id": "TX-018", "section": "Màn hình, Kết nối và Điều hòa / Điều hướng", "question": "Nhập địa chỉ vào bản đồ như thế nào"}
+{"case_id": "TX-019", "section": "Màn hình, Kết nối và Điều hòa / Điện thoại & Chiếu", "question": "Nối điện thoại lên màn hình xe kiểu gì"}
+{"case_id": "TX-020", "section": "Màn hình, Kết nối và Điều hòa / Ứng dụng VinFast", "question": "Xem xe đang đỗ ở đâu bằng điện thoại được không"}
+{"case_id": "TX-021", "section": "Pin và Sạc / Hệ thống điện áp cao", "question": "Đụng vào dây điện màu cam có bị giật không"}
+{"case_id": "TX-022", "section": "Thông số kỹ thuật / Số nhận dạng VIN", "question": "Số khung xe nằm chỗ nào"}
+{"case_id": "TX-023", "section": "Tổng quan / Tổng quan về xe", "question": "Xe này chở được mấy người"}
+{"case_id": "TX-024", "section": "VinFast Connect / Điều khiển xe từ xa", "question": "Bật điều hòa từ xa trước khi ra xe được không"}
+{"case_id": "TX-025", "section": "VinFast Connect / Trợ lý ảo", "question": "Gọi trợ lý ảo bằng câu gì"}
+{"case_id": "TX-026", "section": "Đóng Mở và Khoang chứa đồ / Chìa khóa", "question": "Chìa khoá hết pin thì mở xe kiểu gì"}
+{"case_id": "TX-027", "section": "Đóng Mở và Khoang chứa đồ / Hệ thống bảo vệ xe", "question": "Xe có kêu còi khi bị cạy cửa không"}
+{"case_id": "TX-028", "section": "Đóng Mở và Khoang chứa đồ / Khoang chứa đồ", "question": "Để cốc nước ở đâu trong xe"}
+{"case_id": "TX-029", "section": "Đóng Mở và Khoang chứa đồ / Khoang phía trước và phía sau", "question": "Nắp ca-pô trước mở ra bằng cách nào"}
+{"case_id": "TX-030", "section": "Bảo dưỡng / Chăm sóc xe", "question": "Rửa xe bằng máy phun áp lực có sao không"}
+{"case_id": "TX-031", "section": "Bảo dưỡng / Hệ thống điện", "question": "Ắc quy nhỏ hết điện thì câu bình kiểu gì"}
+{"case_id": "TX-032", "section": "Bảo dưỡng / Lịch bảo dưỡng", "question": "Bao lâu phải mang xe đi bảo dưỡng một lần"}
+{"case_id": "TX-033", "section": "Bảo dưỡng / Phụ tùng và phụ kiện", "question": "Lắp thêm đồ chơi cho xe có mất bảo hành không"}
+{"case_id": "TX-034", "section": "Hỗ trợ về xe / Sửa chữa", "question": "Xe chết máy giữa đường thì gọi ai"}
+{"case_id": "TX-035", "section": "Hỗ trợ về xe / Dịch vụ hỗ trợ", "question": "Cứu hộ dọc đường có mất phí không"}
+{"case_id": "TX-036", "section": "Màn hình, Kết nối và Điều hòa / Cài đặt", "question": "Đổi ngôn ngữ trên xe sang tiếng Anh"}
+{"case_id": "TX-037", "section": "Màn hình, Kết nối và Điều hòa / Thông tin giải trí", "question": "Nghe nhạc từ điện thoại qua loa xe"}
+{"case_id": "TX-038", "section": "Ghế và hệ thống an toàn / Ghế", "question": "Ghế nhớ vị trí ngồi của tôi được không"}
+{"case_id": "TX-039", "section": "Lái xe / Đèn ngoại thất", "question": "Đèn xi nhan gạt một cái nháy ba lần là bị gì"}
+{"case_id": "TX-040", "section": "Pin và Sạc / Thông tin về pin", "question": "Pin chai sau mấy năm thì phải thay"}
+{"case_id": "TX-041", "section": "Bảo dưỡng / Vành và bánh xe", "question": "Bánh xe bị xịt giữa đường thì xử lý sao"}
+{"case_id": "TX-042", "section": "Màn hình, Kết nối và Điều hòa / Điều hòa", "question": "Kính mờ hết cả rồi nhìn không thấy đường"}

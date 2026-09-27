@@ -1,0 +1,228 @@
+{
+  "theo_nhom": {
+    "A_control_khop_luat": {
+      "e2e_ms": {
+        "n": 15,
+        "p50": 4.3,
+        "p95": 1633.7,
+        "max": 5412.9
+      },
+      "routing": {
+        "n": 15,
+        "p50": 0.1,
+        "p95": 655.5,
+        "max": 2183.1
+      },
+      "planning_or_retrieval": {
+        "n": 1,
+        "p50": 3224.3,
+        "p95": 3224.3,
+        "max": 3224.3
+      },
+      "safety": {
+        "n": 14,
+        "p50": 0.1,
+        "p95": 0.2,
+        "max": 0.5
+      },
+      "tool": {
+        "n": 12,
+        "p50": 0.2,
+        "p95": 0.6,
+        "max": 1.0
+      },
+      "outcomes": {
+        "completed": 12,
+        "approval_required": 2,
+        "clarify": 1
+      }
+    },
+    "B_control_tu_nhien": {
+      "e2e_ms": {
+        "n": 15,
+        "p50": 3715.8,
+        "p95": 9708.9,
+        "max": 16202.2
+      },
+      "routing": {
+        "n": 15,
+        "p50": 704.5,
+        "p95": 2262.3,
+        "max": 2264.6
+      },
+      "planning_or_retrieval": {
+        "n": 14,
+        "p50": 3038.1,
+        "p95": 8975.0,
+        "max": 13937.9
+      },
+      "safety": {
+        "n": 2,
+        "p50": 0.1,
+        "p95": 0.1,
+        "max": 0.1
+      },
+      "tool": {
+        "n": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "outcomes": {
+        "approval_required": 2,
+        "clarify": 6,
+        "grounded_refusal": 6,
+        "chitchat": 1
+      }
+    },
+    "C_manual_khop_luat": {
+      "e2e_ms": {
+        "n": 15,
+        "p50": 1380.1,
+        "p95": 5717.0,
+        "max": 12186.9
+      },
+      "routing": {
+        "n": 15,
+        "p50": 0.0,
+        "p95": 1.0,
+        "max": 1.7
+      },
+      "planning_or_retrieval": {
+        "n": 15,
+        "p50": 24.2,
+        "p95": 225.3,
+        "max": 620.6
+      },
+      "safety": {
+        "n": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "tool": {
+        "n": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "outcomes": {
+        "grounded_answer": 12,
+        "grounded_refusal": 3
+      }
+    },
+    "D_manual_la_qua_classifier": {
+      "e2e_ms": {
+        "n": 15,
+        "p50": 2041.2,
+        "p95": 6425.6,
+        "max": 8651.2
+      },
+      "routing": {
+        "n": 15,
+        "p50": 682.3,
+        "p95": 2268.5,
+        "max": 2277.4
+      },
+      "planning_or_retrieval": {
+        "n": 15,
+        "p50": 23.6,
+        "p95": 42.3,
+        "max": 48.8
+      },
+      "safety": {
+        "n": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "tool": {
+        "n": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "outcomes": {
+        "grounded_refusal": 9,
+        "grounded_answer": 6
+      }
+    },
+    "E_chitchat": {
+      "e2e_ms": {
+        "n": 15,
+        "p50": 697.7,
+        "p95": 7718.2,
+        "max": 10038.0
+      },
+      "routing": {
+        "n": 15,
+        "p50": 691.1,
+        "p95": 1186.4,
+        "max": 2266.8
+      },
+      "planning_or_retrieval": {
+        "n": 6,
+        "p50": 47.5,
+        "p95": 7098.7,
+        "max": 9443.8
+      },
+      "safety": {
+        "n": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "tool": {
+        "n": 0,
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "outcomes": {
+        "grounded_refusal": 4,
+        "chitchat": 10,
+        "grounded_answer": 1
+      }
+    }
+  },
+  "classify_don_le_ms": {
+    "n": 15,
+    "p50": 662.0,
+    "p95": 717.2,
+    "max": 720.5
+  },
+  "sinh_chitchat_union_ms": {
+    "n": 15,
+    "p50": 1070.6,
+    "p95": 2241.5,
+    "max": 4237.9
+  },
+  "stt_ms": {
+    "n": 10,
+    "p50": 52.7,
+    "p95": 1033.0,
+    "max": 1831.2
+  },
+  "stt_audio_s": {
+    "n": 10,
+    "p50": 1.9,
+    "p95": 3.2,
+    "max": 4.0
+  },
+  "tts_ms": {
+    "n": 7,
+    "p50": 51.3,
+    "p95": 1682.5,
+    "max": 2275.7
+  },
+  "tts_chars": [
+    29,
+    10,
+    20,
+    15,
+    36,
+    24,
+    126
+  ],
+  "loi": []
+}

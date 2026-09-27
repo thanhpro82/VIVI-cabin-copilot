@@ -1,0 +1,54 @@
+{
+  "by_nhom": {
+    "an-toan": {
+      "dat": 5,
+      "total": 5
+    },
+    "clarify-auto-listen": {
+      "dat": 4,
+      "total": 4
+    },
+    "clarify-ghep": {
+      "dat": 5,
+      "total": 5
+    },
+    "clarify-rao-chan": {
+      "dat": 14,
+      "total": 14
+    },
+    "offer-nhan": {
+      "dat": 5,
+      "total": 5
+    },
+    "offer-phu-song": {
+      "dat": 2,
+      "total": 2
+    },
+    "offer-tu-choi": {
+      "dat": 2,
+      "total": 2
+    }
+  },
+  "case_accuracy": 1.0,
+  "da_sua": [
+    "MT-OFFER-001",
+    "MT-OFFER-002",
+    "MT-OFFER-003",
+    "MT-OFFER-004",
+    "MT-OFFER-005",
+    "MT-PHU-001",
+    "MT-PHU-002",
+    "MT-RAO-001",
+    "MT-RAO-002",
+    "MT-RAO-003",
+    "MT-RAO-004",
+    "MT-RAO-005",
+    "MT-TUCHOI-001",
+    "MT-TUCHOI-002"
+  ],
+  "dat": 37,
+  "di_lui": [],
+  "luot_dat": 72,
+  "tong_luot": 72,
+  "total": 37
+}

@@ -1,0 +1,50 @@
+[Unit]
+Description=VIVI SLM (llama-server, Qwen2.5-3B-Instruct q4_k_m, CPU)
+After=network.target
+
+[Service]
+Type=simple
+User=vivi
+WorkingDirectory=/opt/vivi/tools/llama/llama-b10358
+
+# --host 0.0.0.0, KHONG phai 127.0.0.1: backend chay trong container, va o trong
+# do 127.0.0.1 la chinh container chu khong phai may chu. Xem runbook muc 8.3g.
+#
+# Cong 8093 KHONG co xac thuc nao. Thu duy nhat che no khoi Internet la ufw chan
+# incoming mac dinh — va dieu do CHI dung vi day la tien trinh host, khong phai
+# cong do Docker publish (Docker ghi thang vao chain DOCKER, dung truoc ufw).
+# TUYET DOI khong dua 8093 qua Caddy va khong publish no trong compose.
+#
+# -t 5 = so nhan vat ly sau khi nang cap (+1 vCPU, 2026-08-22). Do duoc:
+# -t 2 -> 4,40 / -t 3 -> 5,98 / -t 4 -> 7,41 / -t 5 -> 8,44 tok/s. Mo hinh bao
+# hoa fit tu 3 diem dau cho tran bang thong ~24,99 tok/s; du doan cho -t 5 la
+# 8,62, do duoc 8,44 — sai so <2%, xac nhan day la nhan vat ly that, khong phai
+# SMT. Doi lai -t 4 neu hoan tac nang cap.
+ExecStart=/opt/vivi/tools/llama/llama-b10358/llama-server -m /opt/vivi/models/slm/qwen2.5-3b-instruct-q4_k_m.gguf --host 0.0.0.0 --port 8093 -c 2048 --cache-reuse 256 -ngl 0 -t 5
+
+# Nap san tien to 562 token. Khong co buoc nay thi luot planner dau tien ton
+# 35 637 ms va hong — moi lan restart.
+#
+# Goi qua `bash` va co tien to `-`, moi cai chan mot duong:
+#
+# 1. `bash <script>` KHONG can bit thuc thi. Goi thang duong dan thi can, va
+#    ca 6 file .sh trong deploy/vps/ tung duoc commit o mode 100644 (sua o PR
+#    nay). Tren may chua `chmod +x`, systemd tra 203/EXEC.
+# 2. Tien to `-` khien ExecStartPost hong KHONG lam unit failed. Thieu no thi
+#    203/EXEC keo ca llama-server xuong — mat SLM vi mot buoc HAM NONG.
+#
+# Ghi chu cu o day viet "Script luon exit 0 nen no khong the lam chet dich vu"
+# — SAI, va chinh cau do lam khong ai de y. Ma loi khong nam o exit code cua
+# script; no nam o cho systemd khong exec noi file. Script co exit 0 hay khong
+# cung khong cuu duoc, vi no chua tung chay.
+ExecStartPost=-/bin/bash /opt/vivi/deploy/vps/slm_warmup.sh
+
+# Warm-up ton ~30 s (28 733 ms prefill). Mac dinh 90 s cua systemd du, nhung dat
+# ro de khong phu thuoc mac dinh cua ban phan phoi.
+TimeoutStartSec=180
+
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

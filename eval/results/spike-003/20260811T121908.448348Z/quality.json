@@ -1,0 +1,54 @@
+{
+ "n": 64,
+ "parse_fail": 0,
+ "kind_accuracy": 0.906,
+ "tool_accuracy_on_plan": 0.828,
+ "plan_n": 29,
+ "misses": [
+  {
+   "case_id": "P-CMD-001",
+   "why": "tool=media_control muon=set_hvac_power"
+  },
+  {
+   "case_id": "P-CMD-003",
+   "why": "tool=set_hvac_power muon=set_window_position"
+  },
+  {
+   "case_id": "P-CMD-016",
+   "why": "tool=media_control muon=set_hvac_temperature"
+  },
+  {
+   "case_id": "P-CMD-017",
+   "why": "tool=media_control muon=set_window_position"
+  },
+  {
+   "case_id": "P-CMD-019",
+   "why": "tool=set_hvac_power muon=media_control"
+  },
+  {
+   "case_id": "P-SOC-010",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-SOC-013",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-003",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-008",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-009",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-010",
+   "why": "kind=plan muon=['chitchat']"
+  }
+ ],
+ "label": "PROBE-NOT-EVIDENCE"
+}

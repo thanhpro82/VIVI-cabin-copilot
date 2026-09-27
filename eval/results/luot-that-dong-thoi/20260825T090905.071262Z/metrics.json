@@ -1,0 +1,998 @@
+{
+  "base_url": "https://c4-app-192.io.vn/api/v1",
+  "origin": "https://c4-app-192.io.vn",
+  "che_do": "voice",
+  "moc": [
+    1,
+    2,
+    3
+  ],
+  "vong": 2,
+  "tran_do_s": 60.0,
+  "nguong": {
+    "p50_ms": 2500.0,
+    "p95_ms": 4500.0
+  },
+  "cau_hinh_llama": {
+    "doc_duoc": true,
+    "endpoint": "http://127.0.0.1:8093",
+    "n_ctx": 2048,
+    "n_slots": 4,
+    "model_path": "/opt/vivi/models/slm/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "kv_unified": null
+  },
+  "healthz": {
+    "http": 200,
+    "than": {
+      "data": {
+        "status": "ready",
+        "checked_at": "2026-08-25T09:04:52.947856Z",
+        "components": {
+          "backend": {
+            "status": "ready",
+            "latency_ms": 18.952186
+          },
+          "llm": {
+            "status": "ready",
+            "latency_ms": 28.155158
+          },
+          "mqtt": {
+            "status": "ready",
+            "latency_ms": 2.445431
+          },
+          "vehicle_simulator": {
+            "status": "ready",
+            "latency_ms": 0.021392
+          },
+          "stt": {
+            "status": "ready",
+            "latency_ms": 121.647417
+          },
+          "tts": {
+            "status": "ready",
+            "latency_ms": 147.709356
+          },
+          "rag_index": {
+            "status": "ready",
+            "latency_ms": 147.110676
+          },
+          "sqlite": {
+            "status": "ready",
+            "latency_ms": 27.001352
+          }
+        },
+        "faults": []
+      },
+      "meta": {
+        "request_id": "req_b8d86b7e57c6"
+      },
+      "trace_id": "tr_b2476845483b",
+      "schema_version": "1.0"
+    }
+  },
+  "so_wav": 5,
+  "wav_dir": "/opt/vivi/tests/fixtures/voice/cham_slm",
+  "ket_qua": {
+    "1": {
+      "so_mau_lo_ngan": 0,
+      "thong_ke": {
+        "n_mau": 10,
+        "n_thanh_cong": 10,
+        "so_loi": 0,
+        "so_cat_cut": 0,
+        "p50_ms": 5700.3,
+        "p95_ms": 17440.1,
+        "max_ms": 17440.1,
+        "nguong_p50_ms": 2500.0,
+        "nguong_p95_ms": 4500.0,
+        "p50_dat": false,
+        "p95_dat": false,
+        "so_vuot_p95": 6,
+        "so_bi_tu_choi": 0,
+        "so_ra_plan": 0,
+        "so_biet_co_plan": 0
+      },
+      "theo_nhan": {
+        "voice:Chào xe, hôm nay thế nào": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 5700.3,
+          "p95_ms": 6238.4,
+          "max_ms": 6238.4,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 2,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Làm cho trong xe dễ chịu hơn tí đi": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 16468.9,
+          "p95_ms": 16757.9,
+          "max_ms": 16757.9,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 2,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Trong xe ngột ngạt quá, xử lý giúp tôi": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 17275.9,
+          "p95_ms": 17440.1,
+          "max_ms": 17440.1,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 2,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Xe này sạc nhanh mất bao lâu": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 1785.8,
+          "p95_ms": 1922.3,
+          "max_ms": 1922.3,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Áp suất lốp tiêu chuẩn là bao nhiêu": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 618.7,
+          "p95_ms": 750.5,
+          "max_ms": 750.5,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        }
+      },
+      "ban_ghi": [
+        {
+          "nhan": "voice:Xe này sạc nhanh mất bao lâu",
+          "turn_id": "turn_voice_754dfd6c694947238b99",
+          "so_event_bo_qua": 11,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 1649.3,
+          "ms_202": 88.5,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 214.1,
+          "ms_assistant_speech": 1649.3,
+          "ms_assistant_response": 1649.3,
+          "ms_cho_duyet": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Xe này sạc nhanh mất bao lâu"
+          ]
+        },
+        {
+          "nhan": "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+          "turn_id": "turn_voice_98f4080317a94aae98ad",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 486.9,
+          "ms_202": 10.4,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 125.4,
+          "ms_assistant_speech": 483.6,
+          "ms_assistant_response": 486.9,
+          "ms_cho_duyet": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu"
+          ]
+        },
+        {
+          "nhan": "voice:Làm cho trong xe dễ chịu hơn tí đi",
+          "turn_id": "turn_voice_a576a91ee9d245e38d9c",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 16757.9,
+          "ms_202": 15.4,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 126.8,
+          "ms_assistant_speech": 16757.9,
+          "ms_assistant_response": 16757.9,
+          "ms_cho_duyet": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Làm cho trong xe dễ chịu hơn tí đi"
+          ]
+        },
+        {
+          "nhan": "voice:Trong xe ngột ngạt quá, xử lý giúp tôi",
+          "turn_id": "turn_voice_4e9f12ea6c354daa8723",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "cho_duyet",
+          "ms_tong": 17440.1,
+          "ms_202": 88.8,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 227.1,
+          "ms_assistant_speech": 17440.0,
+          "ms_assistant_response": null,
+          "ms_cho_duyet": 17440.1,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Trong xe ngột ngạt quá, xử lý giúp tôi"
+          ]
+        },
+        {
+          "nhan": "voice:Chào xe, hôm nay thế nào",
+          "turn_id": "turn_voice_5b78c016bab8498fbfe1",
+          "so_event_bo_qua": 0,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 5162.2,
+          "ms_202": 96.5,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 189.3,
+          "ms_assistant_speech": 5160.7,
+          "ms_assistant_response": 5162.2,
+          "ms_cho_duyet": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Chào xe, hôm nay thế nào"
+          ]
+        },
+        {
+          "nhan": "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+          "turn_id": "turn_voice_4f96a955404b4afd8767",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 750.5,
+          "ms_202": 98.8,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 225.5,
+          "ms_assistant_speech": 750.5,
+          "ms_assistant_response": 750.5,
+          "ms_cho_duyet": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu"
+          ]
+        },
+        {
+          "nhan": "voice:Làm cho trong xe dễ chịu hơn tí đi",
+          "turn_id": "turn_voice_056ac96b79304f529571",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 16179.9,
+          "ms_202": 13.9,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 146.3,
+          "ms_assistant_speech": 16179.6,
+          "ms_assistant_response": 16179.9,
+          "ms_cho_duyet": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Làm cho trong xe dễ chịu hơn tí đi"
+          ]
+        },
+        {
+          "nhan": "voice:Trong xe ngột ngạt quá, xử lý giúp tôi",
+          "turn_id": "turn_voice_76495059a44b4a13b5b1",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "cho_duyet",
+          "ms_tong": 17111.8,
+          "ms_202": 91.1,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 214.7,
+          "ms_assistant_speech": 17111.7,
+          "ms_assistant_response": null,
+          "ms_cho_duyet": 17111.8,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Trong xe ngột ngạt quá, xử lý giúp tôi"
+          ]
+        },
+        {
+          "nhan": "voice:Chào xe, hôm nay thế nào",
+          "turn_id": "turn_voice_efe91e6054f6447e8c98",
+          "so_event_bo_qua": 0,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 6238.4,
+          "ms_202": 123.5,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 228.9,
+          "ms_assistant_speech": 6238.2,
+          "ms_assistant_response": 6238.4,
+          "ms_cho_duyet": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Chào xe, hôm nay thế nào"
+          ]
+        },
+        {
+          "nhan": "voice:Xe này sạc nhanh mất bao lâu",
+          "turn_id": "turn_voice_dbc5586f679d49e7a367",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 1922.3,
+          "ms_202": 50.6,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 149.7,
+          "ms_assistant_speech": 1921.9,
+          "ms_assistant_response": 1922.3,
+          "ms_cho_duyet": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Xe này sạc nhanh mất bao lâu"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "so_mau_lo_ngan": 2,
+      "thong_ke": {
+        "n_mau": 10,
+        "n_thanh_cong": 10,
+        "so_loi": 0,
+        "so_cat_cut": 0,
+        "p50_ms": 11149.0,
+        "p95_ms": 34224.6,
+        "max_ms": 34224.6,
+        "nguong_p50_ms": 2500.0,
+        "nguong_p95_ms": 4500.0,
+        "p50_dat": false,
+        "p95_dat": false,
+        "so_vuot_p95": 6,
+        "so_bi_tu_choi": 0,
+        "so_ra_plan": 0,
+        "so_biet_co_plan": 0
+      },
+      "theo_nhan": {
+        "voice:Chào xe, hôm nay thế nào": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 13642.5,
+          "p95_ms": 22565.7,
+          "max_ms": 22565.7,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 2,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Làm cho trong xe dễ chịu hơn tí đi": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 25729.6,
+          "p95_ms": 33880.4,
+          "max_ms": 33880.4,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 2,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Trong xe ngột ngạt quá, xử lý giúp tôi": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 28580.2,
+          "p95_ms": 34224.6,
+          "max_ms": 34224.6,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 2,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Xe này sạc nhanh mất bao lâu": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 1558.8,
+          "p95_ms": 1630.1,
+          "max_ms": 1630.1,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Áp suất lốp tiêu chuẩn là bao nhiêu": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 1141.8,
+          "p95_ms": 1664.9,
+          "max_ms": 1664.9,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        }
+      },
+      "ban_ghi": [
+        {
+          "nhan": "voice:Xe này sạc nhanh mất bao lâu",
+          "turn_id": "turn_voice_100ff5aa7e2e41c18f75",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 1630.1,
+          "ms_202": 144.1,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 261.6,
+          "ms_assistant_speech": 1629.9,
+          "ms_assistant_response": 1630.1,
+          "ms_cho_duyet": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Xe này sạc nhanh mất bao lâu",
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu"
+          ]
+        },
+        {
+          "nhan": "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+          "turn_id": "turn_voice_d638508922774680bdf5",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 618.8,
+          "ms_202": 46.3,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 156.0,
+          "ms_assistant_speech": 618.8,
+          "ms_assistant_response": 618.8,
+          "ms_cho_duyet": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Xe này sạc nhanh mất bao lâu",
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu"
+          ]
+        },
+        {
+          "nhan": "voice:Làm cho trong xe dễ chịu hơn tí đi",
+          "turn_id": "turn_voice_f9872f27c511454b9185",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 33880.4,
+          "ms_202": 12.2,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 137.5,
+          "ms_assistant_speech": 33880.3,
+          "ms_assistant_response": 33880.4,
+          "ms_cho_duyet": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Làm cho trong xe dễ chịu hơn tí đi",
+            "voice:Trong xe ngột ngạt quá, xử lý giúp tôi"
+          ]
+        },
+        {
+          "nhan": "voice:Trong xe ngột ngạt quá, xử lý giúp tôi",
+          "turn_id": "turn_voice_1d05c4fb246340348da8",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "cho_duyet",
+          "ms_tong": 34224.6,
+          "ms_202": 17.6,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 1111.7,
+          "ms_assistant_speech": 34224.5,
+          "ms_assistant_response": null,
+          "ms_cho_duyet": 34224.6,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Làm cho trong xe dễ chịu hơn tí đi",
+            "voice:Trong xe ngột ngạt quá, xử lý giúp tôi"
+          ]
+        },
+        {
+          "nhan": "voice:Chào xe, hôm nay thế nào",
+          "turn_id": "turn_voice_3fd50bdcd251425dbd66",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 4719.3,
+          "ms_202": 75.5,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 157.1,
+          "ms_assistant_speech": 4719.3,
+          "ms_assistant_response": 4719.3,
+          "ms_cho_duyet": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Chào xe, hôm nay thế nào"
+          ]
+        },
+        {
+          "nhan": "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+          "turn_id": "turn_voice_ef4a151c26574e54a0be",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 1664.9,
+          "ms_202": 14.1,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 106.2,
+          "ms_assistant_speech": 1664.7,
+          "ms_assistant_response": 1664.9,
+          "ms_cho_duyet": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+            "voice:Làm cho trong xe dễ chịu hơn tí đi"
+          ]
+        },
+        {
+          "nhan": "voice:Làm cho trong xe dễ chịu hơn tí đi",
+          "turn_id": "turn_voice_9743da861e974edeb6e3",
+          "so_event_bo_qua": 0,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 17578.8,
+          "ms_202": 40.6,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 263.2,
+          "ms_assistant_speech": 17578.6,
+          "ms_assistant_response": 17578.8,
+          "ms_cho_duyet": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+            "voice:Làm cho trong xe dễ chịu hơn tí đi"
+          ]
+        },
+        {
+          "nhan": "voice:Trong xe ngột ngạt quá, xử lý giúp tôi",
+          "turn_id": "turn_voice_da5d8d382a96449090a6",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "cho_duyet",
+          "ms_tong": 22935.9,
+          "ms_202": 60.4,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 1511.8,
+          "ms_assistant_speech": 22935.8,
+          "ms_assistant_response": null,
+          "ms_cho_duyet": 22935.9,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Trong xe ngột ngạt quá, xử lý giúp tôi",
+            "voice:Chào xe, hôm nay thế nào"
+          ]
+        },
+        {
+          "nhan": "voice:Chào xe, hôm nay thế nào",
+          "turn_id": "turn_voice_ef2392d79ff24a76966d",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 22565.7,
+          "ms_202": 48.7,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 160.7,
+          "ms_assistant_speech": 22565.5,
+          "ms_assistant_response": 22565.7,
+          "ms_cho_duyet": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Trong xe ngột ngạt quá, xử lý giúp tôi",
+            "voice:Chào xe, hôm nay thế nào"
+          ]
+        },
+        {
+          "nhan": "voice:Xe này sạc nhanh mất bao lâu",
+          "turn_id": "turn_voice_8dc86d254f614de39f86",
+          "so_event_bo_qua": 0,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 1487.4,
+          "ms_202": 70.4,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 183.4,
+          "ms_assistant_speech": 1486.9,
+          "ms_assistant_response": 1487.4,
+          "ms_cho_duyet": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "voice:Xe này sạc nhanh mất bao lâu"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "so_mau_lo_ngan": 4,
+      "thong_ke": {
+        "n_mau": 10,
+        "n_thanh_cong": 10,
+        "so_loi": 0,
+        "so_cat_cut": 0,
+        "p50_ms": 20879.6,
+        "p95_ms": 34488.9,
+        "max_ms": 34488.9,
+        "nguong_p50_ms": 2500.0,
+        "nguong_p95_ms": 4500.0,
+        "p50_dat": false,
+        "p95_dat": false,
+        "so_vuot_p95": 10,
+        "so_bi_tu_choi": 0,
+        "so_ra_plan": 0,
+        "so_biet_co_plan": 0
+      },
+      "theo_nhan": {
+        "voice:Chào xe, hôm nay thế nào": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 14576.4,
+          "p95_ms": 23274.2,
+          "max_ms": 23274.2,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 2,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Làm cho trong xe dễ chịu hơn tí đi": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 25841.4,
+          "p95_ms": 34155.8,
+          "max_ms": 34155.8,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 2,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Trong xe ngột ngạt quá, xử lý giúp tôi": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 29423.3,
+          "p95_ms": 34488.9,
+          "max_ms": 34488.9,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 2,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Xe này sạc nhanh mất bao lâu": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 12542.0,
+          "p95_ms": 18320.5,
+          "max_ms": 18320.5,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 2,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        },
+        "voice:Áp suất lốp tiêu chuẩn là bao nhiêu": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 26232.3,
+          "p95_ms": 33979.6,
+          "max_ms": 33979.6,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 2,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 0
+        }
+      },
+      "ban_ghi": [
+        {
+          "nhan": "voice:Xe này sạc nhanh mất bao lâu",
+          "turn_id": "turn_voice_11b895aeb37e4f39b9bd",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 18320.5,
+          "ms_202": 81.0,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 1540.6,
+          "ms_assistant_speech": 18320.3,
+          "ms_assistant_response": 18320.5,
+          "ms_cho_duyet": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "voice:Xe này sạc nhanh mất bao lâu",
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+            "voice:Làm cho trong xe dễ chịu hơn tí đi"
+          ]
+        },
+        {
+          "nhan": "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+          "turn_id": "turn_voice_8d015146aefe4072a778",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 18485.0,
+          "ms_202": 77.0,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 1538.9,
+          "ms_assistant_speech": 18484.8,
+          "ms_assistant_response": 18485.0,
+          "ms_cho_duyet": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "voice:Xe này sạc nhanh mất bao lâu",
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+            "voice:Làm cho trong xe dễ chịu hơn tí đi"
+          ]
+        },
+        {
+          "nhan": "voice:Làm cho trong xe dễ chịu hơn tí đi",
+          "turn_id": "turn_voice_3121fa5fcda64565b94c",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 17527.0,
+          "ms_202": 75.8,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 209.3,
+          "ms_assistant_speech": 17527.0,
+          "ms_assistant_response": 17527.0,
+          "ms_cho_duyet": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "voice:Xe này sạc nhanh mất bao lâu",
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+            "voice:Làm cho trong xe dễ chịu hơn tí đi"
+          ]
+        },
+        {
+          "nhan": "voice:Trong xe ngột ngạt quá, xử lý giúp tôi",
+          "turn_id": "turn_voice_e314196ac36c4c148f68",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "cho_duyet",
+          "ms_tong": 24357.8,
+          "ms_202": 52.7,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 169.3,
+          "ms_assistant_speech": 24357.4,
+          "ms_assistant_response": null,
+          "ms_cho_duyet": 24357.8,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Trong xe ngột ngạt quá, xử lý giúp tôi",
+            "voice:Chào xe, hôm nay thế nào"
+          ]
+        },
+        {
+          "nhan": "voice:Chào xe, hôm nay thế nào",
+          "turn_id": "turn_voice_d4a9753ef78c47f2a2ff",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 23274.2,
+          "ms_202": 117.4,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 1593.2,
+          "ms_assistant_speech": 23273.8,
+          "ms_assistant_response": 23274.2,
+          "ms_cho_duyet": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Trong xe ngột ngạt quá, xử lý giúp tôi",
+            "voice:Chào xe, hôm nay thế nào"
+          ]
+        },
+        {
+          "nhan": "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+          "turn_id": "turn_voice_91c074ccf69345a0b575",
+          "so_event_bo_qua": 0,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 33979.6,
+          "ms_202": 122.1,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 1462.3,
+          "ms_assistant_speech": 33978.1,
+          "ms_assistant_response": 33979.6,
+          "ms_cho_duyet": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+            "voice:Làm cho trong xe dễ chịu hơn tí đi",
+            "voice:Trong xe ngột ngạt quá, xử lý giúp tôi"
+          ]
+        },
+        {
+          "nhan": "voice:Làm cho trong xe dễ chịu hơn tí đi",
+          "turn_id": "turn_voice_5143bb84c32142f88187",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 34155.8,
+          "ms_202": 132.2,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 1461.3,
+          "ms_assistant_speech": 34155.6,
+          "ms_assistant_response": 34155.8,
+          "ms_cho_duyet": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+            "voice:Làm cho trong xe dễ chịu hơn tí đi",
+            "voice:Trong xe ngột ngạt quá, xử lý giúp tôi"
+          ]
+        },
+        {
+          "nhan": "voice:Trong xe ngột ngạt quá, xử lý giúp tôi",
+          "turn_id": "turn_voice_d35e464970ca478d9878",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "cho_duyet",
+          "ms_tong": 34488.9,
+          "ms_202": 60.8,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 228.8,
+          "ms_assistant_speech": 34488.8,
+          "ms_assistant_response": null,
+          "ms_cho_duyet": 34488.9,
+          "n_lo": 3,
+          "cung_lo": [
+            "voice:Áp suất lốp tiêu chuẩn là bao nhiêu",
+            "voice:Làm cho trong xe dễ chịu hơn tí đi",
+            "voice:Trong xe ngột ngạt quá, xử lý giúp tôi"
+          ]
+        },
+        {
+          "nhan": "voice:Chào xe, hôm nay thế nào",
+          "turn_id": "turn_voice_d7ecdfc5a3fa4f48b8ae",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 5878.5,
+          "ms_202": 46.3,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 152.1,
+          "ms_assistant_speech": 5878.3,
+          "ms_assistant_response": 5878.5,
+          "ms_cho_duyet": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Chào xe, hôm nay thế nào",
+            "voice:Xe này sạc nhanh mất bao lâu"
+          ]
+        },
+        {
+          "nhan": "voice:Xe này sạc nhanh mất bao lâu",
+          "turn_id": "turn_voice_d514ab935d9649659ff7",
+          "so_event_bo_qua": 1,
+          "ket_thuc": "tra_loi",
+          "ms_tong": 6763.5,
+          "ms_202": 101.0,
+          "http": 202,
+          "cat_cut": false,
+          "loi": null,
+          "ms_transcript_final": 1481.0,
+          "ms_assistant_speech": 6763.3,
+          "ms_assistant_response": 6763.5,
+          "ms_cho_duyet": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "voice:Chào xe, hôm nay thế nào",
+            "voice:Xe này sạc nhanh mất bao lâu"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+# Mô hình embedding thật cho RAG — CHỈ cài trên máy nhóm, không cài trên CI.
+#
+# `sentence-transformers` kéo theo `torch` khoảng 2 GB. Thêm nó vào
+# requirements.txt sẽ khiến mỗi lần CI chạy phải tải chừng đó dữ liệu.
+# ADR-001 đã chốt hướng xử lý: "CI dùng fake/tiny model; full eval chạy trên
+# máy nhóm" — trên CI, test RAG dùng `StubEmbedder` trong src/rag/embed.py.
+#
+#   pip install -r requirements.txt -r requirements-rag.txt
+#
+# Cần cho: python -m src.rag.cli ingest | query | eval | calibrate
+
+sentence-transformers>=3.0.0

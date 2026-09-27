@@ -1,0 +1,16 @@
+{
+  "command_accuracy": 1.0,
+  "command_to_manual": 0.0,
+  "command_tool_exact": 1.0,
+  "command_total": 64,
+  "question_as_command_intent": 0.0,
+  "question_buckets": {
+    "to_offer": 1,
+    "to_rag": 59
+  },
+  "question_denied": 0.0,
+  "question_recall": 0.9833333333333333,
+  "question_to_control": 0.0,
+  "question_to_offer": 0.016666666666666666,
+  "question_total": 60
+}

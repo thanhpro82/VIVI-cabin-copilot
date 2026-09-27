@@ -1,0 +1,62 @@
+{"case_id": "DT-M001", "input_text": "Dây an toàn kêu bíp bíp mãi thì tắt kiểu gì", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M002", "input_text": "Lắp ghế cho con nhỏ vào đâu thì an toàn nhất", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M003", "input_text": "Túi khí có bung khi va chạm nhẹ không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M004", "input_text": "Xe tự phanh khi sắp đâm phải không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M005", "input_text": "Lùi chuồng thì xe có tự đánh lái giúp không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M006", "input_text": "Chạy đường dài muốn giữ ga cố định thì làm sao", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M007", "input_text": "Xe có tự giữ làn đường không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M008", "input_text": "Đỗ dốc thì kéo phanh tay kiểu gì", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M009", "input_text": "Gương chiếu hậu gập vào lúc khoá xe được không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M010", "input_text": "Trời mưa lất phất muốn gạt nước chậm lại", "expected": "manual", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M011", "input_text": "Không mang chìa thì nổ máy kiểu gì", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M012", "input_text": "Đi thế nào cho đỡ tốn điện", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M013", "input_text": "Về số lùi mà xe chưa dừng hẳn thì sao", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M014", "input_text": "Vô lăng chỉnh cao thấp được không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M015", "input_text": "Đèn trong xe cứ sáng hoài không tắt", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "negated_command"}
+{"case_id": "DT-M016", "input_text": "Xem tốc độ ngay trên kính lái được không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M017", "input_text": "Màn hình đơ thì khởi động lại kiểu gì", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M018", "input_text": "Nhập địa chỉ vào bản đồ như thế nào", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M019", "input_text": "Nối điện thoại lên màn hình xe kiểu gì", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M020", "input_text": "Xem xe đang đỗ ở đâu bằng điện thoại được không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M021", "input_text": "Đụng vào dây điện màu cam có bị giật không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M022", "input_text": "Số khung xe nằm chỗ nào", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M023", "input_text": "Xe này chở được mấy người", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M024", "input_text": "Bật điều hòa từ xa trước khi ra xe được không", "expected": "manual", "predicted": "control", "duong": "duong_tat", "router_reason": "question_about_supported_action"}
+{"case_id": "DT-M025", "input_text": "Gọi trợ lý ảo bằng câu gì", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M026", "input_text": "Chìa khoá hết pin thì mở xe kiểu gì", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M027", "input_text": "Xe có kêu còi khi bị cạy cửa không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M028", "input_text": "Để cốc nước ở đâu trong xe", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M029", "input_text": "Nắp ca-pô trước mở ra bằng cách nào", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M030", "input_text": "Rửa xe bằng máy phun áp lực có sao không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M031", "input_text": "Ắc quy nhỏ hết điện thì câu bình kiểu gì", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M032", "input_text": "Bao lâu phải mang xe đi bảo dưỡng một lần", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M033", "input_text": "Lắp thêm đồ chơi cho xe có mất bảo hành không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M034", "input_text": "Xe chết máy giữa đường thì gọi ai", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M035", "input_text": "Cứu hộ dọc đường có mất phí không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M036", "input_text": "Đổi ngôn ngữ trên xe sang tiếng Anh", "expected": "manual", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M037", "input_text": "Nghe nhạc từ điện thoại qua loa xe", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M038", "input_text": "Ghế nhớ vị trí ngồi của tôi được không", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M039", "input_text": "Đèn xi nhan gạt một cái nháy ba lần là bị gì", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M040", "input_text": "Pin chai sau mấy năm thì phải thay", "expected": "manual", "predicted": "manual", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-M041", "input_text": "Bánh xe bị xịt giữa đường thì xử lý sao", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "manual_question"}
+{"case_id": "DT-M042", "input_text": "Kính mờ hết cả rồi nhìn không thấy đường", "expected": "manual", "predicted": "manual", "duong": "duong_tat", "router_reason": "negated_command"}
+{"case_id": "DT-C001", "input_text": "Nóng quá, giảm nhiệt độ xuống đi", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C002", "input_text": "Lạnh cóng rồi, cho ấm lên chút", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C003", "input_text": "Cho ghế ngả ra sau một chút", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C004", "input_text": "Chỉnh ghế thoải mái hơn đi", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C005", "input_text": "Ồn quá, vặn nhỏ tiếng xuống", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C006", "input_text": "Nghe gì đó vui vui đi", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C007", "input_text": "Ngột ngạt quá, cho thoáng chút đi", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C008", "input_text": "Tối quá, cho sáng lên tí", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C009", "input_text": "Gió mạnh quá đấy", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C010", "input_text": "Cho tôi chút không khí trong lành", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C011", "input_text": "Kính mờ hết cả rồi", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C012", "input_text": "Sau lưng đau quá, đỡ tôi cái", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C013", "input_text": "Mở giùm cái cửa sổ cho con bé nó nhìn", "expected": "control", "predicted": "manual", "duong": "duong_tat", "router_reason": "missing_window_side"}
+{"case_id": "DT-C014", "input_text": "Im lặng chút được không, tôi cần tập trung", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C015", "input_text": "Chân lạnh quá nhỉ", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C016", "input_text": "Đưa tôi về nhà đi", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C017", "input_text": "Ghé đâu đó uống cà phê đi", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C018", "input_text": "Bài này chán quá, đổi bài khác", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C019", "input_text": "Ấm lên 26 độ giùm", "expected": "control", "predicted": "control", "duong": "slm", "router_reason": "default_to_manual"}
+{"case_id": "DT-C020", "input_text": "Quay lại bài lúc nãy đi", "expected": "control", "predicted": "control", "duong": "duong_tat", "router_reason": "deterministic_rule"}

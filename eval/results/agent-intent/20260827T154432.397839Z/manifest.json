@@ -1,0 +1,8 @@
+{
+  "case_count": 93,
+  "dataset": "eval/datasets/agent/v3/cases.jsonl",
+  "note": "Router luật, không gọi model. Không phải bằng chứng chất lượng SLM.",
+  "router": "DeterministicControlRouter",
+  "run_id": "20260827T154432.397839Z",
+  "slm_used": false
+}

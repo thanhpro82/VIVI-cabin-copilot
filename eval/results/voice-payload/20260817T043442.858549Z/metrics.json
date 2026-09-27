@@ -1,0 +1,19 @@
+{
+  "client_van_ket_noi": true,
+  "frame_bytes_max": 665979,
+  "khung_mac_dinh_bytes": 1048576,
+  "ly_do_dong": [],
+  "phan_tram_khung_max": 63.5,
+  "so_luot_co_speech": 3,
+  "so_luot_do": 3,
+  "stt_ms": [
+    48.4048,
+    null,
+    null
+  ],
+  "tts_ms": [
+    92.2982000047341,
+    715.1109999977052,
+    588.9588999561965
+  ]
+}

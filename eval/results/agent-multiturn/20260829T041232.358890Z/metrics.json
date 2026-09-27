@@ -1,0 +1,31 @@
+{
+  "by_nhom": {
+    "an-toan": {
+      "dat": 5,
+      "total": 5
+    },
+    "clarify-ghep": {
+      "dat": 5,
+      "total": 5
+    },
+    "offer-nhan": {
+      "dat": 0,
+      "total": 5
+    },
+    "offer-phu-song": {
+      "dat": 0,
+      "total": 2
+    },
+    "offer-tu-choi": {
+      "dat": 0,
+      "total": 2
+    }
+  },
+  "case_accuracy": 0.5263,
+  "da_sua": [],
+  "dat": 10,
+  "di_lui": [],
+  "luot_dat": 28,
+  "tong_luot": 39,
+  "total": 19
+}

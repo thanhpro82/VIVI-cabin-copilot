@@ -1,0 +1,39 @@
+{"case_id": "RAG-101", "chot": [{"loai": "cot_loi", "cum": ["giữ công tắc", "2 giây", "nhả công tắc"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-102", "chot": [{"loai": "phu_dinh", "cum": ["không cho hành khách"]}, {"loai": "cot_loi", "cum": ["an toàn cho trẻ em"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-103", "chot": [{"loai": "cot_loi", "cum": ["tự động dừng", "vị trí mở hoàn toàn"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-104", "chot": [{"loai": "cot_loi", "cum": ["nhấn hoàn toàn công tắc cửa sổ xuống"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-105", "chot": [{"loai": "cot_loi", "cum": ["màn hình thông tin giải trí", "cài đặt xe"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-107", "chot": [{"loai": "cot_loi", "cum": ["đẩy phần rộng của tay nắm", "trong phạm vi 1m"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-108", "chot": [{"loai": "dieu_kien", "cum": ["nếu được trang bị"]}, {"loai": "cot_loi", "cum": ["trang điều hòa"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-109", "chot": [{"loai": "cot_loi", "cum": ["trượt nút di chuyển", "nút độ cao", "nút tựa lưng"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-110", "chot": [{"loai": "dieu_kien", "cum": ["nếu được trang bị"]}, {"loai": "cot_loi", "cum": ["tuần hoàn máu", "thư giãn cơ bắp"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-111", "chot": [{"loai": "phu_dinh", "cum": ["không nên trượt về phía trước"]}, {"loai": "cot_loi", "cum": ["12 đến 25cm", "120 độ"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-112", "chot": [{"loai": "cot_loi", "cum": ["điều khiển đèn", "đèn sương mù phía sau"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-113", "chot": [{"loai": "cot_loi", "cum": ["tự động bật đèn chiếu sáng bên ngoài"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-114", "chot": [{"loai": "cot_loi", "cum": ["bảng điều khiển trung tâm", "công tắc đèn cảnh báo nguy hiểm"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-115", "chot": [{"loai": "cot_loi", "cum": ["điều kiện ánh sáng xung quanh", "tự động bật khi vào số"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-116", "chot": [{"loai": "dieu_kien", "cum": ["nếu có"]}, {"loai": "cot_loi", "cum": ["chiếu ánh sáng theo hướng xe rẽ"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-117", "chot": [{"loai": "cot_loi", "cum": ["trang điều hòa", "sấy kính"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-118", "chot": [{"loai": "cot_loi", "cum": ["lịch bảo dưỡng", "thời gian bảo trì quy định"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-119", "chot": [{"loai": "phu_dinh", "cum": ["không để chế độ tuần hoàn bật"]}, {"loai": "cot_loi", "cum": ["lưu thông và lọc sạch"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-120", "chot": [{"loai": "cot_loi", "cum": ["giảm nhiệt độ", "tốc độ quạt"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-121", "chot": [{"loai": "cot_loi", "cum": ["hoàn toàn tự động", "tốc độ không khí"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-122", "chot": [{"loai": "cot_loi", "cum": ["chống đọng sương phía sau"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-123", "chot": [{"loai": "cot_loi", "cum": ["dừng lại và kiểm tra lốp", "áp suất thích hợp"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-124", "chot": [{"loai": "cot_loi", "cum": ["odo", "màn hình cảm ứng"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-125", "chot": [{"loai": "cot_loi", "cum": ["car control area"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-126", "chot": [{"loai": "dieu_kien", "cum": ["nếu có"]}, {"loai": "cot_loi", "cum": ["kết nối thiết bị", "nút nguồn trên điều khiển vô lăng"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-127", "chot": [{"loai": "cot_loi", "cum": ["đài fm", "nút nguồn trên điều khiển vô lăng"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-128", "chot": [{"loai": "cot_loi", "cum": ["trang phương tiện usb", "thanh bài hát"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-129", "chot": [{"loai": "dieu_kien", "cum": ["nếu có"]}, {"loai": "cot_loi", "cum": ["thư viện ứng dụng", "hey vinfast"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-130", "chot": [{"loai": "dieu_kien", "cum": ["nếu được trang bị"]}, {"loai": "cot_loi", "cum": ["nhãn gắn trên khung cửa"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-131", "chot": [{"loai": "cot_loi", "cum": ["mài mòn lốp không đồng đều", "kéo dài tuổi thọ"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-132", "chot": [{"loai": "cot_loi", "cum": ["2 mm", "phải thay thế"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-133", "chot": [{"loai": "cot_loi", "cum": ["cảm biến ở mỗi bánh xe", "đèn cảnh báo sẽ sáng"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-134", "chot": [{"loai": "cot_loi", "cum": ["hao mòn lốp bất thường", "xe bị rung", "kéo một chiều"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-135", "chot": [{"loai": "cot_loi", "cum": ["chế độ đỗ xe", "mở cửa cổng sạc", "tay cầm sạc"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-136", "chot": [{"loai": "cot_loi", "cum": ["220v", "bộ sạc di động"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-137", "chot": [{"loai": "phu_dinh", "cum": ["không bao giờ được để pin xả hết điện"]}, {"loai": "cot_loi", "cum": ["không cần bảo dưỡng", "30%"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-138", "chot": [{"loai": "cot_loi", "cum": ["55°C", "-35°C", "24 giờ"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-139", "chot": [{"loai": "cot_loi", "cum": ["pin điện áp cao bị xả kiệt", "dung lượng pin"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}
+{"case_id": "RAG-140", "chot": [{"loai": "dieu_kien", "cum": ["nếu có"]}, {"loai": "cot_loi", "cum": ["thỏa thuận cho thuê pin"]}], "soan_boi": "claude-doi-chieu-cau-tra-loi-va-doan-nguon"}

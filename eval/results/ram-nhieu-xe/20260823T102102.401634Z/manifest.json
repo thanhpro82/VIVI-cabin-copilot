@@ -1,0 +1,19 @@
+{
+  "suite": "ram-nhieu-xe",
+  "run_id": "20260823T102102.401634Z",
+  "run_uuid": "3fbb2725-7120-440e-9e5f-1820af8f850b",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.41",
+  "python": "3.11.16",
+  "git_branch": "",
+  "git_commit": "unknown",
+  "git_dirty": false,
+  "che_do": "co_mqtt",
+  "note": "Do phia XE AO trong mot tien trinh. KHONG gom chi phi phia backend cho moi xe (VehicleStateCache, UiPolicyEmitter, checkpoint LangGraph) - phan do chua ai do.",
+  "blind_spots": {
+    "mot_may_mot_lan": "MOT lan lay mau tren MOT may, khong phai phan phoi. Day la so de lap ngan sach may, khong phai benchmark. Chay lai tren may dich truoc khi trich.",
+    "python_khong_tra_ram": "CPython gan nhu khong tra vung nho da cap ve cho OS, nen VmRSS chi tang. Vi vay do doc lay tu khop tuyen tinh tren NHIEU moc, khong phai hieu cua hai diem - hieu hai diem dinh ca nhieu allocator lan nhieu GC.",
+    "moi_xe_mot_ket_noi": "Moi xe o day co MQTT client rieng, giong het kien truc hien tai (mot tien trinh = mot xe = mot ket noi). Thiet ke multi-tenant co the dung CHUNG mot ket noi cho N xe, khi do do doc that con thap hon so nay. Nen day van la tran tren, chi la tran chat hon nhieu so voi con so 34,3 MiB/container.",
+    "chua_do_phia_backend": "Chi do phia XE AO. Backend cung ton them cho moi xe: mot VehicleStateCache (subscribe rieng), mot UiPolicyEmitter, va moi phien tai xe con keo theo mot checkpoint LangGraph InMemorySaver. Phan do nhieu kha nang LON HON phan nay va chua ai do. Dung lap ngan sach chi bang con so o day.",
+    "khong_co_tai": "Xe dung yen, chi co heartbeat - khong lenh, khong chu ky tu chay. Do luc co tai se cao hon, nhung phan chenh la buffer tam chu khong phai chi phi thuong truc, nen no khong doi ket luan ve suc chua."
+  }
+}

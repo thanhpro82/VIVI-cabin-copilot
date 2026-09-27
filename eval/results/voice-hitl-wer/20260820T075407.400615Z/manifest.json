@@ -1,0 +1,8 @@
+{
+  "run_id": "20260820T075407.400615Z",
+  "dataset": "eval\\datasets\\voice-hitl-confirmation\\v1\\audio\\manifest.jsonl",
+  "case_count": 20,
+  "matcher": "src.agents.voice_intent.doc_y_dinh_phe_duyet",
+  "provenance": "human-only",
+  "note": "Audio provenance (synthetic vs. real, speaker) is whatever this dataset's manifest.jsonl noise_condition/speaker_code fields say per entry. A run drawn from noise_condition=synthetic-tts entries does NOT satisfy issue #198's WER gate, which requires real human speech before the acoustic-constraint approach in part 1 is chosen or README status is raised."
+}

@@ -1,0 +1,11 @@
+{
+  "case_count": 77,
+  "cong_hoi_quy": "eval/datasets/agent/bao-loi-2408/cong_hoi_quy.json",
+  "cong_hoi_quy_so_ca": 46,
+  "dataset": "eval/datasets/agent/bao-loi-2408/cases.jsonl",
+  "moc": "develop @ bab0fc6, src/agents/router.py @ 6e0b523, đo 2026-08-25",
+  "note": "Router luật, không gọi model. Không phải bằng chứng chất lượng SLM.",
+  "router": "DeterministicControlRouter",
+  "run_id": "20260830T150106.270895Z",
+  "slm_used": false
+}

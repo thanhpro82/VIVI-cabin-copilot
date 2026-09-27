@@ -1,0 +1,14 @@
+{
+  "status": "partial",
+  "valid_dimensions": [
+    "schema_validity",
+    "tool_exact_match",
+    "repair_rate",
+    "latency"
+  ],
+  "invalid_dimensions": [
+    "process.peak_rss_bytes"
+  ],
+  "reason": "The runner captured process memory before, not after, the 20-case benchmark. A post-run snapshot fix was added and this run is retained without overwriting as preliminary evidence.",
+  "superseded_by": null
+}

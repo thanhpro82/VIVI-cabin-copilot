@@ -1,0 +1,30 @@
+.git
+.gitignore
+.env
+# `.venv*` chu khong chi `.venv`: repo co hai venv (`.venv` Python 3.13.7 va
+# `.venv311` Python 3.11.9 khop CI — xem CLAUDE.md muc Commands). Pattern cu bo sot
+# `.venv311`, nen `docker compose build` nap them ~1.2 GB lam build context va treo
+# hang chuc phut. `.gitignore` da sua cung mot loi mau nay o PR #75.
+.venv*
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+# `frontend/` la 751 MB node_modules + .next, va image nay la Python thuan:
+# `Dockerfile` chay `python -m src.vehicle_sim` / uvicorn, khong phuc vu Next.js
+# (compose khong co service `ivi-web` — README ghi Planned). Moi tham chieu
+# `frontend/` trong `src/` deu nam trong comment/docstring, khong phai luc runtime.
+frontend/
+.ai-log/
+docs/
+presentation/
+eval/
+# 150 MB PDF nguon, chi dung luc `python -m src.rag.cli ingest` sinh ra
+# data/rag/. Luc chay backend khong doc file nao trong day — no chi lam nang
+# build context. Thu muc data/rag/ (artifact that su can) VAN duoc giu lai.
+data/manuals/
+*.md
+!requirements.txt
+.dockerignore
+Dockerfile
+docker-compose.yml

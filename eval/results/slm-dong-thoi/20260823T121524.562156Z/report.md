@@ -1,0 +1,45 @@
+# llama-server duoi tai dong thoi
+
+- Run id: `20260823T121524.562156Z`
+- Commit: `0f0a31fde96a` (dirty: False)
+- Endpoint: `http://host.docker.internal:8093`, model `qwen2.5-3b-instruct-q4_k_m`
+- **So slot doc duoc tu `/slots`: 4**
+- **Ghim slot: CO — {'classify': 0, 'planner': 1}**
+- Nguong cau hinh: classify 3.5s, planner 20.0s
+- Tran dung khi do: 30.0s (co y noi, de do duoc do tre THAT)
+- Nap nguoi = `timings.prompt_n` >= 100 token
+
+## Vai `classify`
+
+| N | p50 (ms) | p95 (ms) | max (ms) | vuot tran | nap nguoi | prompt_n p50/max | prefill max (ms) | slot | cat cut |
+|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| 1 | 1678 | 20227 | 20227 | 1/3 | **1/3** | 17/483 | 19197.7 | {0: 3} | 0 |
+| 2 | 2530 | 3686 | 3686 | 1/6 | **0/6** | 14.5/19 | 1061.4 | {0: 6} | 0 |
+| 3 | 3534 | 5736 | 5736 | 5/9 | **0/9** | 14/19 | 1055.3 | {0: 9} | 0 |
+| 5 | 5358 | 8856 | 8856 | 10/15 | **0/15** | 14/19 | 1006.5 | {0: 15} | 0 |
+
+## Vai `tron`
+
+| N | p50 (ms) | p95 (ms) | max (ms) | vuot tran | nap nguoi | prompt_n p50/max | prefill max (ms) | slot | cat cut |
+|---:|---:|---:|---:|---:|---:|---:|---:|---|---:|
+| 1 | 1640 | 1777 | 1777 | 0/3 | **0/3** | 15/17 | 873.2 | {0: 3} | 0 |
+| 2 | 30050 | 30067 | 30067 | 6/6 | **0/6** | 11/11 | 23656.6 | {0: 1} | 5 |
+| 3 | 5727 | 30056 | 30056 | 3/9 | **0/9** | 15.0/19 | 24292.8 | {0: 6, 1: 2} | 1 |
+| 5 | 26799 | 30072 | 30072 | 15/15 | **2/15** | 14/487 | 23501.5 | {0: 9, 1: 2} | 4 |
+
+## Doc bang the nao
+
+1. **`nap nguoi`** la cot quan trong nhat. `timings.prompt_n` chi dem token THAT SU phai tinh; phan trung KV cache khong duoc dem. Nen `prompt_n` lon = tien to khong nam trong slot do = phai prefill lai tu dau (~19,6 tok/s tren may nay).
+2. **`vuot tran`** la thu nguoi dung cam nhan. Vuot tran classify = am tham roi ve nhanh so tay (`graph.py:333`), khong bao loi.
+3. **`cat cut` > 0** thi moi so trong dong do la CAN DUOI, khong phai gia tri.
+4. **`slot`** cho biet request roi vao rang nao. Ghim slot dung thi moi vai chi thay dung mot rang.
+
+## Diem mu
+
+- **mot_may_mot_lan** - MOT lan do tren MOT may. So de ra quyet dinh cau hinh, khong phai benchmark.
+- **du_lieu_bi_cat_cut** - Luot cham tran 30s duoc danh dau `cat_cut`. Gia tri that la '>= 30s, chua biet'. Moi o co `so_cat_cut > 0` thi p50/p95/max va ti le vuot tran deu la CAN DUOI.
+- **p95_o_mau_nho_chinh_la_max** - Voi `--vong 3`, muc N=1 chi co 3 mau nen 'p95' chinh la gia tri lon nhat. Dung doc no nhu mot phan vi that.
+- **dong_thoi_khong_deu** - N request ban ra gan nhu cung luc, KHONG mo phong nguoi dung that (ho den rai rac). Day la ca XAU NHAT, co y: cho tran tren cua do tre, khong cho ky vong trung binh.
+- **lich_su_anh_huong_ket_qua** - Do tre phu thuoc slot nao dang giu tien to nao, tuc phu thuoc vai phut TRUOC do. Hai run cung cau hinh co the lech 4x. Luon doc `so_lan_nap_nguoi` truoc khi so hai run.
+- **khong_do_STT_TTS** - Chi do llama-server. Luot that con qua STT/TTS - ca hai co khoa toan cuc (`voice.py:97`, `:192`, num_threads=1) nen cung noi tiep. Tong do tre se te hon.
+- **n_predict_la_literal** - `_N_PREDICT` chep tay tu `slm.py`. Doi n_predict o do ma quen o day thi script do mot cau hinh KHONG con ton tai. Kiem lai khi slm.py doi.

@@ -1,0 +1,11 @@
+{
+  "suite": "tom-tat",
+  "commit": "10567365c3ae21138c916680fe5cbaaa48d839d9",
+  "branch": "feat/thong-nhat-display-va-speak-text",
+  "endpoint": "http://127.0.0.1:8093",
+  "hardware": {
+    "tier": "cpu",
+    "ngoai_le": "llama-server co the chay tren dGPU — xem log server"
+  },
+  "machine": "AMD64"
+}

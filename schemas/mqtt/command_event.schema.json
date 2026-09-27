@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.vivi.dev/schemas/command-event-v1.json",
+  "title": "CommandEvent",
+  "description": "Published by the simulator to v1/vehicles/{id}/events/command. Carries no attempt_count: retries are owned by the executor, not the simulator.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "event_id",
+    "command_id",
+    "idempotency_key",
+    "plan_id",
+    "step_id",
+    "vehicle_id",
+    "approval_id",
+    "execution_group_id",
+    "phase",
+    "status",
+    "expected_state_version",
+    "observed_state_version",
+    "before",
+    "after",
+    "error_code",
+    "latency_ms",
+    "emitted_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "event_id": {"type": "string", "minLength": 1},
+    "command_id": {"type": "string", "minLength": 1},
+    "idempotency_key": {"type": "string", "pattern": "^[^:]+:[^:]+$"},
+    "plan_id": {"type": "string", "minLength": 1},
+    "step_id": {"type": "string", "minLength": 1},
+    "vehicle_id": {"type": "string", "minLength": 1},
+    "approval_id": {"type": ["string", "null"], "minLength": 1},
+    "execution_group_id": {"type": ["string", "null"], "minLength": 1},
+    "phase": {
+      "enum": ["accepted", "rejected", "completed"],
+      "description": "accepted = target set; completed = observed state reached the target"
+    },
+    "status": {"enum": ["completed", "rejected", "failed"]},
+    "expected_state_version": {"type": "integer", "minimum": 0},
+    "observed_state_version": {"type": "integer", "minimum": 0},
+    "before": {"type": "object"},
+    "after": {"type": "object"},
+    "error_code": {
+      "type": ["string", "null"],
+      "enum": [
+        "stale_state",
+        "unsafe_vehicle_state",
+        "invalid_arguments",
+        "tool_not_allowed",
+        "internal_error",
+        null
+      ]
+    },
+    "latency_ms": {"type": "number", "minimum": 0},
+    "emitted_at": {"type": "string", "format": "date-time"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "completed"}}, "required": ["status"]},
+      "then": {"properties": {"error_code": {"type": "null"}}}
+    },
+    {
+      "if": {
+        "properties": {"status": {"enum": ["rejected", "failed"]}},
+        "required": ["status"]
+      },
+      "then": {"properties": {"error_code": {"type": "string"}}}
+    }
+  ]
+}

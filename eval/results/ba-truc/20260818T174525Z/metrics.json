@@ -1,0 +1,136 @@
+[
+  {
+    "cau_hinh": "luat",
+    "n": 39,
+    "do_tre_p50_ms": 0.3,
+    "do_tre_p95_ms": 0.5,
+    "chinh_xac_dat": 0.5385,
+    "chinh_xac_diem": 0.0727,
+    "tu_nhien_sach": 0.9744,
+    "khuyet_tat": {
+      "breadcrumb": 1
+    }
+  },
+  {
+    "cau_hinh": "thac",
+    "n": 39,
+    "do_tre_p50_ms": 711.5,
+    "do_tre_p95_ms": 1444.6,
+    "chinh_xac_dat": 0.5128,
+    "chinh_xac_diem": 0.0637,
+    "tu_nhien_sach": 0.9744,
+    "khuyet_tat": {
+      "breadcrumb": 1
+    }
+  },
+  {
+    "cau_hinh": "luat+tach",
+    "n": 39,
+    "do_tre_p50_ms": 0.4,
+    "do_tre_p95_ms": 1.0,
+    "chinh_xac_dat": 0.6154,
+    "chinh_xac_diem": 0.081,
+    "tu_nhien_sach": 1.0,
+    "khuyet_tat": {}
+  },
+  {
+    "cau_hinh": "thac+tach",
+    "n": 39,
+    "do_tre_p50_ms": 621.4,
+    "do_tre_p95_ms": 1182.8,
+    "chinh_xac_dat": 0.5385,
+    "chinh_xac_diem": 0.069,
+    "tu_nhien_sach": 1.0,
+    "khuyet_tat": {}
+  },
+  {
+    "cau_hinh": "luat+tach+3c",
+    "n": 39,
+    "do_tre_p50_ms": 0.4,
+    "do_tre_p95_ms": 0.8,
+    "chinh_xac_dat": 0.641,
+    "chinh_xac_diem": 0.0801,
+    "tu_nhien_sach": 1.0,
+    "khuyet_tat": {}
+  },
+  {
+    "cau_hinh": "luat+tach+4c",
+    "n": 39,
+    "do_tre_p50_ms": 0.4,
+    "do_tre_p95_ms": 0.8,
+    "chinh_xac_dat": 0.641,
+    "chinh_xac_diem": 0.08,
+    "tu_nhien_sach": 1.0,
+    "khuyet_tat": {}
+  },
+  {
+    "cau_hinh": "luat+tach+5c",
+    "n": 39,
+    "do_tre_p50_ms": 0.5,
+    "do_tre_p95_ms": 1.0,
+    "chinh_xac_dat": 0.641,
+    "chinh_xac_diem": 0.08,
+    "tu_nhien_sach": 1.0,
+    "khuyet_tat": {}
+  },
+  {
+    "cau_hinh": "luat+tach+6c",
+    "n": 39,
+    "do_tre_p50_ms": 0.5,
+    "do_tre_p95_ms": 0.9,
+    "chinh_xac_dat": 0.641,
+    "chinh_xac_diem": 0.08,
+    "tu_nhien_sach": 1.0,
+    "khuyet_tat": {}
+  },
+  {
+    "cau_hinh": "thac+tach+3c",
+    "n": 39,
+    "do_tre_p50_ms": 1030.6,
+    "do_tre_p95_ms": 1821.1,
+    "chinh_xac_dat": 0.5385,
+    "chinh_xac_diem": 0.0635,
+    "tu_nhien_sach": 1.0,
+    "khuyet_tat": {}
+  },
+  {
+    "cau_hinh": "thac+tach+4c",
+    "n": 39,
+    "do_tre_p50_ms": 1049.3,
+    "do_tre_p95_ms": 2600.5,
+    "chinh_xac_dat": 0.5128,
+    "chinh_xac_diem": 0.0656,
+    "tu_nhien_sach": 1.0,
+    "khuyet_tat": {}
+  },
+  {
+    "cau_hinh": "thac+tach+5c",
+    "n": 39,
+    "do_tre_p50_ms": 1010.2,
+    "do_tre_p95_ms": 1913.4,
+    "chinh_xac_dat": 0.5128,
+    "chinh_xac_diem": 0.06,
+    "tu_nhien_sach": 1.0,
+    "khuyet_tat": {}
+  },
+  {
+    "cau_hinh": "cross+tach+3c",
+    "n": 39,
+    "do_tre_p50_ms": 968.8,
+    "do_tre_p95_ms": 2961.8,
+    "chinh_xac_dat": 0.5385,
+    "chinh_xac_diem": 0.0635,
+    "tu_nhien_sach": 1.0,
+    "khuyet_tat": {}
+  },
+  {
+    "cau_hinh": "e5+tach+3c",
+    "n": 39,
+    "do_tre_p50_ms": 123.1,
+    "do_tre_p95_ms": 218.4,
+    "chinh_xac_dat": 0.5641,
+    "chinh_xac_diem": 0.0644,
+    "tu_nhien_sach": 1.0,
+    "khuyet_tat": {}
+  }
+]

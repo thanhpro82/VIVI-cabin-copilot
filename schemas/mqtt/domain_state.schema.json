@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.vivi.dev/schemas/domain-state-v1.json",
+  "title": "DomainState",
+  "description": "Published retained by the simulator to v1/vehicles/{id}/state/{domain} for the domain that just changed. The state object is exactly that domain's object in the snapshot.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "vehicle_id", "state_version", "observed_at", "domain", "state"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "vehicle_id": {"type": "string", "minLength": 1},
+    "state_version": {"type": "integer", "minimum": 0},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "domain": {
+      "enum": ["motion", "hvac", "windows", "doors", "media", "navigation", "seat", "lights", "trunk"]
+    },
+    "status": {
+      "enum": ["available", "unavailable"],
+      "description": "Optional, defaults to available. P0 always emits available; reserved so P1 can express an unavailable signal without a schema change."
+    },
+    "state": {"type": "object"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"domain": {"const": "motion"}}, "required": ["domain"]},
+      "then": {"properties": {"state": {"$ref": "vehicle-state-domains-v1.json#/$defs/motion"}}}
+    },
+    {
+      "if": {"properties": {"domain": {"const": "hvac"}}, "required": ["domain"]},
+      "then": {"properties": {"state": {"$ref": "vehicle-state-domains-v1.json#/$defs/hvac"}}}
+    },
+    {
+      "if": {"properties": {"domain": {"const": "windows"}}, "required": ["domain"]},
+      "then": {"properties": {"state": {"$ref": "vehicle-state-domains-v1.json#/$defs/windows"}}}
+    },
+    {
+      "if": {"properties": {"domain": {"const": "doors"}}, "required": ["domain"]},
+      "then": {"properties": {"state": {"$ref": "vehicle-state-domains-v1.json#/$defs/doors"}}}
+    },
+    {
+      "if": {"properties": {"domain": {"const": "media"}}, "required": ["domain"]},
+      "then": {"properties": {"state": {"$ref": "vehicle-state-domains-v1.json#/$defs/media"}}}
+    },
+    {
+      "if": {"properties": {"domain": {"const": "navigation"}}, "required": ["domain"]},
+      "then": {"properties": {"state": {"$ref": "vehicle-state-domains-v1.json#/$defs/navigation"}}}
+    },
+    {
+      "if": {"properties": {"domain": {"const": "seat"}}, "required": ["domain"]},
+      "then": {"properties": {"state": {"$ref": "vehicle-state-domains-v1.json#/$defs/seat"}}}
+    },
+    {
+      "if": {"properties": {"domain": {"const": "lights"}}, "required": ["domain"]},
+      "then": {"properties": {"state": {"$ref": "vehicle-state-domains-v1.json#/$defs/lights"}}}
+    },
+    {
+      "if": {"properties": {"domain": {"const": "trunk"}}, "required": ["domain"]},
+      "then": {"properties": {"state": {"$ref": "vehicle-state-domains-v1.json#/$defs/trunk"}}}
+    }
+  ]
+}

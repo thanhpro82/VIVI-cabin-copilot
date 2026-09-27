@@ -1,0 +1,31 @@
+{
+  "aggregate_recall": 0.696429,
+  "confusion_matrix": {
+    "non_wake": {
+      "non_wake": 472,
+      "wake": 2
+    },
+    "wake": {
+      "non_wake": 85,
+      "wake": 195
+    }
+  },
+  "corpus_sha256": "0720d595723229f3cbf88843602733b80c03d019139efed45ce6d896de6d5189",
+  "detection_latency": null,
+  "false_activations_per_hour": {
+    "cabin_noise": 0.0,
+    "conversation": 29.002992,
+    "fpt_tts": 11.911397,
+    "mid_sentence_vivi": 0.0,
+    "music": 0.0,
+    "near_rhyme_en": 0.0,
+    "production_tts": 0.0,
+    "room_noise": 0.0
+  },
+  "model_sha256": "fa5320149cdf1569b7f1516965a1f5608e305a4947e34121e31e0fc04d0d3ebe",
+  "per_phrase_recall": {
+    "wake": 0.696429
+  },
+  "precision": 0.989848,
+  "schema_version": "1.0"
+}

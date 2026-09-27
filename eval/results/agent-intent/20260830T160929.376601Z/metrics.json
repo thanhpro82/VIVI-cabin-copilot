@@ -1,0 +1,68 @@
+{
+  "by_domain": {
+    "ambiguous": {
+      "intent_ok": 2,
+      "tool_exact": 2,
+      "total": 2
+    },
+    "chitchat": {
+      "intent_ok": 2,
+      "tool_exact": 2,
+      "total": 2
+    },
+    "door": {
+      "intent_ok": 5,
+      "tool_exact": 5,
+      "total": 5
+    },
+    "hvac": {
+      "intent_ok": 14,
+      "tool_exact": 14,
+      "total": 14
+    },
+    "light": {
+      "intent_ok": 12,
+      "tool_exact": 12,
+      "total": 12
+    },
+    "manual": {
+      "intent_ok": 7,
+      "tool_exact": 7,
+      "total": 7
+    },
+    "music": {
+      "intent_ok": 17,
+      "tool_exact": 17,
+      "total": 17
+    },
+    "navigation": {
+      "intent_ok": 18,
+      "tool_exact": 18,
+      "total": 18
+    },
+    "seat": {
+      "intent_ok": 10,
+      "tool_exact": 10,
+      "total": 10
+    },
+    "trunk": {
+      "intent_ok": 1,
+      "tool_exact": 1,
+      "total": 1
+    },
+    "unsafe": {
+      "intent_ok": 1,
+      "tool_exact": 1,
+      "total": 1
+    },
+    "window": {
+      "intent_ok": 7,
+      "tool_exact": 7,
+      "total": 7
+    }
+  },
+  "disposition_accuracy": 1.0,
+  "intent_accuracy": 1.0,
+  "tool_exact": 1.0,
+  "total": 96
+}

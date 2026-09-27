@@ -1,0 +1,27 @@
+{
+  "profile_id": "piper-vais1000-medium",
+  "case_count": 30,
+  "latency": {
+    "count": 30,
+    "p50_ms": 2120.5456,
+    "p95_ms": 2365.6463
+  },
+  "first_audio_latency": {
+    "count": 30,
+    "p50_ms": 2120.5456,
+    "p95_ms": 2365.6463
+  },
+  "real_time_factor": {
+    "count": 30,
+    "p50": 1.664100661057692,
+    "p95": 4.121611519349564
+  },
+  "process_tree_peak_rss_bytes": 238628864,
+  "process": {
+    "pid": 4972,
+    "rss_bytes_after": 43216896,
+    "peak_rss_bytes": 43909120,
+    "cpu_seconds_after": 7.9375,
+    "scope": "benchmark_harness_process"
+  }
+}

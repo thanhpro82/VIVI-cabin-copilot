@@ -1,0 +1,22 @@
+[
+  {
+    "file": "command_00.wav",
+    "text": "Bật điều hòa"
+  },
+  {
+    "file": "command_01.wav",
+    "text": "Đặt điều hòa hai mươi bốn độ"
+  },
+  {
+    "file": "command_02.wav",
+    "text": "Mở cửa sổ bên phụ một nửa"
+  },
+  {
+    "file": "command_03.wav",
+    "text": "Tăng nhiệt độ lên hai mươi sáu độ"
+  },
+  {
+    "file": "command_04.wav",
+    "text": "Bật sưởi ghế lái mức hai"
+  }
+]

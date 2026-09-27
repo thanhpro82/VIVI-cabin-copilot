@@ -1,0 +1,10 @@
+{
+  "repo": "BAAI/bge-reranker-v2-m3",
+  "license": "apache-2.0",
+  "architecture": "XLMRobertaForSequenceClassification",
+  "trust_remote_code": false,
+  "vai_tro": "rerank CÂU trong đoạn sổ tay (SPIKE-004)",
+  "tai_luc": "2026-08-17T11:48:37.828945Z",
+  "tai_boi": "MSI",
+  "ghi_chu": "Chỉ tải file cần chạy; bỏ assets/ và bản .bin trùng với safetensors."
+}

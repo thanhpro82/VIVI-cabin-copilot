@@ -1,0 +1,48 @@
+# Core
+fastapi>=0.115.0
+uvicorn[standard]>=0.34.0
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+python-dotenv>=1.0.0
+
+# AI / LangChain
+langchain>=0.3.0
+langchain-openai>=0.3.0
+langgraph>=0.2.0
+
+# Voice (uncomment when running the voice module locally with real models;
+# heavy optional dependency, not installed in CI — see docs/devops.md)
+# piper-tts>=1.3,<2
+# sherpa-onnx>=1.10,<2
+
+# Database (uncomment as needed)
+# sqlalchemy>=2.0.0
+# alembic>=1.14.0
+# psycopg2-binary>=2.9.0
+
+# RAG — ADR-003 chốt FAISS + SQLite, KHÔNG dùng Chroma.
+# Nhóm này đủ nhẹ (~75 MB) để CI cài mỗi lần chạy, nên phần lớn test RAG
+# chạy được trên CI với StubEmbedder. Riêng sentence-transformers kéo theo
+# torch (~2 GB) nên nằm ở requirements-rag.txt.
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+pymupdf>=1.24.0
+faiss-cpu>=1.8.0
+numpy>=1.26.0
+
+# MQTT — ADR-004 chốt Mosquitto + digital twin.
+# Chặn trên <3 là cố ý: aiomqtt 3.0 đổi lõi từ paho-mqtt sang mqtt5 sans-io
+# (breaking change) và tới 2026-08 vẫn còn là alpha.
+aiomqtt>=2.5,<3
+
+# Dev tools
+ruff>=0.8.0
+pytest>=8.0.0
+pytest-asyncio>=0.24.0
+# CI chạy `--cov=src` để gác `fail_under = 60` (pyproject.toml). Thiếu dòng này
+# thì pytest chết ngay ở `error: unrecognized arguments: --cov` — CI chỉ cài
+# requirements.txt, KHÔNG cài extra `[dev]` nơi pytest-cov vốn được khai báo.
+pytest-cov>=5.0.0
+httpx>=0.28.0
+# Kiểm 6 JSON Schema ở schemas/mqtt/ — scripts/validate_mqtt_schemas.py
+jsonschema>=4.23.0

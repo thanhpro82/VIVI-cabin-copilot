@@ -1,0 +1,10 @@
+{
+  "profile_id": "llama.cpp-b9637-win-cpu-x64",
+  "source": "ggml-org/llama.cpp GitHub release b9637",
+  "release": "b9637",
+  "commit": "aedb2a5e9",
+  "archive": "llama-b9637-bin-win-cpu-x64.zip",
+  "size_bytes": 16906751,
+  "sha256": "f7783c2b8c007f95e710ac40f26a24861a80b603b0b739fc54d7c926a4716c1e",
+  "runtime_executable": "llama-b9637/llama-server.exe"
+}

@@ -1,0 +1,114 @@
+{"case_id": "DT-M001", "input_text": "Dây an toàn kêu bíp bíp mãi thì tắt kiểu gì", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M002", "input_text": "Lắp ghế cho con nhỏ vào đâu thì an toàn nhất", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M003", "input_text": "Túi khí có bung khi va chạm nhẹ không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M004", "input_text": "Xe tự phanh khi sắp đâm phải không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M005", "input_text": "Lùi chuồng thì xe có tự đánh lái giúp không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M006", "input_text": "Chạy đường dài muốn giữ ga cố định thì làm sao", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M007", "input_text": "Xe có tự giữ làn đường không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M008", "input_text": "Đỗ dốc thì kéo phanh tay kiểu gì", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M009", "input_text": "Gương chiếu hậu gập vào lúc khoá xe được không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M010", "input_text": "Trời mưa lất phất muốn gạt nước chậm lại", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M011", "input_text": "Không mang chìa thì nổ máy kiểu gì", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M012", "input_text": "Đi thế nào cho đỡ tốn điện", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M013", "input_text": "Về số lùi mà xe chưa dừng hẳn thì sao", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M014", "input_text": "Vô lăng chỉnh cao thấp được không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M015", "input_text": "Đèn trong xe cứ sáng hoài không tắt", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M016", "input_text": "Xem tốc độ ngay trên kính lái được không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M017", "input_text": "Màn hình đơ thì khởi động lại kiểu gì", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M018", "input_text": "Nhập địa chỉ vào bản đồ như thế nào", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M019", "input_text": "Nối điện thoại lên màn hình xe kiểu gì", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M020", "input_text": "Xem xe đang đỗ ở đâu bằng điện thoại được không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M021", "input_text": "Đụng vào dây điện màu cam có bị giật không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M022", "input_text": "Số khung xe nằm chỗ nào", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M023", "input_text": "Xe này chở được mấy người", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M024", "input_text": "Bật điều hòa từ xa trước khi ra xe được không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M025", "input_text": "Gọi trợ lý ảo bằng câu gì", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M026", "input_text": "Chìa khoá hết pin thì mở xe kiểu gì", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M027", "input_text": "Xe có kêu còi khi bị cạy cửa không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M028", "input_text": "Để cốc nước ở đâu trong xe", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M029", "input_text": "Nắp ca-pô trước mở ra bằng cách nào", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M030", "input_text": "Rửa xe bằng máy phun áp lực có sao không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M031", "input_text": "Ắc quy nhỏ hết điện thì câu bình kiểu gì", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M032", "input_text": "Bao lâu phải mang xe đi bảo dưỡng một lần", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M033", "input_text": "Lắp thêm đồ chơi cho xe có mất bảo hành không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M034", "input_text": "Xe chết máy giữa đường thì gọi ai", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M035", "input_text": "Cứu hộ dọc đường có mất phí không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M036", "input_text": "Đổi ngôn ngữ trên xe sang tiếng Anh", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M037", "input_text": "Nghe nhạc từ điện thoại qua loa xe", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M038", "input_text": "Ghế nhớ vị trí ngồi của tôi được không", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M039", "input_text": "Đèn xi nhan gạt một cái nháy ba lần là bị gì", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M040", "input_text": "Pin chai sau mấy năm thì phải thay", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M041", "input_text": "Bánh xe bị xịt giữa đường thì xử lý sao", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-M042", "input_text": "Kính mờ hết cả rồi nhìn không thấy đường", "expected_route": "manual", "source": "hoi-nhu-tai-xe-v1"}
+{"case_id": "DT-C001", "input_text": "Nóng quá, giảm nhiệt độ xuống đi", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C002", "input_text": "Lạnh cóng rồi, cho ấm lên chút", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C003", "input_text": "Cho ghế ngả ra sau một chút", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C004", "input_text": "Chỉnh ghế thoải mái hơn đi", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C005", "input_text": "Ồn quá, vặn nhỏ tiếng xuống", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C006", "input_text": "Nghe gì đó vui vui đi", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C007", "input_text": "Ngột ngạt quá, cho thoáng chút đi", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C008", "input_text": "Tối quá, cho sáng lên tí", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C009", "input_text": "Gió mạnh quá đấy", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C010", "input_text": "Cho tôi chút không khí trong lành", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C012", "input_text": "Sau lưng đau quá, đỡ tôi cái", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C013", "input_text": "Mở giùm cái cửa sổ cho con bé nó nhìn", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C014", "input_text": "Im lặng chút được không, tôi cần tập trung", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C015", "input_text": "Chân lạnh quá nhỉ", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C016", "input_text": "Đưa tôi về nhà đi", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C017", "input_text": "Ghé đâu đó uống cà phê đi", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C018", "input_text": "Bài này chán quá, đổi bài khác", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C019", "input_text": "Ấm lên 26 độ giùm", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-C020", "input_text": "Quay lại bài lúc nãy đi", "expected_route": "control", "source": "phien-149-bien-the"}
+{"case_id": "DT-CC01", "input_text": "Xin chào, hôm nay khỏe không?", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC02", "input_text": "Cảm ơn nhé", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC03", "input_text": "Hôm nay trời đẹp ghê", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC04", "input_text": "Cậu tên gì thế?", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC05", "input_text": "Xe này đi đường dài có êm không nhỉ?", "expected_route": "manual", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC06", "input_text": "Tôi hơi mệt rồi", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC07", "input_text": "Chào buổi sáng nha", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC08", "input_text": "Bạn là ai vậy", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC09", "input_text": "Kể chuyện cười đi", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC10", "input_text": "Đi Đà Lạt chơi thích không", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC11", "input_text": "Tạm biệt nhé", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC12", "input_text": "Ngày mai có mưa không ta", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC13", "input_text": "Hát một bài đi", "expected_route": "control", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC14", "input_text": "Bạn thích xe nào", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC15", "input_text": "Ok cảm ơn bạn nhiều", "expected_route": "chitchat", "source": "chitchat-v1/sp0"}
+{"case_id": "DT-CC16", "input_text": "Mở nhạc gì vui vui đi", "expected_route": "control", "source": "chitchat-v1/tu_viet"}
+{"case_id": "DT-CC17", "input_text": "Xe này chạy được bao nhiêu km một lần sạc?", "expected_route": "manual", "source": "chitchat-v1/tu_viet"}
+{"case_id": "DT-CC18", "input_text": "Nóng quá trời ơi", "expected_route": "control", "source": "chitchat-v1/tu_viet"}
+{"case_id": "DT-CC19", "input_text": "Đường này có trạm sạc nào gần không", "expected_route": "control", "source": "chitchat-v1/tu_viet"}
+{"case_id": "DT-CC20", "input_text": "Chuyển khoản giùm tôi 2 triệu", "expected_route": "chitchat", "source": "chitchat-v1/tu_viet"}
+{"case_id": "DT-CC21", "input_text": "Tính giúp 15 nhân 12 bằng bao nhiêu", "expected_route": "chitchat", "source": "chitchat-v1/tu_viet"}
+{"case_id": "DT-CC22", "input_text": "Hôm nay có tin gì mới không", "expected_route": "chitchat", "source": "chitchat-v1/tu_viet"}
+{"case_id": "DT-CC23", "input_text": "Buồn ngủ quá", "expected_route": "chitchat", "source": "chitchat-v1/tu_viet"}
+{"case_id": "DT-CC24", "input_text": "Đèn báo lỗi màu vàng là sao vậy", "expected_route": "manual", "source": "chitchat-v1/tu_viet"}
+{"case_id": "DT-CC25", "input_text": "Im lặng chút được không", "expected_route": "control", "source": "chitchat-v1/tu_viet"}
+{"case_id": "DT-AN01", "input_text": "Chán quá đi mất", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN02", "input_text": "Nay đi làm về trễ ghê", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN03", "input_text": "Kẹt xe muốn khùng luôn", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN04", "input_text": "Đường này dạo này hay ngập ha", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN05", "input_text": "Còn xa không ta, đi hoài không tới", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN06", "input_text": "Sáng mai chạy Vũng Tàu chắc phải dậy sớm", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN07", "input_text": "Giá vàng nay lên hay xuống vậy", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN08", "input_text": "Đội tuyển tối nay đá mấy giờ vậy", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN09", "input_text": "Tối thui vậy trời", "expected_route": "control", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN10", "input_text": "Nhạc gì mà chán vậy trời", "expected_route": "control", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN11", "input_text": "Xe mình còn đủ pin về tới nhà không ta", "expected_route": "manual", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN12", "input_text": "Alo alo nghe rõ không", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN13", "input_text": "Hạ kiếng xuống chút coi", "expected_route": "control", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AN14", "input_text": "Thắng dạo này kêu két két là sao ta", "expected_route": "manual", "source": "chitchat-v1/ai-sinh-nam"}
+{"case_id": "DT-AB01", "input_text": "Chán chết đi được", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB02", "input_text": "Hôm nay đi làm về muộn quá", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB03", "input_text": "Tắc đường phát điên lên được", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB04", "input_text": "Đường này dạo này hay ngập nhỉ", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB05", "input_text": "Còn xa không nhỉ, đi mãi không đến", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB06", "input_text": "Sáng mai chạy Hạ Long chắc phải dậy sớm", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB07", "input_text": "Giá vàng hôm nay lên hay xuống thế", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB08", "input_text": "Tối nay đội tuyển đá mấy giờ thế", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB09", "input_text": "Tối om thế này", "expected_route": "control", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB10", "input_text": "Nhạc gì mà chán thế", "expected_route": "control", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB11", "input_text": "Xe mình còn đủ pin về đến nhà không nhỉ", "expected_route": "manual", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB12", "input_text": "Alo alo có nghe thấy không đấy", "expected_route": "chitchat", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB13", "input_text": "Hạ kính xuống một tí", "expected_route": "control", "source": "chitchat-v1/ai-sinh-bac"}
+{"case_id": "DT-AB14", "input_text": "Phanh dạo này kêu két két là sao nhỉ", "expected_route": "manual", "source": "chitchat-v1/ai-sinh-bac"}

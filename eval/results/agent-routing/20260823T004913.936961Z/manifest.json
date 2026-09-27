@@ -1,0 +1,8 @@
+{
+  "case_count": 114,
+  "classifier": "QwenClassifier",
+  "dataset": "eval/datasets/agent/dinh-tuyen-v1/cases.jsonl",
+  "note": "Bộ đo SP-1. Chưa có phần chitchat (SP-2 bổ sung) thì ma trận chỉ có 2 lớp — mọi trích dẫn phải ghi rõ. Cổng cứng: manual->control = 0.",
+  "router": "DeterministicControlRouter (đường tắt) + classifier",
+  "run_id": "20260823T004913.936961Z"
+}

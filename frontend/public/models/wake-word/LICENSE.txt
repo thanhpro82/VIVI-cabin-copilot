@@ -1,0 +1,7 @@
+VIVI Wake Word Classifier License
+
+This artifact is limited to the VIVI internal academic/demo project. No license
+is granted for commercial redistribution. This license covers only the
+classifier head (vivi-wake-classifier.onnx); the pretrained melspectrogram and
+embedding models are vendored separately under their own upstream license
+(see PRETRAINED_LICENSE.txt).

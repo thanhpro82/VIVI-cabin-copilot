@@ -1,0 +1,10 @@
+{
+  "status": "superseded",
+  "usable_for_summary": false,
+  "invalid_dimensions": [
+    "real_time_factor field units",
+    "Piper child-process peak RSS"
+  ],
+  "reason": "RTF percentiles used ms-suffixed keys and memory covered only the harness process.",
+  "superseded_by": "20260730T100148.330452Z"
+}

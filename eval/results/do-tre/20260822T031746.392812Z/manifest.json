@@ -1,0 +1,7 @@
+{
+  "run_id": "20260822T031746.392812Z",
+  "muc_dich": "SP-0 thi nghiem 2: chi phi DOI VAI tren cung llama-server va phuong an tach vai sang GPU thu hai",
+  "phuong_phap": "goi truc tiep /completion bang httpx (cung body nhu QwenClassifier/QwenPlanner), timeout noi 10-30 s de thay so that thay vi fail-safe; moi o la ms tuong ung tung lan goi, thu tu nhu da chay",
+  "may": "Windows 11, dGPU Radeon RX 5500M 4 GB (Vulkan0), iGPU AMD Radeon Graphics (Vulkan1), llama-server tools/llama-vulkan, --cache-reuse 256, 4 slot, n_ctx 2048/slot",
+  "run_lien_quan": "eval/results/do-tre/20260822T030757.814951Z (thi nghiem 1: qua graph that)"
+}

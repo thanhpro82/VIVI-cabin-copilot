@@ -1,0 +1,69 @@
+# CD — trien khai `main` len VPS production.
+#
+# Luong: feature/* --PR--> develop --CI--> (review qua SSH tunnel) --PR--> main
+#        --CI + CD--> VPS. Khong co tang DEV rieng: nhom co MOT VPS, va nhoi hai
+#        stack vao no thi moi lan build se OOM (do duoc: con ~0,4 GB tu do, ma
+#        `docker compose build` ngon them 1-2 GB).
+#
+# ĐIEU KIEN TIEN QUYET, chua lam tinh toi 2026-08-22:
+#   `main` dang o sau `develop` 903 commit (van con o PR #1). PHAI gop develop
+#   vao main truoc, neu khong deploy se lui ve bo khung rong. `deploy.sh` co lop
+#   chong lui se tu choi truong hop nay, nhung dung dua vao no — hay gop main
+#   cho dung truoc da.
+#
+# Bao mat: khoa SSH bi ep chi chay dung mot lenh qua `command=` trong
+# authorized_keys cua tai khoan `deploy`. Xem docs/deploy_vps_van_hanh.md muc 8c.
+
+name: CD - Trien khai VPS
+
+on:
+  # Chay sau khi CI tren `main` xanh. Day la ve "CI + CD PROD" cua so do.
+  workflow_run:
+    workflows: ["CI"]
+    types: [completed]
+    branches: [main]
+  # Nut bam tay, dung khi can trien khai lai ma khong co commit moi.
+  workflow_dispatch:
+
+concurrency:
+  # Hai lan trien khai chong nhau lam `git merge` va `docker build` dam nhau.
+  group: deploy-vps
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    # `self-hosted` giong ci.yml: runner do BTC quan ly, khong phu thuoc billing
+    # GitHub-hosted. Doi sang ubuntu-latest co the that bai vi het phut mien phi.
+    runs-on: self-hosted
+    timeout-minutes: 30
+
+    # Chi chay khi CI THAT SU xanh. Thieu dieu kien nay thi `workflow_run` van
+    # kich hoat ca khi CI do — dung cai bay pho bien nhat cua trigger nay.
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      - name: Nap khoa SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # Ghim host key that — KHONG dung StrictHostKeyChecking=no: tat kiem
+          # tra la mo duong cho tan cong nguoi-o-giua tren chinh buoc trien khai
+          # production.
+          ssh-keyscan -t ed25519 "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Trien khai
+        run: |
+          # Khong truyen lenh: `command=` trong authorized_keys da ep san
+          # `sudo -u vivi DEPLOY_REF=main /opt/vivi/deploy/vps/deploy.sh`.
+          # Moi thu go o day deu bi bo qua — do la chu y thiet ke.
+          ssh -i ~/.ssh/deploy_key \
+              -o BatchMode=yes \
+              -o ConnectTimeout=15 \
+              "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}"
+
+      - name: Xoa khoa khoi runner
+        if: always()
+        run: rm -f ~/.ssh/deploy_key

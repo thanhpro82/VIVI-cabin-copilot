@@ -1,0 +1,118 @@
+{
+  "by_ac": {
+    "AC1-chain": {
+      "duration_s": 26.918,
+      "failed": 0,
+      "passed": 73,
+      "skipped": 0,
+      "total": 73
+    },
+    "AC1-chain+AC2-topic": {
+      "duration_s": 0.13,
+      "failed": 0,
+      "passed": 12,
+      "skipped": 0,
+      "total": 12
+    },
+    "AC1-chain+AC3-idempotency": {
+      "duration_s": 94.367,
+      "failed": 0,
+      "passed": 13,
+      "skipped": 0,
+      "total": 13
+    },
+    "AC1-chain+AC3-realtime": {
+      "duration_s": 34.736,
+      "failed": 0,
+      "passed": 5,
+      "skipped": 0,
+      "total": 5
+    },
+    "AC2-schema": {
+      "duration_s": 0.424,
+      "failed": 0,
+      "passed": 7,
+      "skipped": 0,
+      "total": 7
+    },
+    "AC3-idempotency": {
+      "duration_s": 0.534,
+      "failed": 0,
+      "passed": 14,
+      "skipped": 0,
+      "total": 14
+    },
+    "AC3-realtime": {
+      "duration_s": 0.056,
+      "failed": 0,
+      "passed": 6,
+      "skipped": 0,
+      "total": 6
+    },
+    "AC3-stale": {
+      "duration_s": 0.298,
+      "failed": 0,
+      "passed": 23,
+      "skipped": 0,
+      "total": 23
+    },
+    "AC3-state_version": {
+      "duration_s": 0.11,
+      "failed": 0,
+      "passed": 44,
+      "skipped": 0,
+      "total": 44
+    },
+    "unmapped": {
+      "duration_s": 0.112,
+      "failed": 0,
+      "passed": 12,
+      "skipped": 0,
+      "total": 12
+    }
+  },
+  "by_layer": {
+    "L0-unit": {
+      "duration_s": 0.076,
+      "failed": 0,
+      "passed": 49,
+      "skipped": 0,
+      "total": 49
+    },
+    "L1-inmemory": {
+      "duration_s": 28.394,
+      "failed": 0,
+      "passed": 130,
+      "skipped": 0,
+      "total": 130
+    },
+    "L2-mosquitto": {
+      "duration_s": 94.367,
+      "failed": 0,
+      "passed": 13,
+      "skipped": 0,
+      "total": 13
+    },
+    "L3-two-process": {
+      "duration_s": 34.736,
+      "failed": 0,
+      "passed": 5,
+      "skipped": 0,
+      "total": 5
+    },
+    "unmapped": {
+      "duration_s": 0.112,
+      "failed": 0,
+      "passed": 12,
+      "skipped": 0,
+      "total": 12
+    }
+  },
+  "overall": {
+    "duration_s": 157.685,
+    "failed": 0,
+    "passed": 209,
+    "skipped": 0,
+    "total": 209
+  }
+}

@@ -1,0 +1,53 @@
+/*
+ * VIVI Cabin Copilot — Design Tokens
+ * Nguồn duy nhất: HANDOFF_prototype-to-fe.md mục 1.2, đối chiếu vivi_ivi_vf8style.html.
+ * KHÔNG hard-code hex màu mới ở nơi khác — luôn dùng biến ở đây.
+ * 1 dark theme duy nhất cho toàn bộ /login, /driver, /engineer (xem frontend/docs/ARCHITECTURE.md mục 2).
+ */
+
+:root {
+  /* Báo trình duyệt render control gốc (dropdown <select>, scrollbar...) theo bảng màu
+     tối — thiếu dòng này thì danh sách <option> mở ra dùng UA light theme mặc định
+     (nền trắng, chữ rất nhạt trên các mục chưa chọn), lệch hẳn với "1 dark theme duy
+     nhất" — không phải light theme mới, chỉ là khai đúng theme đã có cho control gốc. */
+  color-scheme: dark;
+
+  /* Nền */
+  --bg: #07090d;
+  --bg2: #0b0e14;
+  --panel: rgba(255, 255, 255, 0.045);
+  /* Trong suốt có chủ đích (không phải nền đặc #11151c như trước) — để lộ nền
+     "vũ trụ" (sao/tinh vân) đặt ở <body>, xem globals.css. Card vẫn đọc được
+     nhờ backdrop-filter: blur() gắn kèm cho mọi nơi dùng token này. */
+  --panel-solid: rgba(17, 21, 28, 0.4);
+  --line: rgba(255, 255, 255, 0.09);
+  --line-soft: rgba(255, 255, 255, 0.05);
+
+  /* Chữ */
+  --ink: #edeff3;
+  --ink-soft: #8b94a3;
+  --ink-dim: #545d6b;
+
+  /* Màu nhấn theo danh mục (map theo chức năng, không hard-code từng nơi) */
+  --accent: #ff4d5e; /* nhấn chính / cảnh báo / điều khiển xe nguy hiểm */
+  --accent-dim: #7a2530;
+  --cyan: #38bdf8; /* bản đồ / tương tác / xác nhận thành công */
+  --violet: #8b7cf6; /* nhạc trên máy */
+  --green: #22c55e; /* Spotify / trạng thái "đạt ngưỡng" */
+  --amber: #fbbf24; /* điều khiển xe / cảnh báo nhẹ */
+  --pink: #ff3d9a; /* TikTok */
+  --indigo: #6366f1; /* Routines */
+
+  /* Bo góc */
+  --r-lg: 28px;
+  --r-md: 18px;
+  --r-sm: 12px;
+
+  /*
+   * Font: KHÔNG khai báo font-family literal ở đây để tránh đè lên biến do
+   * next/font sinh ra. --font-display / --font-body / --font-mono được nạp
+   * bằng next/font/google trong src/app/layout.tsx (Space Grotesk / Inter /
+   * IBM Plex Mono) và gắn vào className của <html> — đây là nguồn sự thật
+   * duy nhất cho font-family thật sự áp dụng.
+   */
+}

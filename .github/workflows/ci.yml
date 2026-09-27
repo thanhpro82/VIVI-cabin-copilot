@@ -1,0 +1,78 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-test:
+    # Nhận runner self-hosted bất kỳ do BTC quản lý, không phụ thuộc billing GitHub-hosted.
+    runs-on: self-hosted
+    # Ephemeral BTC runners can spend ~10 minutes downloading Python/tool-cache
+    # before pytest starts; leave enough time for the ~2-minute fast suite.
+    timeout-minutes: 30
+
+    env:
+      APP_ENV: test
+      OPENAI_API_KEY: test-key
+      # Runner khong co broker. De mac dinh (true) thi moi `TestClient(app)` chay
+      # lifespan -> AiomqttClient.start(wait=True, timeout=10) -> 10 giay trang mot
+      # lan, kem logger.exception gay nhieu log. Test can broker that dung
+      # InMemoryBroker hoac job mqtt-contract rieng.
+      MQTT_ENABLED: "false"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Lint with ruff
+        run: python -m ruff check src/ tests/ scripts/
+
+      - name: Run fast tests
+        # `slow` can broker Mosquitto that hoac model embedding that; `integration`
+        # can model voice cuc bo. Ca hai deu khong co tren runner.
+        #
+        # `--cov` gac nguong `fail_under = 60` khai o pyproject.toml. Truoc 2026-08-31
+        # nguong ay chua bao gio duoc chay, ke ca mot lan: no chi la dong config.
+        #
+        # CANH BAO khi doc con so nay: `-m "not slow"` loai ca L2 lan L3, ma do
+        # dung la hai tang sinh ra de phu MQTT. Nen coverage o CI **khong bao gom
+        # tang kiem thu van chuyen** -- mqtt_client.py chi ~41%. Xem docs/testing.md §1.
+        run: |
+          python -c "from pathlib import Path; Path('reports').mkdir(exist_ok=True)"
+          python -m pytest tests/ -v --tb=short -m "not slow and not integration" \
+            --junitxml=reports/junit-fast.xml \
+            --cov=src --cov-report=term --cov-report=xml:reports/coverage.xml
+
+      - name: Upload junit
+        uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: junit-fast
+          path: reports/junit-fast.xml
+          if-no-files-found: warn
+
+      - name: Upload coverage
+        uses: actions/upload-artifact@v4
+        if: always()
+        continue-on-error: true
+        with:
+          name: coverage-xml
+          path: reports/coverage.xml
+          if-no-files-found: warn

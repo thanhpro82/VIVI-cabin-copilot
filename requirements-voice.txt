@@ -1,0 +1,19 @@
+# Runtime giọng nói thật cho backend — sherpa-onnx (Zipformer STT) + piper (TTS).
+#
+# Tách khỏi requirements.txt vì `.github/workflows/ci.yml` cài thẳng file đó
+# (`pip install -r requirements.txt`), mà runner của BTC không có model voice —
+# `slow`/`integration` bị loại bằng `-m` nên hai gói này chỉ làm CI nặng thêm
+# chứ không chạy test nào. Cùng lý do và cùng khuôn với requirements-rag.txt.
+#
+# Đây là bản mirror của extra `voice` trong pyproject.toml. Sửa một chỗ thì
+# sửa cả hai — Dockerfile đọc file này, còn máy dev thì cài bằng extra:
+#
+#   pip install -e ".[voice]"                       # máy dev
+#   pip install -r requirements-voice.txt           # image Docker
+#
+# Thiếu hai gói này thì backend vẫn khởi động và vẫn báo healthy: cả hai được
+# import lazy bên trong get_stt_engine()/get_tts_engine() (src/services/voice.py),
+# nên lỗi chỉ nổ ở lượt voice đầu tiên có người bấm micro.
+
+piper-tts>=1.3,<2
+sherpa-onnx>=1.10,<2

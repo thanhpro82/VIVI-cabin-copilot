@@ -1,0 +1,20 @@
+{
+  "profile_id": "qwen25-05b-q4",
+  "case_count": 20,
+  "schema_validity": 0.55,
+  "tool_exact_match": 0.15,
+  "repair_rate": 0.45,
+  "latency": {
+    "count": 20,
+    "p50_ms": 3863.8058,
+    "p95_ms": 10115.178
+  },
+  "process": {
+    "server_pid": 11972,
+    "rss_bytes_before": 543264768,
+    "peak_rss_bytes": 627970048,
+    "cpu_seconds_before": 1.921875,
+    "rss_bytes_after": 603348992,
+    "cpu_seconds_after": 432.65625
+  }
+}

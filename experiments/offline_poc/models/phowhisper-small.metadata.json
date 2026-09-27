@@ -1,0 +1,14 @@
+{
+  "profile_id": "phowhisper-small",
+  "repository": "vinai/PhoWhisper-small",
+  "revision": "a86b604c346caf7148c37512eafe783a16420adb",
+  "license": "MIT",
+  "size_bytes": 970701816,
+  "weights": {
+    "file": "pytorch_model.bin",
+    "size_bytes": 967102729,
+    "sha256": "9ec6f07c5bd321fc8f477cf778c43c3fd94b0e33a9f20283fc61cc6d22cbfded"
+  },
+  "checksum_manifest": "phowhisper-small.sha256",
+  "downloaded_at_utc": "2026-07-30T09:37:52.9830890Z"
+}

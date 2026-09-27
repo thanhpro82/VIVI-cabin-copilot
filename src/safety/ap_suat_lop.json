@@ -1,0 +1,23 @@
+{
+  "phien_ban": 1,
+  "nguon": {
+    "edition": "VF9_23-25_VN_VI_2.4 [New UI]",
+    "chunk_id": "chunk_1148033_003",
+    "checksum": "87a4e6b0b68bb180",
+    "page": 2,
+    "heading": "Áp suất lốp",
+    "section_path": "Bảo dưỡng / Vành và bánh xe"
+  },
+  "dieu_kien_do": "lốp nguội",
+  "hang": [
+    {"trim": "eco",  "battery": "sdi",  "axle": "front", "kpa": 240, "psi": 35, "nguyen_van": "240 KPA,35 PSI, (SDI)"},
+    {"trim": "eco",  "battery": "catl", "axle": "front", "kpa": 260, "psi": 38, "nguyen_van": "260 KPA,38 PSI, (CATL)"},
+    {"trim": "eco",  "battery": "sdi",  "axle": "rear",  "kpa": 260, "psi": 38, "nguyen_van": "260 KPA,38 PSI, (SDI)"},
+    {"trim": "eco",  "battery": "catl", "axle": "rear",  "kpa": 280, "psi": 40, "nguyen_van": "280 KPA,40 PSI, (CATL)"},
+    {"trim": "plus", "battery": "sdi",  "axle": "front", "kpa": 260, "psi": 38, "nguyen_van": "260 KPA,38 PSI, (SDI)"},
+    {"trim": "plus", "battery": "catl", "axle": "front", "kpa": 260, "psi": 38, "nguyen_van": "260 KPA,38 PSI, (CATL)"},
+    {"trim": "plus", "battery": "sdi",  "axle": "rear",  "kpa": 270, "psi": 39, "nguyen_van": "270 KPA,39 PSI, (SDI)"},
+    {"trim": "plus", "battery": "catl", "axle": "rear",  "kpa": 270, "psi": 39, "nguyen_van": "270 KPA,39 PSI, (CATL)"}
+  ],
+  "du_phong": {"kpa": 420, "psi": 61, "nguyen_van": "420 KPA, 61 PSI,"}
+}

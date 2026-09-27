@@ -1,0 +1,60 @@
+{
+  "che_do": "co_mqtt",
+  "moc": [
+    1,
+    2,
+    5,
+    10,
+    20
+  ],
+  "on_dinh_s": 3.0,
+  "samples": [
+    {
+      "n": 0,
+      "pha": "nen",
+      "rss_mb": 37.04,
+      "peak_mb": 37.04,
+      "nguon": "/proc/self/status"
+    },
+    {
+      "n": 1,
+      "pha": "sau_on_dinh",
+      "rss_mb": 44.48,
+      "peak_mb": 44.48,
+      "nguon": "/proc/self/status"
+    },
+    {
+      "n": 2,
+      "pha": "sau_on_dinh",
+      "rss_mb": 44.48,
+      "peak_mb": 44.48,
+      "nguon": "/proc/self/status"
+    },
+    {
+      "n": 5,
+      "pha": "sau_on_dinh",
+      "rss_mb": 44.48,
+      "peak_mb": 44.48,
+      "nguon": "/proc/self/status"
+    },
+    {
+      "n": 10,
+      "pha": "sau_on_dinh",
+      "rss_mb": 44.53,
+      "peak_mb": 44.53,
+      "nguon": "/proc/self/status"
+    },
+    {
+      "n": 20,
+      "pha": "sau_on_dinh",
+      "rss_mb": 44.73,
+      "peak_mb": 44.73,
+      "nguon": "/proc/self/status"
+    }
+  ],
+  "mb_moi_xe": 0.013,
+  "chan_mb": 44.44,
+  "mem_available_mb": 3456.1,
+  "he_so_an_toan": 0.7,
+  "suc_chua_uoc_tinh": 186097
+}

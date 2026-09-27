@@ -1,0 +1,20 @@
+[
+  {
+    "id": "poi-cafe-01",
+    "name": "Cà phê Hồ Xanh",
+    "category": "cafe",
+    "distance_m": 450
+  },
+  {
+    "id": "poi-cafe-02",
+    "name": "Cà phê Bình Minh",
+    "category": "cafe",
+    "distance_m": 900
+  },
+  {
+    "id": "poi-charge-01",
+    "name": "Trạm sạc Trung Tâm",
+    "category": "charging",
+    "distance_m": 1200
+  }
+]

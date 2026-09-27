@@ -1,0 +1,78 @@
+name: Frontend
+
+# Issue #239: `.github/workflows/` không file nào chạy một lệnh npm nào, nên **533 test
+# trên 64 file** của frontend chưa từng được gác. Hệ quả không phải giả định — `npm run
+# build` đã hỏng trên `develop` bằng một lỗi TypeScript và không ai biết, vì không có gì
+# chạy nó; nó chặn cứng #184 (không `next build` được thì không có image `ivi-web`).
+#
+# Vì sao là một workflow RIÊNG chứ không thêm job vào `ci.yml`:
+#
+# 1. `paths` chỉ lọc được ở mức **workflow**, không ở mức job. Runner là self-hosted của
+#    BTC nên thời gian không miễn phí, và một PR chỉ đụng Python không có lý do gì phải
+#    chạy `npm ci`.
+# 2. Tách ra thì một lỗi ở đây không đụng tới job Python đang chạy tốt. `mqtt-contract.yml`
+#    đã là tiền lệ cho cách tách này trong repo.
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - "frontend/**"
+      - ".github/workflows/frontend.yml"
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - "frontend/**"
+      - ".github/workflows/frontend.yml"
+
+concurrency:
+  group: fe-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  frontend:
+    runs-on: self-hosted
+    # Cùng lý do với `ci.yml`: runner ephemeral của BTC có thể mất ~10 phút chỉ để dựng
+    # môi trường trước khi lệnh đầu tiên chạy.
+    timeout-minutes: 30
+
+    defaults:
+      run:
+        working-directory: frontend
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          # Next 16 cần Node 20+. Không ghim patch: máy dev đang chạy 24.x và ghim chặt
+          # ở đây chỉ tạo ra một khác biệt nữa giữa CI và máy người viết code.
+          node-version: "20"
+          # KHÔNG bật `cache: npm`. `ci.yml` đã phải bỏ cache pip vì restore trên runner
+          # này chậm hơn cả cài lại (xem `a6ad687`); chưa có gì cho thấy npm khác đi, và
+          # một cache hỏng thì im lặng làm chậm mọi lần chạy. Bật khi có số đo.
+
+      - name: Install dependencies
+        # `npm ci` chứ không `npm install`: nó cài đúng `package-lock.json` và **xoá**
+        # `node_modules` trước. Đó là điều kiện để CI bắt được đúng lớp lỗi vừa xảy ra
+        # trên máy dev — `onnxruntime-web` không được cài chút nào, chặn cả `npm run dev`
+        # lẫn một file test, mà không ai biết vì `package.json` vẫn khai nó.
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type-check
+        # `npm run build` cũng type-check, nhưng chạy riêng thì lỗi kiểu hiện ra **trước**
+        # và không lẫn vào log build. Đây là bước rẻ nhất trong bốn bước.
+        run: npx tsc --noEmit
+
+      - name: Test
+        run: npm run test
+
+      - name: Build
+        # Bước đắt nhất, để cuối. `build` gọi `prepare:ort` trước — nó chép WASM của
+        # `onnxruntime-web` sang `public/ort-wasm/`, mà thư mục ấy nằm trong `.gitignore`
+        # nên **phải** được sinh ra sau `npm ci`, không phải checkout ra.
+        run: npm run build

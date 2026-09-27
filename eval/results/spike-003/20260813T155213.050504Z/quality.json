@@ -1,0 +1,118 @@
+{
+ "n": 64,
+ "parse_fail": 0,
+ "kind_accuracy": 0.875,
+ "tool_accuracy_on_plan": 0.345,
+ "plan_n": 29,
+ "misses": [
+  {
+   "case_id": "P-CMD-001",
+   "why": "tool=set_hvac_temperature muon=set_hvac_power"
+  },
+  {
+   "case_id": "P-CMD-003",
+   "why": "tool=set_hvac_temperature muon=set_window_position"
+  },
+  {
+   "case_id": "P-CMD-004",
+   "why": "tool=set_hvac_temperature muon=set_window_position"
+  },
+  {
+   "case_id": "P-CMD-005",
+   "why": "tool=set_hvac_temperature muon=set_window_position"
+  },
+  {
+   "case_id": "P-CMD-006",
+   "why": "tool=set_hvac_temperature muon=set_seat_position"
+  },
+  {
+   "case_id": "P-CMD-007",
+   "why": "tool=set_hvac_temperature muon=set_seat_heating"
+  },
+  {
+   "case_id": "P-CMD-008",
+   "why": "kind=chitchat muon=['plan']"
+  },
+  {
+   "case_id": "P-CMD-008",
+   "why": "tool=None muon=media_control"
+  },
+  {
+   "case_id": "P-CMD-010",
+   "why": "kind=chitchat muon=['plan']"
+  },
+  {
+   "case_id": "P-CMD-010",
+   "why": "tool=None muon=media_control"
+  },
+  {
+   "case_id": "P-CMD-011",
+   "why": "tool=set_navigation muon=search_nearby"
+  },
+  {
+   "case_id": "P-CMD-012",
+   "why": "kind=chitchat muon=['plan']"
+  },
+  {
+   "case_id": "P-CMD-012",
+   "why": "tool=None muon=search_nearby"
+  },
+  {
+   "case_id": "P-CMD-015",
+   "why": "tool=set_hvac_power muon=set_door_state"
+  },
+  {
+   "case_id": "P-CMD-017",
+   "why": "tool=search_nearby muon=set_window_position"
+  },
+  {
+   "case_id": "P-CMD-019",
+   "why": "kind=chitchat muon=['plan']"
+  },
+  {
+   "case_id": "P-CMD-019",
+   "why": "tool=None muon=media_control"
+  },
+  {
+   "case_id": "P-CMD-020",
+   "why": "tool=set_hvac_temperature muon=set_seat_heating"
+  },
+  {
+   "case_id": "P-CMD-021",
+   "why": "kind=chitchat muon=['plan']"
+  },
+  {
+   "case_id": "P-CMD-021",
+   "why": "tool=None muon=set_navigation"
+  },
+  {
+   "case_id": "P-CMD-025",
+   "why": "tool=set_hvac_power muon=set_hvac_temperature"
+  },
+  {
+   "case_id": "P-CMD-027",
+   "why": "tool=set_hvac_temperature muon=set_seat_position"
+  },
+  {
+   "case_id": "P-CMD-028",
+   "why": "tool=set_navigation muon=media_control"
+  },
+  {
+   "case_id": "P-CMD-029",
+   "why": "tool=media_control muon=set_navigation"
+  },
+  {
+   "case_id": "P-SOC-010",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-001",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-003",
+   "why": "kind=plan muon=['chitchat']"
+  }
+ ],
+ "label": "PROBE-NOT-EVIDENCE"
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.vivi.dev/schemas/health-v1.json",
+  "title": "Health",
+  "description": "Published retained by the simulator to v1/vehicles/{id}/health. Serves as both Birth message and Last Will payload.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "vehicle_id", "online"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "vehicle_id": {"type": "string", "minLength": 1},
+    "online": {"type": "boolean"},
+    "state_version": {"type": "integer", "minimum": 0},
+    "simulator_version": {"type": "string", "minLength": 1},
+    "heartbeat_at": {"type": "string", "format": "date-time"},
+    "reason": {
+      "enum": ["lwt", "shutdown"],
+      "description": "Forbidden when online is true; required when online is false"
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"online": {"const": true}}, "required": ["online"]},
+      "then": {
+        "not": {"required": ["reason"]},
+        "required": ["state_version", "simulator_version", "heartbeat_at"]
+      }
+    },
+    {
+      "if": {"properties": {"online": {"const": false}}, "required": ["online"]},
+      "then": {"required": ["reason"]}
+    }
+  ]
+}

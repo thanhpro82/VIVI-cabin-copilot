@@ -1,0 +1,77 @@
+{
+  "by_domain": {
+    "N1-tien-to": {
+      "dat": 2,
+      "intent_ok": 2,
+      "tool_exact": 2,
+      "total": 10
+    },
+    "N2-dong-tu": {
+      "dat": 1,
+      "intent_ok": 1,
+      "tool_exact": 1,
+      "total": 24
+    },
+    "N3-alias": {
+      "dat": 1,
+      "intent_ok": 4,
+      "tool_exact": 1,
+      "total": 22
+    },
+    "N4-cau-hoi": {
+      "dat": 1,
+      "intent_ok": 1,
+      "tool_exact": 2,
+      "total": 2
+    },
+    "N5-sua-loi": {
+      "dat": 0,
+      "intent_ok": 2,
+      "tool_exact": 0,
+      "total": 3
+    },
+    "N6-ten-bai": {
+      "dat": 0,
+      "intent_ok": 2,
+      "tool_exact": 0,
+      "total": 4
+    },
+    "N7-dan-duong": {
+      "dat": 4,
+      "intent_ok": 4,
+      "tool_exact": 4,
+      "total": 4
+    },
+    "N8-quyet-dinh": {
+      "dat": 1,
+      "intent_ok": 1,
+      "tool_exact": 1,
+      "total": 1
+    },
+    "OK-tripwire": {
+      "dat": 7,
+      "intent_ok": 7,
+      "tool_exact": 7,
+      "total": 7
+    }
+  },
+  "can_quyet_dinh": [
+    "BL-N2-024",
+    "BL-N3-009",
+    "BL-N3-017",
+    "BL-N3-022",
+    "BL-N5-003",
+    "BL-N6-001",
+    "BL-N6-002",
+    "BL-N6-003",
+    "BL-N7-004",
+    "BL-N8-001"
+  ],
+  "da_sua": [],
+  "dat": 17,
+  "di_lui": [],
+  "disposition_accuracy": 0.3116883116883117,
+  "intent_accuracy": 0.3116883116883117,
+  "tool_exact": 0.23376623376623376,
+  "total": 77
+}

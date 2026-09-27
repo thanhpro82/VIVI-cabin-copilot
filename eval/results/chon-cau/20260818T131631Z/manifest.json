@@ -1,0 +1,16 @@
+{
+  "suite": "chon-cau",
+  "commit": "64816e8c9fe09459fa7aa695b5caf71f32f0e086",
+  "branch": "feat/thac-rerank",
+  "dataset": "eval\\datasets\\manual\\v1\\answer_keys.jsonl",
+  "reranker": "models\\reranker\\bge-reranker-v2-m3",
+  "int8": true,
+  "pool": 4,
+  "top": 2,
+  "hardware": {
+    "tier": "cpu",
+    "machine": "AMD64",
+    "python": "3.11.9"
+  },
+  "ghi_chu": "Doan lay tu khoa, KHONG qua truy hoi — do rieng tang chon cau."
+}

@@ -1,0 +1,10 @@
+{
+  "case_count": 47,
+  "dataset": "eval/datasets/agent/multiturn-v1/cases.jsonl",
+  "moc": "develop @ ddfa4b7, đo 2026-08-29",
+  "note": "Đa lượt trên một state dùng chung. Router luật, không gọi model.",
+  "router": "DeterministicControlRouter + route_node",
+  "run_id": "20260830T161026.379023Z",
+  "slm_used": false,
+  "turn_count": 82
+}

@@ -1,0 +1,1408 @@
+[
+ {
+  "id": 1147107,
+  "chapter": "Giới thiệu",
+  "name": "Hướng dẫn sử dụng",
+  "html": "html/01_Giới thiệu/01_Hướng dẫn sử dụng.html",
+  "pdf": "pdf/01_Giới thiệu/01_Hướng dẫn sử dụng.pdf",
+  "anchors": [
+   {
+    "id": "yzvjoda3mzywzjfiymzh",
+    "name": "Giới thiệu"
+   },
+   {
+    "id": "ywq2ztrjzdu1odzlyjfm",
+    "name": "Lưu ý quan trọng liên quan đến Pin"
+   },
+   {
+    "id": "zme5mdi4mdyzyjuwnwq1",
+    "name": "Thông tin sách hướng dẫn sử dụng"
+   }
+  ]
+ },
+ {
+  "id": 1147117,
+  "chapter": "Tổng quan",
+  "name": "Tổng quan về xe",
+  "html": "html/02_Tổng quan/02_Tổng quan về xe.html",
+  "pdf": "pdf/02_Tổng quan/02_Tổng quan về xe.pdf",
+  "anchors": [
+   {
+    "id": "yji4yzrmzjixzdgxzmfk",
+    "name": "Tổng quan về xe điện"
+   },
+   {
+    "id": "odu0zdyyztdjztm5zgqx",
+    "name": "Tổng quan về ngoại thất"
+   },
+   {
+    "id": "zmy4ytywmwu3ogyynwy4",
+    "name": "Tổng quan về nội thất"
+   },
+   {
+    "id": "mdllnzg4ytk3mji4nzjj",
+    "name": "Tổng quan về sạc pin"
+   }
+  ]
+ },
+ {
+  "id": 1147139,
+  "chapter": "Đóng Mở và Khoang chứa đồ",
+  "name": "Chìa khóa",
+  "html": "html/03_Đóng Mở và Khoang chứa đồ/03_Chìa khóa.html",
+  "pdf": "pdf/03_Đóng Mở và Khoang chứa đồ/03_Chìa khóa.pdf",
+  "anchors": [
+   {
+    "id": "mtrjmza2ngqwzwjlmte5",
+    "name": "Tổng quan về hệ thống khóa trung tâm"
+   },
+   {
+    "id": "odvmndljzdg1nmqzyje0",
+    "name": "Tổng quan về chìa khóa điều khiển từ xa"
+   },
+   {
+    "id": "mwu3mmmynmqymgiwzjjl",
+    "name": "Chức năng chìa khóa điều khiển từ xa"
+   },
+   {
+    "id": "m2u4zty2zgu3mziyodm3",
+    "name": "Chìa khóa cơ"
+   }
+  ]
+ },
+ {
+  "id": 1147161,
+  "chapter": "Đóng Mở và Khoang chứa đồ",
+  "name": "Cửa",
+  "html": "html/03_Đóng Mở và Khoang chứa đồ/04_Cửa.html",
+  "pdf": "pdf/03_Đóng Mở và Khoang chứa đồ/04_Cửa.pdf",
+  "anchors": [
+   {
+    "id": "ody0nwq1nje0zdk5yzkx",
+    "name": "Cửa ngoại thất"
+   },
+   {
+    "id": "yzq3yjg0ntiwzmqymji3",
+    "name": "Cửa nội thất"
+   },
+   {
+    "id": "mdjjnzaymzvloge5ytu1",
+    "name": "Khóa trẻ em"
+   }
+  ]
+ },
+ {
+  "id": 1147179,
+  "chapter": "Đóng Mở và Khoang chứa đồ",
+  "name": "Khoang phía trước và phía sau",
+  "html": "html/03_Đóng Mở và Khoang chứa đồ/05_Khoang phía trước và phía sau.html",
+  "pdf": "pdf/03_Đóng Mở và Khoang chứa đồ/05_Khoang phía trước và phía sau.pdf",
+  "anchors": [
+   {
+    "id": "ytu3zdaynzlhzmuymdgz",
+    "name": "Cửa hậu"
+   },
+   {
+    "id": "ymy3yme0ndg2ymjimtfm",
+    "name": "Nắp ca-pô"
+   }
+  ]
+ },
+ {
+  "id": 1147191,
+  "chapter": "Đóng Mở và Khoang chứa đồ",
+  "name": "Cửa sổ điện",
+  "html": "html/03_Đóng Mở và Khoang chứa đồ/06_Cửa sổ điện.html",
+  "pdf": "pdf/03_Đóng Mở và Khoang chứa đồ/06_Cửa sổ điện.pdf",
+  "anchors": [
+   {
+    "id": "yzi5yjkzzdrlyjjmzjzk",
+    "name": "Điều khiển cửa sổ điện"
+   },
+   {
+    "id": "mdflnzbmn2nimzeynjfk",
+    "name": "Chức năng an toàn"
+   }
+  ]
+ },
+ {
+  "id": 1147202,
+  "chapter": "Đóng Mở và Khoang chứa đồ",
+  "name": "Khoang chứa đồ",
+  "html": "html/03_Đóng Mở và Khoang chứa đồ/07_Khoang chứa đồ.html",
+  "pdf": "pdf/03_Đóng Mở và Khoang chứa đồ/07_Khoang chứa đồ.pdf",
+  "anchors": [
+   {
+    "id": "odi0nzy2n2e1ztnindy0",
+    "name": "Hộp đựng găng tay"
+   },
+   {
+    "id": "zgzimdk1ymexnmy0zjc1",
+    "name": "Bệ tỳ tay trung tâm"
+   },
+   {
+    "id": "zdg4mzmxzmzlnde4ztnk",
+    "name": "Khoang chứa đồ ở cửa"
+   },
+   {
+    "id": "owfmytk2otuxzgyyy2u2",
+    "name": "Giá để cốc"
+   },
+   {
+    "id": "mtfkzdvhmzc4zmyymte4",
+    "name": "Khoang chứa đồ phía trước"
+   },
+   {
+    "id": "nta2mjlizjzmzjhlmdbh",
+    "name": "Khoang chứa đồ phía sau"
+   },
+   {
+    "id": "odlindjlmgfhndlkzge0",
+    "name": "Túi lưng ghế"
+   }
+  ]
+ },
+ {
+  "id": 1147234,
+  "chapter": "Đóng Mở và Khoang chứa đồ",
+  "name": "Hệ thống bảo vệ xe",
+  "html": "html/03_Đóng Mở và Khoang chứa đồ/08_Hệ thống bảo vệ xe.html",
+  "pdf": "pdf/03_Đóng Mở và Khoang chứa đồ/08_Hệ thống bảo vệ xe.pdf",
+  "anchors": [
+   {
+    "id": "ndbizgjiyjrhzgjizgfj",
+    "name": "Hệ thống chống trộm"
+   },
+   {
+    "id": "mmqwztg0mwrmnjfjytiw",
+    "name": "Hệ thống mã hóa động cơ"
+   }
+  ]
+ },
+ {
+  "id": 1147249,
+  "chapter": "Ghế và hệ thống an toàn",
+  "name": "Ghế",
+  "html": "html/04_Ghế và hệ thống an toàn/09_Ghế.html",
+  "pdf": "pdf/04_Ghế và hệ thống an toàn/09_Ghế.pdf",
+  "anchors": [
+   {
+    "id": "otziztkzownmmtuxmty2",
+    "name": "Ghế trước"
+   },
+   {
+    "id": "oda3zmfjntcyn2e4odvk",
+    "name": "Ghế sau"
+   },
+   {
+    "id": "ytm3mju3odjiyzazm2ji",
+    "name": "Điều chỉnh ghế ngồi"
+   },
+   {
+    "id": "mzfmndk1mtzhytdmntcw",
+    "name": "Hệ thống sưởi và thông gió cho ghế"
+   },
+   {
+    "id": "oty4mdg5nwi2njm3yjlh",
+    "name": "Vị trí ngồi đúng"
+   },
+   {
+    "id": "ogi4ytflnmm5zde2ztyx",
+    "name": "Massage ghế ngồi"
+   }
+  ]
+ },
+ {
+  "id": 1147276,
+  "chapter": "Ghế và hệ thống an toàn",
+  "name": "Dây đai an toàn",
+  "html": "html/04_Ghế và hệ thống an toàn/10_Dây đai an toàn.html",
+  "pdf": "pdf/04_Ghế và hệ thống an toàn/10_Dây đai an toàn.pdf",
+  "anchors": [
+   {
+    "id": "mzc0ywnhotu1mmjlyzk5",
+    "name": "Sử dụng dây đai an toàn"
+   },
+   {
+    "id": "ywrimmflymvmnti0y2iw",
+    "name": "Bảo quản dây đai an toàn"
+   }
+  ]
+ },
+ {
+  "id": 1147287,
+  "chapter": "Ghế và hệ thống an toàn",
+  "name": "Ghế trẻ em",
+  "html": "html/04_Ghế và hệ thống an toàn/11_Ghế trẻ em.html",
+  "pdf": "pdf/04_Ghế và hệ thống an toàn/11_Ghế trẻ em.pdf",
+  "anchors": [
+   {
+    "id": "owy5njzmnjlkndu0zmm3",
+    "name": "Tổng quan về ghế trẻ em"
+   },
+   {
+    "id": "owu3y2ewoddmzgiwnwmy",
+    "name": "Vị trí lắp đặt ghế trẻ em"
+   }
+  ]
+ },
+ {
+  "id": 1147300,
+  "chapter": "Ghế và hệ thống an toàn",
+  "name": "Túi khí",
+  "html": "html/04_Ghế và hệ thống an toàn/12_Túi khí.html",
+  "pdf": "pdf/04_Ghế và hệ thống an toàn/12_Túi khí.pdf",
+  "anchors": [
+   {
+    "id": "nmyymjnjytq1mjgxzgix",
+    "name": "Tổng quan túi khí"
+   },
+   {
+    "id": "nju5ytywmzlkzdjky2uy",
+    "name": "Các loại túi khí"
+   },
+   {
+    "id": "mzc3yjzmmgvhmjnlntk0",
+    "name": "Hoạt động và phát hiện người ngồi"
+   }
+  ]
+ },
+ {
+  "id": 1147320,
+  "chapter": "Hỗ trợ người lái nâng cao",
+  "name": "Kiểm soát hành trình",
+  "html": "html/05_Hỗ trợ người lái nâng cao/13_Kiểm soát hành trình.html",
+  "pdf": "pdf/05_Hỗ trợ người lái nâng cao/13_Kiểm soát hành trình.pdf",
+  "anchors": [
+   {
+    "id": "ogeym2iynwviytzlzjqy",
+    "name": "Hệ thống giám sát hành trình thích ứng (nếu có)"
+   },
+   {
+    "id": "njfkzjg4nju5ytrjmjc2",
+    "name": "Điều chỉnh tốc độ thông minh (nếu có)"
+   },
+   {
+    "id": "yzq2otjkotvkmdzknme0",
+    "name": "Nhận biết dạng biển báo giao thông (nếu có)"
+   }
+  ]
+ },
+ {
+  "id": 1147336,
+  "chapter": "Hỗ trợ người lái nâng cao",
+  "name": "Trợ giúp lái xe",
+  "html": "html/05_Hỗ trợ người lái nâng cao/14_Trợ giúp lái xe.html",
+  "pdf": "pdf/05_Hỗ trợ người lái nâng cao/14_Trợ giúp lái xe.pdf",
+  "anchors": [
+   {
+    "id": "ntgyyte0mta2mwe2y2y5",
+    "name": "Hỗ trợ lái trên cao tốc (nếu có)"
+   },
+   {
+    "id": "mzg5zgexymrlmtrhmwq2",
+    "name": "Hệ thống trợ làn (nếu có)"
+   },
+   {
+    "id": "owe4odqzzjq1otnizwnj",
+    "name": "Hệ thống giám sát người lái (nếu có)"
+   }
+  ]
+ },
+ {
+  "id": 1147354,
+  "chapter": "Hỗ trợ người lái nâng cao",
+  "name": "Hệ thống cảnh báo va chạm",
+  "html": "html/05_Hỗ trợ người lái nâng cao/15_Hệ thống cảnh báo va chạm.html",
+  "pdf": "pdf/05_Hỗ trợ người lái nâng cao/15_Hệ thống cảnh báo va chạm.pdf",
+  "anchors": [
+   {
+    "id": "ywvknjiyztc4oge4zja2",
+    "name": "Cảnh báo va chạm phía trước (nếu có)"
+   },
+   {
+    "id": "mgnkntkyn2nhnza0ogy1",
+    "name": "Phanh khẩn cấp tự động (nếu có)"
+   },
+   {
+    "id": "ogm2ymfmzdfmzgm1njjj",
+    "name": "Hệ thống cảnh báo điểm mù (nếu có)"
+   },
+   {
+    "id": "ytc1n2e2n2i4nti0mzzi",
+    "name": "Cảnh báo giao thông phía sau (nếu có)"
+   },
+   {
+    "id": "yjuyyjuymtzhm2rmzwu3",
+    "name": "Cảnh báo mở cửa (nếu có)"
+   },
+   {
+    "id": "njnhm2jlzgi1mjq4njvk",
+    "name": "Hệ thống cảnh báo phương tiện âm thanh (nếu có)"
+   }
+  ]
+ },
+ {
+  "id": 1147382,
+  "chapter": "Hỗ trợ người lái nâng cao",
+  "name": "Hỗ trợ đỗ xe",
+  "html": "html/05_Hỗ trợ người lái nâng cao/16_Hỗ trợ đỗ xe.html",
+  "pdf": "pdf/05_Hỗ trợ người lái nâng cao/16_Hỗ trợ đỗ xe.pdf",
+  "anchors": [
+   {
+    "id": "yzjjmdlmywm3ywjjotnj",
+    "name": "Hỗ trợ đỗ xe trước & sau (nếu có)"
+   },
+   {
+    "id": "zwi2ymm3otcwogviymi1",
+    "name": "Camera quan sát phía sau (nếu có)"
+   },
+   {
+    "id": "mjgynmflmzlhyjayntqx",
+    "name": "Giám sát xung quanh 360 độ (nếu có)"
+   }
+  ]
+ },
+ {
+  "id": 1147400,
+  "chapter": "Lái xe",
+  "name": "Khởi động/dừng",
+  "html": "html/06_Lái xe/17_Khởi động-dừng.html",
+  "pdf": "pdf/06_Lái xe/17_Khởi động-dừng.pdf",
+  "anchors": [
+   {
+    "id": "mte2mgfhntkxymq0mzzh",
+    "name": "Khởi động xe"
+   }
+  ]
+ },
+ {
+  "id": 1147410,
+  "chapter": "Lái xe",
+  "name": "Truyền động",
+  "html": "html/06_Lái xe/18_Truyền động.html",
+  "pdf": "pdf/06_Lái xe/18_Truyền động.pdf",
+  "anchors": [
+   {
+    "id": "yzi1nzjkyjm4mwvky2mw",
+    "name": "Mô-đun chọn số"
+   },
+   {
+    "id": "odqznje4ntflmtm3mdi2",
+    "name": "Chế độ lái xe"
+   },
+   {
+    "id": "mdvlzddmnju3mznmmwq4",
+    "name": "Phanh đỗ điện tử (EPB)"
+   }
+  ]
+ },
+ {
+  "id": 1147426,
+  "chapter": "Lái xe",
+  "name": "Vô lăng",
+  "html": "html/06_Lái xe/19_Vô lăng.html",
+  "pdf": "pdf/06_Lái xe/19_Vô lăng.pdf",
+  "anchors": [
+   {
+    "id": "mdzjnwrjodiymwiyzdc2",
+    "name": "Điều chỉnh vô lăng"
+   },
+   {
+    "id": "mjdmyjdmzdy0yzvhnzex",
+    "name": "Các công tắc trên vô lăng"
+   },
+   {
+    "id": "zwrmzwnhmwfmn2njm2fh",
+    "name": "Sưởi vô lăng"
+   }
+  ]
+ },
+ {
+  "id": 1147443,
+  "chapter": "Lái xe",
+  "name": "Gương",
+  "html": "html/06_Lái xe/20_Gương.html",
+  "pdf": "pdf/06_Lái xe/20_Gương.pdf",
+  "anchors": [
+   {
+    "id": "ndexymu1yjlin2yymmmx",
+    "name": "Gương chiếu hậu bên ngoài"
+   },
+   {
+    "id": "njzimdk0mtu4y2vlytjk",
+    "name": "Gương chiếu hậu bên trong"
+   },
+   {
+    "id": "nta1njywzdiyyzqwmmux",
+    "name": "Tấm chắn nắng và Gương trang điểm"
+   }
+  ]
+ },
+ {
+  "id": 1147459,
+  "chapter": "Lái xe",
+  "name": "Đèn ngoại thất",
+  "html": "html/06_Lái xe/21_Đèn ngoại thất.html",
+  "pdf": "pdf/06_Lái xe/21_Đèn ngoại thất.pdf",
+  "anchors": [
+   {
+    "id": "nzg4n2u1ywm0nzdiytq4",
+    "name": "Đèn ngoại thất - Phía trước"
+   },
+   {
+    "id": "owixogqxndi3yjiwnznk",
+    "name": "Đèn báo rẽ"
+   },
+   {
+    "id": "nwziote2ymzin2rjmzcy",
+    "name": "Đèn cảnh báo nguy hiểm"
+   },
+   {
+    "id": "mtezmwywmdlingjiztm2",
+    "name": "Đèn ngoại thất - Phía sau"
+   },
+   {
+    "id": "ymy2odfkmge1njc5zmmx",
+    "name": "Đèn ban ngày"
+   },
+   {
+    "id": "ywrmztg1ytywmwq4yjky",
+    "name": "Đèn chờ dẫn đường"
+   },
+   {
+    "id": "zdq2mjexmjq4zdlmndcx",
+    "name": "Đèn chào mừng"
+   },
+   {
+    "id": "mmnjnthkmjq2ymqxnzg0",
+    "name": "Điều chỉnh góc chiếu pha thông minh"
+   },
+   {
+    "id": "nzyznwfhn2mwmwjlotgx",
+    "name": "Đèn sương mù"
+   },
+   {
+    "id": "zjnhotaymgmzodi1ywi4",
+    "name": "Đèn chiếu sáng góc cua"
+   },
+   {
+    "id": "mmm3nmq2mjrmzmm2ytfh",
+    "name": "Đèn soi bậc cửa"
+   }
+  ]
+ },
+ {
+  "id": 1147508,
+  "chapter": "Lái xe",
+  "name": "Đèn nội thất",
+  "html": "html/06_Lái xe/22_Đèn nội thất.html",
+  "pdf": "pdf/06_Lái xe/22_Đèn nội thất.pdf",
+  "anchors": [
+   {
+    "id": "zjjmzmvimtq3nznmzmy0",
+    "name": "Độ sáng màn hình cảm ứng"
+   },
+   {
+    "id": "ytvmowjjnzeymje1odlk",
+    "name": "Đèn đọc sách phía sau"
+   },
+   {
+    "id": "mdaxnzmwntk5mtc5zwri",
+    "name": "Đèn trần xe (phía trước)"
+   },
+   {
+    "id": "mgixnje3njriowuwnjji",
+    "name": "Đèn khoang hành lý"
+   },
+   {
+    "id": "mgvjyjq0ntcxmdvlyza3",
+    "name": "Bảo vê ắc quy 12V"
+   },
+   {
+    "id": "mzmzogfjnju4zdfhymu5",
+    "name": "Đèn nội thất"
+   }
+  ]
+ },
+ {
+  "id": 1147535,
+  "chapter": "Lái xe",
+  "name": "Gạt nước rửa kính",
+  "html": "html/06_Lái xe/23_Gạt nước rửa kính.html",
+  "pdf": "pdf/06_Lái xe/23_Gạt nước rửa kính.pdf",
+  "anchors": [
+   {
+    "id": "otu2yjrkotmynmm0y2m1",
+    "name": "Gạt nước rửa kính phía trước"
+   },
+   {
+    "id": "njazyzyxndk2ogjlytjj",
+    "name": "Gạt nước rửa kính phía sau"
+   }
+  ]
+ },
+ {
+  "id": 1147547,
+  "chapter": "Lái xe",
+  "name": "Dừng và phanh xe",
+  "html": "html/06_Lái xe/24_Dừng và phanh xe.html",
+  "pdf": "pdf/06_Lái xe/24_Dừng và phanh xe.pdf",
+  "anchors": [
+   {
+    "id": "nwy1mty1ntc2mgvjymqx",
+    "name": "Hệ thống kiểm soát lực kéo"
+   },
+   {
+    "id": "nzi1zwnlzdjhmtezndlj",
+    "name": "Hệ thống chống bó cứng phanh"
+   },
+   {
+    "id": "mmq2zte3ztu0mwzimde0",
+    "name": "Hệ thống phân phối phanh điện tử"
+   },
+   {
+    "id": "mdg2nzlhownmmzyynzrl",
+    "name": "Hệ thống cân bằng điện tử"
+   },
+   {
+    "id": "mde0zda3zdc4n2nky2jl",
+    "name": "Hệ thống hỗ trợ khởi hành ngang dốc"
+   },
+   {
+    "id": "mdzjntfjntvindfmzte5",
+    "name": "Hệ thống hỗ trợ phanh khẩn cấp"
+   },
+   {
+    "id": "mzlinjljmdg5zwvlyzdi",
+    "name": "Hệ thống chống lật"
+   },
+   {
+    "id": "zjvjymiyowm0nzi4yjaw",
+    "name": "Phanh tái sinh"
+   },
+   {
+    "id": "ymjhntvkzde1njjizwmx",
+    "name": "Hệ thống phát tín hiệu khẩn cấp (ESS)"
+   },
+   {
+    "id": "mmq3zdq1zdg2m2m4n2y0",
+    "name": "Tự động giữ phanh xe (AVH)"
+   }
+  ]
+ },
+ {
+  "id": 1147592,
+  "chapter": "Lái xe",
+  "name": "Tiết kiệm và thân thiện môi trường",
+  "html": "html/06_Lái xe/25_Tiết kiệm và thân thiện môi trường.html",
+  "pdf": "pdf/06_Lái xe/25_Tiết kiệm và thân thiện môi trường.pdf",
+  "anchors": [
+   {
+    "id": "mdm0ywexoti5njfintbj",
+    "name": "Tiết kiệm nhiên liệu"
+   },
+   {
+    "id": "nzu1otrlmtg5ytdmmgzi",
+    "name": "Thông số hành trình"
+   },
+   {
+    "id": "zwuzodlmmzezn2q2njjj",
+    "name": "Lịch sử hành trình"
+   }
+  ]
+ },
+ {
+  "id": 1147607,
+  "chapter": "Lái xe",
+  "name": "Khuyên cáo ",
+  "html": "html/06_Lái xe/26_Khuyên cáo.html",
+  "pdf": "pdf/06_Lái xe/26_Khuyên cáo.pdf",
+  "anchors": [
+   {
+    "id": "ytcznmnkmmuzotrhyziz",
+    "name": "Khuyến cáo khi đi đường ngập nước"
+   }
+  ]
+ },
+ {
+  "id": 1147618,
+  "chapter": "Màn hình, Kết nối và Điều hòa",
+  "name": "Màn hình cảm ứng",
+  "html": "html/07_Màn hình, Kết nối và Điều hòa/27_Màn hình cảm ứng.html",
+  "pdf": "pdf/07_Màn hình, Kết nối và Điều hòa/27_Màn hình cảm ứng.pdf",
+  "anchors": [
+   {
+    "id": "mjlimdc5zdqxm2njnzzj",
+    "name": "Tổng quan về màn hình cảm ứng"
+   },
+   {
+    "id": "zguwmtrjnwm4m2vkzja1",
+    "name": "Sử dụng màn hình cảm ứng"
+   },
+   {
+    "id": "ztfmytm5nzgwmjuwn2nl",
+    "name": "Thông báo"
+   },
+   {
+    "id": "ymy2nzi4ntywmza1ntrh",
+    "name": "Hồ sơ người dùng"
+   },
+   {
+    "id": "mthmzmrjmjfimdqxymfm",
+    "name": "Chế độ người lạ"
+   },
+   {
+    "id": "ztrkowi1yjhiyzzjowvm",
+    "name": "Chế độ cắm trại"
+   },
+   {
+    "id": "ztmynjfhn2i0mde1zdi4",
+    "name": "Chế độ rửa xe"
+   },
+   {
+    "id": "ngjmmdlmnjawndixmdyz",
+    "name": "Chế độ thú cưng"
+   }
+  ]
+ },
+ {
+  "id": 1147654,
+  "chapter": "Màn hình, Kết nối và Điều hòa",
+  "name": "Thông tin giải trí",
+  "html": "html/07_Màn hình, Kết nối và Điều hòa/28_Thông tin giải trí.html",
+  "pdf": "pdf/07_Màn hình, Kết nối và Điều hòa/28_Thông tin giải trí.pdf",
+  "anchors": [
+   {
+    "id": "njllotm1nwvmodiwyze1",
+    "name": "Tổng quan và các tính năng chính"
+   },
+   {
+    "id": "mdg2y2i5mgvimwnjytg3",
+    "name": "Đài"
+   },
+   {
+    "id": "otcwyzkznzm0ndg4mtk1",
+    "name": "Phát nhạc Bluetooth"
+   },
+   {
+    "id": "ntc2owexntk4nzzmntg4",
+    "name": "Trình phát USB"
+   },
+   {
+    "id": "yzuxmjyyodyzmjqwn2fl",
+    "name": "Podcast"
+   },
+   {
+    "id": "nzcxnmu5yzbimtqymtni",
+    "name": "Trình duyệt"
+   },
+   {
+    "id": "mgnjyjdkzjcxzmy0oddh",
+    "name": "Trò chơi"
+   },
+   {
+    "id": "ndg0ztm2zwmwmguxntg2",
+    "name": "Trợ lý giọng nói"
+   }
+  ]
+ },
+ {
+  "id": 1147691,
+  "chapter": "Màn hình, Kết nối và Điều hòa",
+  "name": "Khu vực điều khiển xe",
+  "html": "html/07_Màn hình, Kết nối và Điều hòa/29_Khu vực điều khiển xe.html",
+  "pdf": "pdf/07_Màn hình, Kết nối và Điều hòa/29_Khu vực điều khiển xe.pdf",
+  "anchors": [
+   {
+    "id": "odexzdcwzjllmdi0mza3",
+    "name": "Tổng quan về Khu vực điều khiển xe"
+   },
+   {
+    "id": "nmrlnjvhnzyxmzgzmgjh",
+    "name": "Đèn cảnh báo và chỉ báo"
+   },
+   {
+    "id": "ntjlntzmzmu4zjlkmwrk",
+    "name": "Thông tin chuyến đi"
+   },
+   {
+    "id": "nddknzuxztiwymi5ztmz",
+    "name": "Hệ thống theo dõi áp suất lốp"
+   },
+   {
+    "id": "zwqyywe1njyxztkymge5",
+    "name": "Cảnh báo xe"
+   }
+  ]
+ },
+ {
+  "id": 1147714,
+  "chapter": "Màn hình, Kết nối và Điều hòa",
+  "name": "Màn hình Head Up",
+  "html": "html/07_Màn hình, Kết nối và Điều hòa/30_Màn hình Head Up.html",
+  "pdf": "pdf/07_Màn hình, Kết nối và Điều hòa/30_Màn hình Head Up.pdf",
+  "anchors": [
+   {
+    "id": "odnkztiymme1mdiynzdm",
+    "name": "Tổng quan"
+   },
+   {
+    "id": "zgezzgrjmzbmntkzoge4",
+    "name": "Điều chỉnh và cài đặt"
+   }
+  ]
+ },
+ {
+  "id": 1147726,
+  "chapter": "Màn hình, Kết nối và Điều hòa",
+  "name": "Điều hướng",
+  "html": "html/07_Màn hình, Kết nối và Điều hòa/31_Điều hướng.html",
+  "pdf": "pdf/07_Màn hình, Kết nối và Điều hòa/31_Điều hướng.pdf",
+  "anchors": [
+   {
+    "id": "odnkztiymme1mdiynzdm",
+    "name": "Tổng quan"
+   },
+   {
+    "id": "ogizzgflywnjogfkndvi",
+    "name": "Tìm kiếm điểm đến"
+   },
+   {
+    "id": "mdkynjjintq3nzhmztnk",
+    "name": "Xem trước tuyến đường"
+   },
+   {
+    "id": "ogiwm2m2zje5ywuxmjvm",
+    "name": "Chế độ xem hướng dẫn"
+   },
+   {
+    "id": "ztyxndrjzmq5mzllmzqz",
+    "name": "Điều hướng EV"
+   },
+   {
+    "id": "mjywmdrkzwq5mjgymdu2",
+    "name": "Ứng dụng VinFast và Điều hướng"
+   },
+   {
+    "id": "yzzlztliytqyywmwmtc5",
+    "name": "Cài đặt điều hướng"
+   }
+  ]
+ },
+ {
+  "id": 1147757,
+  "chapter": "Màn hình, Kết nối và Điều hòa",
+  "name": "Điện thoại & Chiếu",
+  "html": "html/07_Màn hình, Kết nối và Điều hòa/32_Điện thoại & Chiếu.html",
+  "pdf": "pdf/07_Màn hình, Kết nối và Điều hòa/32_Điện thoại & Chiếu.pdf",
+  "anchors": [
+   {
+    "id": "zjk5m2qyzjy5nthlnzk4",
+    "name": "Điện thoại"
+   },
+   {
+    "id": "yzywmtjlzdbiotdkztbi",
+    "name": "Cổng USB & Nguồn ra"
+   },
+   {
+    "id": "ytg3yzhhody2ntc1mzay",
+    "name": "Sạc không dây"
+   },
+   {
+    "id": "ntc4yzu3owy4ytiwzju5",
+    "name": "Android Auto"
+   },
+   {
+    "id": "zddhyzhhnwi3mde2yte3",
+    "name": "Apple CarPlay"
+   }
+  ]
+ },
+ {
+  "id": 1147781,
+  "chapter": "Màn hình, Kết nối và Điều hòa",
+  "name": "Ứng dụng VinFast",
+  "html": "html/07_Màn hình, Kết nối và Điều hòa/33_Ứng dụng VinFast.html",
+  "pdf": "pdf/07_Màn hình, Kết nối và Điều hòa/33_Ứng dụng VinFast.pdf",
+  "anchors": [
+   {
+    "id": "njllotm1nwvmodiwyze1",
+    "name": "Tổng quan và các tính năng chính"
+   },
+   {
+    "id": "zjcyytm3oge0zjyzotc3",
+    "name": "Đăng ký và Đăng nhập"
+   },
+   {
+    "id": "nzawzmniztvlmzbimmrh",
+    "name": "Quản lý phương tiện và người dùng"
+   },
+   {
+    "id": "y2i2ytmyothmotbmnddm",
+    "name": "Tổng quan về trang chủ dành cho chủ sở hữu"
+   },
+   {
+    "id": "mtgzm2m0ogyyzdhkodfm",
+    "name": "Bản đồ"
+   },
+   {
+    "id": "nmuxmdbknzc4nda3nzm2",
+    "name": "Mua sắm"
+   },
+   {
+    "id": "nzzlnzqwn2ezntizoty3",
+    "name": "Tài khoản"
+   }
+  ]
+ },
+ {
+  "id": 1147814,
+  "chapter": "Màn hình, Kết nối và Điều hòa",
+  "name": "Điều hòa",
+  "html": "html/07_Màn hình, Kết nối và Điều hòa/34_Điều hòa.html",
+  "pdf": "pdf/07_Màn hình, Kết nối và Điều hòa/34_Điều hòa.pdf",
+  "anchors": [
+   {
+    "id": "zmq3ogzlnwi3ntlintix",
+    "name": "Điều hòa"
+   },
+   {
+    "id": "y2ewyjhlzjcxnzk0nzq0",
+    "name": "Cửa gió"
+   },
+   {
+    "id": "zdixmzu4zwmznjy0mduy",
+    "name": "Nhiệt độ, quạt gió và phân phối khí"
+   },
+   {
+    "id": "ztqzmjuwzjqzotqxnza5",
+    "name": "Vận hành tự động"
+   },
+   {
+    "id": "ntkxngyymjjhnzaxzjez",
+    "name": "Vận hành thủ công"
+   },
+   {
+    "id": "nji5ywi4yzlhytewowi2",
+    "name": "Sấy kính/Khử sương kính chắn gió trước"
+   },
+   {
+    "id": "ntjinguxmmi0mzkxnjll",
+    "name": "Lọc gió điều hòa"
+   },
+   {
+    "id": "ngqxn2uynjjjzdg5ogi0",
+    "name": "Chế độ lấy gió trong"
+   },
+   {
+    "id": "njzjmgu3njzhy2jlmdm1",
+    "name": "Bảo dưỡng hệ thống điều hòa"
+   },
+   {
+    "id": "ythmmte3ytlhnjk1ytg5",
+    "name": "Chống đọng sương phía sau"
+   }
+  ]
+ },
+ {
+  "id": 1147858,
+  "chapter": "Màn hình, Kết nối và Điều hòa",
+  "name": "Cài đặt",
+  "html": "html/07_Màn hình, Kết nối và Điều hòa/35_Cài đặt.html",
+  "pdf": "pdf/07_Màn hình, Kết nối và Điều hòa/35_Cài đặt.pdf",
+  "anchors": [
+   {
+    "id": "ytg5ywrkymqxodringzl",
+    "name": "Tổng quan về cài đặt"
+   },
+   {
+    "id": "nzuzogjhzdcyytu2zja0",
+    "name": "Cài đặt xe"
+   },
+   {
+    "id": "ztmwowu1m2yyotzkotvh",
+    "name": "Kết nối thiết bị"
+   },
+   {
+    "id": "mgi2mdfiymewmja3mdey",
+    "name": "Wi-Fi"
+   },
+   {
+    "id": "mzq5ndi0odnmm2uxmze4",
+    "name": "Âm thanh"
+   },
+   {
+    "id": "ogzlnzyxztfhyjlkzdk3",
+    "name": "Cài đặt chung"
+   },
+   {
+    "id": "ota5nzc3m2zmowiyyjbi",
+    "name": "Thông tin xe"
+   },
+   {
+    "id": "odgwodixzwq2m2y2ndzh",
+    "name": "eSim"
+   },
+   {
+    "id": "ndg0ztm2zwmwmguxntg2",
+    "name": "Trợ lý giọng nói"
+   }
+  ]
+ },
+ {
+  "id": 1147898,
+  "chapter": "Màn hình, Kết nối và Điều hòa",
+  "name": "Navigation (HNAV)",
+  "html": "html/07_Màn hình, Kết nối và Điều hòa/36_Navigation (HNAV).html",
+  "pdf": "pdf/07_Màn hình, Kết nối và Điều hòa/36_Navigation (HNAV).pdf",
+  "anchors": [
+   {
+    "id": "ndexztuzogrhntkwyjq3",
+    "name": "Tổng quan về Điều hướng (HNAV)"
+   },
+   {
+    "id": "ogizzgflywnjogfkndvi",
+    "name": "Tìm kiếm điểm đến"
+   },
+   {
+    "id": "ywi2owq4mzdizjcwntnh",
+    "name": "Tình trạng giao thông"
+   },
+   {
+    "id": "zjm5owy2zjbkmdfkmjey",
+    "name": "Dẫn đường"
+   },
+   {
+    "id": "zthiytnkzgi0yjy5mzhk",
+    "name": "Chế độ xem hướng dẫn Điều hướng"
+   },
+   {
+    "id": "mjcyy2niode4mtlhzwvh",
+    "name": "Tính năng EV"
+   },
+   {
+    "id": "mzc2zdgwztayzwjmzdhm",
+    "name": "Bản đồ & Hiển thị"
+   }
+  ]
+ },
+ {
+  "id": 1147930,
+  "chapter": "Pin và Sạc",
+  "name": "Hệ thống điện áp cao",
+  "html": "html/08_Pin và Sạc/37_Hệ thống điện áp cao.html",
+  "pdf": "pdf/08_Pin và Sạc/37_Hệ thống điện áp cao.pdf",
+  "anchors": [
+   {
+    "id": "y2njzjjinzi3mddknmm0",
+    "name": "Tổng quan thành phần Hệ thống điện áp cao"
+   }
+  ]
+ },
+ {
+  "id": 1147938,
+  "chapter": "Pin và Sạc",
+  "name": "Hướng dẫn sạc",
+  "html": "html/08_Pin và Sạc/38_Hướng dẫn sạc.html",
+  "pdf": "pdf/08_Pin và Sạc/38_Hướng dẫn sạc.pdf",
+  "anchors": [
+   {
+    "id": "n2i2ztg0mju4n2y1zdbl",
+    "name": "Thiết bị sạc"
+   },
+   {
+    "id": "yzgxmjlimtkxmtblywq5",
+    "name": "Hướng dẫn sạc"
+   }
+  ]
+ },
+ {
+  "id": 1147950,
+  "chapter": "Pin và Sạc",
+  "name": "Thông tin về pin",
+  "html": "html/08_Pin và Sạc/39_Thông tin về pin.html",
+  "pdf": "pdf/08_Pin và Sạc/39_Thông tin về pin.pdf",
+  "anchors": [
+   {
+    "id": "otlmodqwntjlody1ota5",
+    "name": "Thông tin về pin"
+   },
+   {
+    "id": "njyznmy3nznhzwmzmdgy",
+    "name": "Quản lý kế thuê pin"
+   },
+   {
+    "id": "yjkwyzlinde2njizntgy",
+    "name": "Ứng dụng pin EV"
+   },
+   {
+    "id": "mje5nthmmtiwmzk3m2m2",
+    "name": "Chăm sóc pin"
+   },
+   {
+    "id": "ndiwnddlzjm2otc0y2qy",
+    "name": "Giới hạn nhiệt độ"
+   },
+   {
+    "id": "zja5ntzjztc5mtgzn2i0",
+    "name": "Chế độ tiêu hao điện năng thấp"
+   }
+  ]
+ },
+ {
+  "id": 1147981,
+  "chapter": "Bảo dưỡng",
+  "name": "Thông tin chung",
+  "html": "html/09_Bảo dưỡng/40_Thông tin chung.html",
+  "pdf": "pdf/09_Bảo dưỡng/40_Thông tin chung.pdf",
+  "anchors": [
+   {
+    "id": "owfkowqxzmfimdzlmdux",
+    "name": "Tổng quan về chăm sóc xe"
+   }
+  ]
+ },
+ {
+  "id": 1147989,
+  "chapter": "Bảo dưỡng",
+  "name": "Dầu mỡ, phụ tùng bảo dưỡng",
+  "html": "html/09_Bảo dưỡng/41_Dầu mỡ, phụ tùng bảo dưỡng.html",
+  "pdf": "pdf/09_Bảo dưỡng/41_Dầu mỡ, phụ tùng bảo dưỡng.pdf",
+  "anchors": [
+   {
+    "id": "ntjinguxmmi0mzkxnjll",
+    "name": "Lọc gió điều hòa"
+   },
+   {
+    "id": "ogm4mjy4ywyyyzawymi0",
+    "name": "Dung dịch làm mát"
+   },
+   {
+    "id": "zde5mdiwnjfinzrmmwux",
+    "name": "Nước rửa kính"
+   },
+   {
+    "id": "nta4nzy2mdu5n2mwmjc4",
+    "name": "Cần gạt nước"
+   },
+   {
+    "id": "otg1yjg4ogjhogy2ztlh",
+    "name": "Má phanh và dầu phanh"
+   },
+   {
+    "id": "ytfmn2u4ztdhotg4n2fj",
+    "name": "Điều hòa nhiệt độ"
+   }
+  ]
+ },
+ {
+  "id": 1148019,
+  "chapter": "Bảo dưỡng",
+  "name": "Hệ thống điện",
+  "html": "html/09_Bảo dưỡng/42_Hệ thống điện.html",
+  "pdf": "pdf/09_Bảo dưỡng/42_Hệ thống điện.pdf",
+  "anchors": [
+   {
+    "id": "owe1ogzhntixodk3y2i5",
+    "name": "Cầu chì"
+   },
+   {
+    "id": "mjrly2vkn2exy2q3odvm",
+    "name": "Đèn"
+   },
+   {
+    "id": "mwm3n2rhotu2mtzimmu3",
+    "name": "Ắc quy 12V"
+   }
+  ]
+ },
+ {
+  "id": 1148033,
+  "chapter": "Bảo dưỡng",
+  "name": "Vành và bánh xe",
+  "html": "html/09_Bảo dưỡng/43_Vành và bánh xe.html",
+  "pdf": "pdf/09_Bảo dưỡng/43_Vành và bánh xe.pdf",
+  "anchors": [
+   {
+    "id": "ntk0zwi5otyyndlmymfl",
+    "name": "Lốp xe"
+   },
+   {
+    "id": "zmqxzme2zmfjndrlzmi5",
+    "name": "Áp suất lốp"
+   },
+   {
+    "id": "nzjizti0nmzhownlntmy",
+    "name": "Hệ thống giám sát áp suất lốp"
+   },
+   {
+    "id": "ody3ngnin2u1mzdkzji4",
+    "name": "Độ mòn và chiều sau gai lốp"
+   },
+   {
+    "id": "zmm0nzk2ywnknwe1zdgy",
+    "name": "Đảo lốp"
+   },
+   {
+    "id": "zjg5owq5ztqzn2qxnte4",
+    "name": "Căn chỉnh và cân bằng bánh xe"
+   }
+  ]
+ },
+ {
+  "id": 1148062,
+  "chapter": "Bảo dưỡng",
+  "name": "Chăm sóc xe",
+  "html": "html/09_Bảo dưỡng/44_Chăm sóc xe.html",
+  "pdf": "pdf/09_Bảo dưỡng/44_Chăm sóc xe.pdf",
+  "anchors": [
+   {
+    "id": "nze1zdblmmnjmzliotrj",
+    "name": "Chăm sóc ngoại thất"
+   },
+   {
+    "id": "mtc3yweznwjjnmzmmjk1",
+    "name": "Chăm sóc radar, cảm biến và camera"
+   },
+   {
+    "id": "ngi0nzq1zjdkmwy3ztuw",
+    "name": "Chăm sóc nội thất"
+   }
+  ]
+ },
+ {
+  "id": 1148078,
+  "chapter": "Bảo dưỡng",
+  "name": "Lịch bảo dưỡng",
+  "html": "html/09_Bảo dưỡng/45_Lịch bảo dưỡng.html",
+  "pdf": "pdf/09_Bảo dưỡng/45_Lịch bảo dưỡng.pdf",
+  "anchors": [
+   {
+    "id": "yta4zwnlmzywoda4yzmx",
+    "name": "Tổng quan Lịch Bảo Dưỡng"
+   }
+  ]
+ },
+ {
+  "id": 1148085,
+  "chapter": "Bảo dưỡng",
+  "name": "Phụ tùng và phụ kiện",
+  "html": "html/09_Bảo dưỡng/46_Phụ tùng và phụ kiện.html",
+  "pdf": "pdf/09_Bảo dưỡng/46_Phụ tùng và phụ kiện.pdf",
+  "anchors": [
+   {
+    "id": "zwrimtaxoty4mza4ote5",
+    "name": "Phụ tùng"
+   },
+   {
+    "id": "yjdhngyyztrkndawnjzj",
+    "name": "Phụ kiện"
+   }
+  ]
+ },
+ {
+  "id": 1148100,
+  "chapter": "Thông số kỹ thuật",
+  "name": "Dầu mỡ và phụ tùng",
+  "html": "html/10_Thông số kỹ thuật/47_Dầu mỡ và phụ tùng.html",
+  "pdf": "pdf/10_Thông số kỹ thuật/47_Dầu mỡ và phụ tùng.pdf",
+  "anchors": [
+   {
+    "id": "zdbhztyzzdyyn2q4mwi2",
+    "name": "Tổng quan về dầu mỡ, phụ tùng bảo dưỡng"
+   }
+  ]
+ },
+ {
+  "id": 1148108,
+  "chapter": "Thông số kỹ thuật",
+  "name": "Số nhận dạng VIN",
+  "html": "html/10_Thông số kỹ thuật/48_Số nhận dạng VIN.html",
+  "pdf": "pdf/10_Thông số kỹ thuật/48_Số nhận dạng VIN.pdf",
+  "anchors": [
+   {
+    "id": "yzjimjfkmmrimtm5yjq1",
+    "name": "Số VIN"
+   },
+   {
+    "id": "nmvhzjvhmzrkzwy4yza2",
+    "name": "Nhãn dán"
+   }
+  ]
+ },
+ {
+  "id": 1148121,
+  "chapter": "Thông số kỹ thuật",
+  "name": "Thông số kỹ thuật",
+  "html": "html/10_Thông số kỹ thuật/49_Thông số kỹ thuật.html",
+  "pdf": "pdf/10_Thông số kỹ thuật/49_Thông số kỹ thuật.pdf",
+  "anchors": [
+   {
+    "id": "owjkzwi3nze4ogrmzdm2",
+    "name": "Kích thước và cân nặng"
+   },
+   {
+    "id": "yty0zmqzmwu3odm5zgu0",
+    "name": "Hệ thống khác"
+   },
+   {
+    "id": "ntuznzi2yzjhyjkzyjcw",
+    "name": "Vành và bánh xe"
+   }
+  ]
+ },
+ {
+  "id": 1148140,
+  "chapter": "Hỗ trợ về xe",
+  "name": "Dịch vụ hỗ trợ",
+  "html": "html/11_Hỗ trợ về xe/50_Dịch vụ hỗ trợ.html",
+  "pdf": "pdf/11_Hỗ trợ về xe/50_Dịch vụ hỗ trợ.pdf",
+  "anchors": [
+   {
+    "id": "n2fjzwi5ote0zgeznzuz",
+    "name": "Tổng quan về dịch vụ hỗ trợ"
+   },
+   {
+    "id": "y2vlyty4mzcxmzfjztbl",
+    "name": "Đặt hẹn dịch vụ"
+   },
+   {
+    "id": "ywi5mmy3ytgxy2e2zmrk",
+    "name": "Hỗ trợ trên đường"
+   },
+   {
+    "id": "ztnhmziwmzgwntzhztaz",
+    "name": "Cuộc gọi khẩn cấp SOS (e-Call)"
+   },
+   {
+    "id": "yzzlyjrkzdq5mgjlzji4",
+    "name": "Chẩn đoán từ xa"
+   },
+   {
+    "id": "otywnjuym2flndmwnjk3",
+    "name": "Cập nhật phần mềm từ xa"
+   }
+  ]
+ },
+ {
+  "id": 1148171,
+  "chapter": "Hỗ trợ về xe",
+  "name": "Sửa chữa",
+  "html": "html/11_Hỗ trợ về xe/51_Sửa chữa.html",
+  "pdf": "pdf/11_Hỗ trợ về xe/51_Sửa chữa.pdf",
+  "anchors": [
+   {
+    "id": "yjlimtg4zgi2yjcznty1",
+    "name": "Kích nâng xe và vá lốp"
+   },
+   {
+    "id": "njdjzmzmodq4owzmzjy1",
+    "name": "Hỗ trợ khởi động"
+   },
+   {
+    "id": "mtfmmdc4otnkowiwnjq1",
+    "name": "Kéo xe"
+   }
+  ]
+ },
+ {
+  "id": 1148187,
+  "chapter": "Hỗ trợ về xe",
+  "name": "Liên hệ",
+  "html": "html/11_Hỗ trợ về xe/52_Liên hệ.html",
+  "pdf": "pdf/11_Hỗ trợ về xe/52_Liên hệ.pdf",
+  "anchors": [
+   {
+    "id": "otawmdizyte0mzu2mgfm",
+    "name": "Chăm sóc khách hàng"
+   }
+  ]
+ },
+ {
+  "id": 1148198,
+  "chapter": "Thông tin tham khảo",
+  "name": "Tham khảo",
+  "html": "html/12_Thông tin tham khảo/53_Tham khảo.html",
+  "pdf": "pdf/12_Thông tin tham khảo/53_Tham khảo.pdf",
+  "anchors": [
+   {
+    "id": "owrlm2jlmddkzjhkotdh",
+    "name": "Lưu trữ và xử lý dữ liệu"
+   }
+  ]
+ },
+ {
+  "id": 1148211,
+  "chapter": "VinFast Connect",
+  "name": "Tổng quan về VinFast Connect",
+  "html": "html/13_VinFast Connect/54_Tổng quan về VinFast Connect.html",
+  "pdf": "pdf/13_VinFast Connect/54_Tổng quan về VinFast Connect.pdf",
+  "anchors": [
+   {
+    "id": "yjqxyja1nmi4mdcxntgy",
+    "name": "Tổng quan về VinFast Connect"
+   }
+  ]
+ },
+ {
+  "id": 1148219,
+  "chapter": "VinFast Connect",
+  "name": "Điều khiển xe từ xa",
+  "html": "html/13_VinFast Connect/55_Điều khiển xe từ xa.html",
+  "pdf": "pdf/13_VinFast Connect/55_Điều khiển xe từ xa.pdf",
+  "anchors": [
+   {
+    "id": "ndnimdi1nwu3owiyndlj",
+    "name": "Điều khiển xe từ xa"
+   },
+   {
+    "id": "odmzzwriotk1y2i1ztgy",
+    "name": "SmartWatch"
+   }
+  ]
+ },
+ {
+  "id": 1148230,
+  "chapter": "VinFast Connect",
+  "name": "Hệ thống ứng dụng giải trí đa dụng",
+  "html": "html/13_VinFast Connect/56_Hệ thống ứng dụng giải trí đa dụng.html",
+  "pdf": "pdf/13_VinFast Connect/56_Hệ thống ứng dụng giải trí đa dụng.pdf",
+  "anchors": [
+   {
+    "id": "nzq4mti3zjk4ndhkymjm",
+    "name": "Kho ứng dụng (chợ ứng dụng)"
+   },
+   {
+    "id": "ndjkyzkwyjcyztjjmjhh",
+    "name": "Chế độ nghỉ ngơi (Nap mode)"
+   }
+  ]
+ },
+ {
+  "id": 1148243,
+  "chapter": "VinFast Connect",
+  "name": "Trợ lý ảo",
+  "html": "html/13_VinFast Connect/57_Trợ lý ảo.html",
+  "pdf": "pdf/13_VinFast Connect/57_Trợ lý ảo.pdf",
+  "anchors": [
+   {
+    "id": "mmrhowuwntizyjkyowiw",
+    "name": "Trợ lý ảo nâng cao (ViVi 3.0)"
+   }
+  ]
+ },
+ {
+  "id": 1148251,
+  "chapter": "VinFast Connect",
+  "name": "Dẫn đường và hỗ trợ lái thông minh",
+  "html": "html/13_VinFast Connect/58_Dẫn đường và hỗ trợ lái thông minh.html",
+  "pdf": "pdf/13_VinFast Connect/58_Dẫn đường và hỗ trợ lái thông minh.pdf",
+  "anchors": [
+   {
+    "id": "odg2ntk4nzc5mti0zjq5",
+    "name": "VietMap Live"
+   }
+  ]
+ }
+]

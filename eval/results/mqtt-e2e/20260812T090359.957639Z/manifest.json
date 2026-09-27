@@ -1,0 +1,23 @@
+{
+  "blind_spots": {
+    "L0-unit": "Không nói gì về vận chuyển: không broker, không serialize.",
+    "L1-inmemory": "InMemoryBroker gọi handler đồng bộ ngay trong publish nên hoàn toàn tất định — 0 flaky, nhưng cũng KHÔNG BAO GIỜ tạo ra xen kẽ thời gian thật. Không chứng minh được: QoS 1 duplicate của broker thật, retain qua restart, ACL, Last Will, clean_session, hay reconnect.",
+    "L2-mosquitto": "Broker thật nhưng vẫn trong một tiến trình pytest: không có HTTP/WS thật, không có backend và simulator chạy như hai tiến trình riêng.",
+    "L3-two-process": "Hai tiến trình thật nhưng CÙNG một máy, cùng một venv, cùng loopback. KHÔNG chứng minh: image Docker, topology docker-compose, hành vi khi mạng phân mảnh hay có độ trễ, và nhiều xe cùng lúc. Thời gian khởi động ghi ở đây là số đo một lần trên máy dev — nó phụ thuộc nặng vào việc model STT/TTS có sẵn hay chưa (backend warm singleton trong lifespan)."
+  },
+  "git_branch": "test/mqtt-l3-two-process",
+  "git_commit": "5f7c76e2da3fbf1e25f80f10234e59ab6d58ef00",
+  "git_dirty": true,
+  "layers_run": [
+    "L0-unit",
+    "L1-inmemory",
+    "L2-mosquitto",
+    "L3-two-process"
+  ],
+  "note": "Thời gian trong case_results.jsonl là số đo MỘT lần chạy trên máy dev, KHÔNG phải benchmark. Không dùng làm bằng chứng hiệu năng.",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "pytest_exit_code": 0,
+  "python": "3.11.9",
+  "run_id": "20260812T090359.957639Z",
+  "suite": "mqtt-e2e"
+}

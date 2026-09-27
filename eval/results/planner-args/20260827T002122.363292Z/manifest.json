@@ -1,0 +1,9 @@
+{
+  "suite": "planner-args",
+  "run_id": "20260827T002122.363292Z",
+  "prompt": "moi-sinh-tu-registry",
+  "model_id": "qwen2.5-3b-instruct-q4_k_m",
+  "endpoint": "http://127.0.0.1:8093",
+  "may": "Windows-10-10.0.26200-SP0",
+  "ghi_chu": "Đo hình dạng args, KHÔNG đo khả năng hiểu câu khó — mọi câu đều trần trụi."
+}

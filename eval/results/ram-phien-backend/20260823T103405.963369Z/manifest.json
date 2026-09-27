@@ -1,0 +1,20 @@
+{
+  "suite": "ram-phien-backend",
+  "run_id": "20260823T103405.963369Z",
+  "run_uuid": "c1a65780-be62-4e2d-aaaf-af6092d75eb5",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "git_branch": "develop",
+  "git_commit": "0f0a31fde96a72ac7b4a646d7770da3b31c60852",
+  "git_dirty": true,
+  "che_do": "phien_co_luot",
+  "note": "Do tu NGOAI qua HTTP + docker stats, khong dung tien trinh backend that. Phien da tao KHONG duoc don - chung tu het han sau session_ttl_hours (24h).",
+  "blind_spots": {
+    "mot_may_mot_lan": "MOT lan lay mau tren MOT may. So de lap ngan sach, khong phai benchmark.",
+    "docker_stats_khong_phai_rss_thuan": "`docker stats` bao working set cua cgroup, khong phai VmRSS thuan: no gom ca page cache cua container. Do doc van dung vi cache gan nhu khong doi giua cac moc, nhung DIEM CHAN thi khong so duoc voi VmRSS cua script khac.",
+    "gop_ba_chi_phi": "Do doc gom CA BA: checkpoint LangGraph, ban ghi trace trong TraceStore, va phien trong SQLite. Day la chu y - cai can lap ngan sach la 'mot tai xe dang hoat dong ton bao nhieu', khong phai tach rieng tung cau truc.",
+    "mot_luot_moi_phien": "Moi phien chi chay MOT luot. Tai xe that noi nhieu luot, checkpoint lon dan theo lich su hoi thoai. Nen day la SAN, khong phai tran.",
+    "khong_tru_nhieu_slm": "SLM dang bat: llama-server la tien trinh RIENG tren host, khong nam trong container backend, nen no khong vao con so nay. Nhung KV cache cua no co lon len theo so luot - phan do phai do rieng.",
+    "lru_lam_phang_duong": "MAX_SESSIONS=128 va MAX_TOKENS=256 la LRU. Chay qua nguong do thi duong cong phang ra mot cach gia tao vi phien cu bi day ra, khong phai vi phien re di."
+  }
+}

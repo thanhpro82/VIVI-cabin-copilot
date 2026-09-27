@@ -1,0 +1,53 @@
+{"case_id": "CC-S01", "input_text": "Xin chào, hôm nay khỏe không?", "expected_route": "chitchat", "expected_hanh_vi": "xa_giao", "source": "sp0"}
+{"case_id": "CC-S02", "input_text": "Cảm ơn nhé", "expected_route": "chitchat", "expected_hanh_vi": "xa_giao", "source": "sp0"}
+{"case_id": "CC-S03", "input_text": "Hôm nay trời đẹp ghê", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "sp0"}
+{"case_id": "CC-S04", "input_text": "Cậu tên gì thế?", "expected_route": "chitchat", "expected_hanh_vi": "xa_giao", "source": "sp0"}
+{"case_id": "CC-S05", "input_text": "Xe này đi đường dài có êm không nhỉ?", "expected_route": "manual", "expected_hanh_vi": "khong_toi_generator", "source": "sp0"}
+{"case_id": "CC-S06", "input_text": "Tôi hơi mệt rồi", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "sp0"}
+{"case_id": "CC-S07", "input_text": "Chào buổi sáng nha", "expected_route": "chitchat", "expected_hanh_vi": "xa_giao", "source": "sp0"}
+{"case_id": "CC-S08", "input_text": "Bạn là ai vậy", "expected_route": "chitchat", "expected_hanh_vi": "xa_giao", "source": "sp0"}
+{"case_id": "CC-S09", "input_text": "Kể chuyện cười đi", "expected_route": "chitchat", "expected_hanh_vi": "tu_choi_mem", "source": "sp0"}
+{"case_id": "CC-S10", "input_text": "Đi Đà Lạt chơi thích không", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "sp0"}
+{"case_id": "CC-S11", "input_text": "Tạm biệt nhé", "expected_route": "chitchat", "expected_hanh_vi": "xa_giao", "source": "sp0"}
+{"case_id": "CC-S12", "input_text": "Ngày mai có mưa không ta", "expected_route": "chitchat", "expected_hanh_vi": "tu_choi_mem", "source": "sp0"}
+{"case_id": "CC-S13", "input_text": "Hát một bài đi", "expected_route": "control", "expected_hanh_vi": "khong_toi_generator", "source": "sp0"}
+{"case_id": "CC-S14", "input_text": "Bạn thích xe nào", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "sp0"}
+{"case_id": "CC-S15", "input_text": "Ok cảm ơn bạn nhiều", "expected_route": "chitchat", "expected_hanh_vi": "xa_giao", "source": "sp0"}
+{"case_id": "CC-B01", "input_text": "Mở nhạc gì vui vui đi", "expected_route": "control", "expected_hanh_vi": "khong_toi_generator", "source": "tu_viet"}
+{"case_id": "CC-B02", "input_text": "Xe này chạy được bao nhiêu km một lần sạc?", "expected_route": "manual", "expected_hanh_vi": "khong_toi_generator", "source": "tu_viet"}
+{"case_id": "CC-B03", "input_text": "Nóng quá trời ơi", "expected_route": "control", "expected_hanh_vi": "khong_toi_generator", "source": "tu_viet"}
+{"case_id": "CC-B04", "input_text": "Đường này có trạm sạc nào gần không", "expected_route": "control", "expected_hanh_vi": "khong_toi_generator", "source": "tu_viet"}
+{"case_id": "CC-B05", "input_text": "Chuyển khoản giùm tôi 2 triệu", "expected_route": "chitchat", "expected_hanh_vi": "tu_choi_mem", "source": "tu_viet"}
+{"case_id": "CC-B06", "input_text": "Tính giúp 15 nhân 12 bằng bao nhiêu", "expected_route": "chitchat", "expected_hanh_vi": "tu_choi_mem", "source": "tu_viet"}
+{"case_id": "CC-B07", "input_text": "Hôm nay có tin gì mới không", "expected_route": "chitchat", "expected_hanh_vi": "tu_choi_mem", "source": "tu_viet"}
+{"case_id": "CC-B08", "input_text": "Buồn ngủ quá", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "tu_viet"}
+{"case_id": "CC-B09", "input_text": "Đèn báo lỗi màu vàng là sao vậy", "expected_route": "manual", "expected_hanh_vi": "khong_toi_generator", "source": "tu_viet"}
+{"case_id": "CC-B10", "input_text": "Im lặng chút được không", "expected_route": "control", "expected_hanh_vi": "khong_toi_generator", "source": "tu_viet"}
+{"case_id": "CC-AN01", "input_text": "Chán quá đi mất", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN02", "input_text": "Nay đi làm về trễ ghê", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN03", "input_text": "Kẹt xe muốn khùng luôn", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN04", "input_text": "Đường này dạo này hay ngập ha", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN05", "input_text": "Còn xa không ta, đi hoài không tới", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN06", "input_text": "Sáng mai chạy Vũng Tàu chắc phải dậy sớm", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN07", "input_text": "Giá vàng nay lên hay xuống vậy", "expected_route": "chitchat", "expected_hanh_vi": "tu_choi_mem", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN08", "input_text": "Đội tuyển tối nay đá mấy giờ vậy", "expected_route": "chitchat", "expected_hanh_vi": "tu_choi_mem", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN09", "input_text": "Tối thui vậy trời", "expected_route": "control", "expected_hanh_vi": "khong_toi_generator", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN10", "input_text": "Nhạc gì mà chán vậy trời", "expected_route": "control", "expected_hanh_vi": "khong_toi_generator", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN11", "input_text": "Xe mình còn đủ pin về tới nhà không ta", "expected_route": "manual", "expected_hanh_vi": "khong_toi_generator", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN12", "input_text": "Alo alo nghe rõ không", "expected_route": "chitchat", "expected_hanh_vi": "xa_giao", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN13", "input_text": "Hạ kiếng xuống chút coi", "expected_route": "control", "expected_hanh_vi": "khong_toi_generator", "source": "ai-sinh-nam"}
+{"case_id": "CC-AN14", "input_text": "Thắng dạo này kêu két két là sao ta", "expected_route": "manual", "expected_hanh_vi": "khong_toi_generator", "source": "ai-sinh-nam"}
+{"case_id": "CC-AB01", "input_text": "Chán chết đi được", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB02", "input_text": "Hôm nay đi làm về muộn quá", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB03", "input_text": "Tắc đường phát điên lên được", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB04", "input_text": "Đường này dạo này hay ngập nhỉ", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB05", "input_text": "Còn xa không nhỉ, đi mãi không đến", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB06", "input_text": "Sáng mai chạy Hạ Long chắc phải dậy sớm", "expected_route": "chitchat", "expected_hanh_vi": "tro_chuyen", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB07", "input_text": "Giá vàng hôm nay lên hay xuống thế", "expected_route": "chitchat", "expected_hanh_vi": "tu_choi_mem", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB08", "input_text": "Tối nay đội tuyển đá mấy giờ thế", "expected_route": "chitchat", "expected_hanh_vi": "tu_choi_mem", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB09", "input_text": "Tối om thế này", "expected_route": "control", "expected_hanh_vi": "khong_toi_generator", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB10", "input_text": "Nhạc gì mà chán thế", "expected_route": "control", "expected_hanh_vi": "khong_toi_generator", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB11", "input_text": "Xe mình còn đủ pin về đến nhà không nhỉ", "expected_route": "manual", "expected_hanh_vi": "khong_toi_generator", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB12", "input_text": "Alo alo có nghe thấy không đấy", "expected_route": "chitchat", "expected_hanh_vi": "xa_giao", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB13", "input_text": "Hạ kính xuống một tí", "expected_route": "control", "expected_hanh_vi": "khong_toi_generator", "source": "ai-sinh-bac"}
+{"case_id": "CC-AB14", "input_text": "Phanh dạo này kêu két két là sao nhỉ", "expected_route": "manual", "expected_hanh_vi": "khong_toi_generator", "source": "ai-sinh-bac"}

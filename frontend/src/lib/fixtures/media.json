@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "items": [
+    {
+      "id": "trk-01",
+      "name": "Carefree",
+      "artist": "Kevin MacLeod",
+      "file": "/media/carefree.mp3",
+      "license": "CC BY 4.0",
+      "attribution": "Carefree — Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "source": "incompetech.com",
+      "source_url": null
+    },
+    {
+      "id": "trk-03",
+      "name": "Wallpaper",
+      "artist": "Kevin MacLeod",
+      "file": "/media/wallpaper.mp3",
+      "license": "CC BY 4.0",
+      "attribution": "Wallpaper — Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "source": "incompetech.com",
+      "source_url": null
+    },
+    {
+      "id": "trk-04",
+      "name": "Local Forecast - Elevator",
+      "artist": "Kevin MacLeod",
+      "file": "/media/local-forecast-elevator.mp3",
+      "license": "CC BY 4.0",
+      "attribution": "Local Forecast - Elevator — Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "source": "incompetech.com",
+      "source_url": null
+    },
+    {
+      "id": "trk-05",
+      "name": "Sneaky Snitch",
+      "artist": "Kevin MacLeod",
+      "file": "/media/sneaky-snitch.mp3",
+      "license": "CC BY 4.0",
+      "attribution": "Sneaky Snitch — Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "source": "incompetech.com",
+      "source_url": null
+    },
+    {
+      "id": "trk-06",
+      "name": "Fluffing a Duck",
+      "artist": "Kevin MacLeod",
+      "file": "/media/fluffing-a-duck.mp3",
+      "license": "CC BY 4.0",
+      "attribution": "Fluffing a Duck — Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "source": "incompetech.com",
+      "source_url": null
+    }
+  ]
+}

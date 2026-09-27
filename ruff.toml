@@ -1,0 +1,22 @@
+target-version = "py311"
+line-length = 120
+
+# Nhóm script ghi log AI là vùng cấm sửa (CLAUDE.md mục "AI usage logging — do not
+# touch"): chúng do hook pre-push gọi và sửa chúng là làm sai bằng chứng nộp bài.
+# Chúng đang có 9 lỗi lint tồn đọng. Loại trừ ở đây để `ruff check scripts/` chạy
+# được trong CI cho các script khác, thay vì phải bỏ luôn cả thư mục.
+extend-exclude = [
+    "scripts/log_antigravity.py",
+    "scripts/log_hook.py",
+    "scripts/log_manual.py",
+    "scripts/log_progress.py",
+    "scripts/submit_log.py",
+]
+
+[lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = ["E501"]
+
+[format]
+quote-style = "double"
+indent-style = "space"

@@ -1,0 +1,7 @@
+{"ten": "guard_self_test", "mo_ta": "Cố tình phân giải huggingface.co — PHẢI bị chặn", "dat": true, "ms": 1.0278999980073422, "egress": [{"kieu": "getaddrinfo", "dich": "huggingface.co", "goi_tu": "(không xác định)"}], "ket_noi_os": [], "loi": "gaierror: [Errno -2] diễn tập offline chặn phân giải tên 'huggingface.co'", "ghi_chu": null}
+{"ten": "nap_stt", "mo_ta": "Nạp engine sherpa-onnx Zipformer", "dat": true, "ms": 1700.7145999814384, "egress": [], "ket_noi_os": [], "loi": null, "ghi_chu": "sherpa-onnx Zipformer nạp từ đĩa"}
+{"ten": "stt", "mo_ta": "Chuyển warm_sample.wav thành chữ", "dat": true, "ms": 47.405999997863546, "egress": [], "ket_noi_os": [], "loi": null, "ghi_chu": "transcript='Đặt điều hòa hai mươi bốn độ'"}
+{"ten": "tts", "mo_ta": "Tổng hợp giọng Piper", "dat": true, "ms": 2084.2591999971773, "egress": [], "ket_noi_os": [], "loi": null, "ghi_chu": "117292 byte WAV"}
+{"ten": "rag", "mo_ta": "Truy hồi FAISS + embedder E5 trên index VF9", "dat": true, "ms": 12595.1034000027, "egress": [], "ket_noi_os": [], "loi": null, "ghi_chu": "5 evidence, top chunk=chunk_1148033_003"}
+{"ten": "luot_so_tay", "mo_ta": "POST /turns/text — câu hỏi sổ tay (RAG)", "dat": true, "ms": 1624.8508999997284, "egress": [], "ket_noi_os": [], "loi": null, "ghi_chu": "status=completed citations=5 steps=0 display_text=1308 ký tự"}
+{"ten": "luot_dieu_khien", "mo_ta": "POST /turns/text — lệnh điều khiển S1", "dat": true, "ms": 227.08469998906367, "egress": [], "ket_noi_os": [], "loi": null, "ghi_chu": "status=completed citations=0 steps=1 display_text=35 ký tự"}

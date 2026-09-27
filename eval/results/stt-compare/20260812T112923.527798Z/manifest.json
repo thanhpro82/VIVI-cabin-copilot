@@ -1,0 +1,23 @@
+{
+  "run_id": "20260812T112923.527798Z",
+  "dataset": "eval\\datasets\\poc\\v1\\audio\\manifest.jsonl",
+  "case_count": 24,
+  "engines": [
+    {
+      "name": "phowhisper-base"
+    },
+    {
+      "name": "zipformer-30m-rnnt-6000h",
+      "repository": "hynt/Zipformer-30M-RNNT-6000h",
+      "revision": "24ed30248e1c96bb690c81c24ab4e056f8cd9fce",
+      "license": "cc-by-nc-nd-4.0",
+      "sha256_by_file": {
+        "encoder.int8.onnx": "8ef5286dd427eb108055c2ddc1982aa31e544706072d5ea228729292dacade68",
+        "decoder.int8.onnx": "b491630c33e76146b7296ab68cee5ae3a8d572732d36a552ee231d4419e06d32",
+        "joiner.int8.onnx": "7311d2e17b810ecea515d79c71cc4668af8759256a06fa01d27047772320c821",
+        "tokens.txt": "ca8171f8bbd516c050b627582f2125c8f5f1f6ed967ab41b0fa9aae2cf61b492"
+      }
+    }
+  ],
+  "note": "Phase 1 quick eval — synthetic Piper TTS audio (single voice), NOT human speech. Not a generalization claim. See docs/superpowers/specs/2026-08-12-stt-domain-eval-design.md."
+}

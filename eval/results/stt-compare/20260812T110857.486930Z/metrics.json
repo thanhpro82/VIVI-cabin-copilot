@@ -1,0 +1,15 @@
+{
+  "total": 24,
+  "phowhisper": {
+    "avg_wer": 0.27192460317460315,
+    "avg_cer": 0.2081090239746738,
+    "avg_latency_ms": 930.6935041666667
+  },
+  "zipformer": {
+    "avg_wer": 0.14203042328042328,
+    "avg_cer": 0.07104252287441944,
+    "avg_latency_ms": 57.779675
+  },
+  "verdict": "zipformer_candidate",
+  "verdict_threshold_wer": 0.15
+}

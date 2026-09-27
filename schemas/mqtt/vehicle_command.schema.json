@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.vivi.dev/schemas/vehicle-command-v1.json",
+  "title": "VehicleCommand",
+  "description": "Payload published by the tool executor to v1/vehicles/{id}/commands/{domain}. Canonical source: docs/data_model.md",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "command_id",
+    "idempotency_key",
+    "plan_id",
+    "step_id",
+    "vehicle_id",
+    "approval_id",
+    "execution_group_id",
+    "expected_state_version",
+    "tool",
+    "args",
+    "issued_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "command_id": {"type": "string", "minLength": 1},
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 3,
+      "pattern": "^[^:]+:[^:]+$",
+      "description": "Exactly plan_id:step_id"
+    },
+    "plan_id": {"type": "string", "minLength": 1},
+    "step_id": {"type": "string", "minLength": 1},
+    "vehicle_id": {"type": "string", "minLength": 1},
+    "approval_id": {
+      "type": ["string", "null"],
+      "minLength": 1,
+      "description": "Null for S0/S1-only plans; required for every S2 command"
+    },
+    "execution_group_id": {
+      "type": ["string", "null"],
+      "minLength": 1,
+      "description": "Null only for S0/S1-only plans that create no group"
+    },
+    "expected_state_version": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Rolling value: approved baseline for the first command, then the preceding result's observed_state_version"
+    },
+    "tool": {
+      "enum": [
+        "set_hvac_temperature",
+        "set_hvac_power",
+        "set_hvac_fan_level",
+        "set_seat_heating",
+        "set_seat_position",
+        "set_window_position",
+        "set_door_state",
+        "media_control",
+        "set_navigation",
+        "set_trunk_state",
+        "set_headlight_mode",
+        "set_interior_light"
+      ],
+      "description": "Actuator tools only. S0 tools never reach MQTT."
+    },
+    "args": {
+      "type": "object",
+      "description": "Tool-specific; ranges enforced by the server-owned tool registry, see docs/agent_spec.md"
+    },
+    "issued_at": {"type": "string", "format": "date-time"}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "suite": "ba-truc",
+  "commit": "22b4c95202c44bbc150ee8a3f81f94cfadddb290",
+  "branch": "feat/ba-truc",
+  "dataset": "eval\\datasets\\manual\\v1\\answer_keys.jsonl",
+  "khoa_giu_y": "eval/datasets/manual/v1/y_phai_giu.jsonl",
+  "cau_hinh": [
+    "luat",
+    "thac"
+  ],
+  "hardware": {
+    "tier": "cpu",
+    "machine": "AMD64",
+    "python": "3.11.9"
+  },
+  "ghi_chu": "Doan lay tu khoa, KHONG qua truy hoi — do rieng tang noi."
+}

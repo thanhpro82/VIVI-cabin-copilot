@@ -1,0 +1,34 @@
+{
+  "suite": "luot-that-dong-thoi",
+  "run_id": "20260825T083929.142515Z",
+  "run_uuid": "676d29be-95eb-4498-9ac7-f539746ec83d",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "git_branch": "fix/slm-nhieu-nguoi-dung-dong-thoi",
+  "git_commit": "6c0a6e7088069bda89727723322ae602d0476cbf",
+  "git_dirty": true,
+  "che_do": "voice",
+  "base_url": "https://c4-app-192.io.vn/api/v1",
+  "cau_hinh_llama": {
+    "doc_duoc": true,
+    "endpoint": "http://127.0.0.1:8093",
+    "n_ctx": 2048,
+    "n_slots": 4,
+    "model_path": "/opt/vivi/models/slm/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "kv_unified": null
+  },
+  "note": "Do LUOT THAT qua backend (auth -> session -> turn), khong goi thang llama-server. Bo sung cho scripts/do_slm_dong_thoi.py, von di vong qua ca backend lan van SLM.",
+  "blind_spots": {
+    "ghep_lo_van_khong_phai_ngau_nhien": "Moi vong chay du bo ca, cat thanh lo N, va bo ca duoc XOAY theo vong de cac ca khac nhau co dip dung chung lo. Nhung voi `--vong` nho thi so to hop van it: `--vong 3` tren 6 ca chi cho 3 cach ghep. Doc cot `cung_lo` trong ban_ghi truoc khi ket luan mot nhan 'khong bi anh huong' — co the no chua bao gio chay chung lo voi `planner`.",
+    "p95_o_mau_nho_chinh_la_max": "Bang 'tach theo duong di' chia mau cho 4-6 nhan, nen nhieu o chi co 1-2 mau. Voi 1 mau thi 'p50' = 'p95' = 'max' = chinh gia tri do. Dung doc no nhu mot phan vi that; doc cot n_mau truoc.",
+    "mot_may_mot_lan": "MOT lan do tren MOT may. So de ra quyet dinh cau hinh, khong phai benchmark.",
+    "dong_thoi_khong_deu": "N request ban ra gan nhu cung luc, KHONG mo phong nguoi dung that (ho den rai rac). Day la ca XAU NHAT, co y: cho tran tren cua do tre, khong cho ky vong trung binh.",
+    "mot_tai_khoan_N_phien": "Tat ca N phien thuoc cung MOT tai khoan demo (src/services/auth.py chi co hai tai khoan hard-code). Do duoc tranh chap tai nguyen, KHONG do duoc tranh chap o tang auth hay pool xe theo nguoi dung.",
+    "stt_nghe_sai_la_mot_phan_cua_phep_do": "Backend KHONG nhan cau goc, no nhan thu Zipformer nghe ra. Loopback do 2026-08-25 tren bo `cham_slm`: WER 0,000-0,222 (xem tests/fixtures/voice/cham_slm/README.md). Ca 5 cau van roi dung lan nen do DO TRE duoc, nhung `cau_01` mat chu 'lop' nen CHAT LUONG cau tra loi cua no khong so duoc voi cung cau o che do text. Va day la WER giong TONG HOP, khong phai nguoi that.",
+    "wav_phu_thuoc_bo_dang_dung": "`--wav-dir` quyet dinh che do voice do duong nao. Bo mac dinh `cham_slm` phu so_tay / planner / chitchat. Bo `synthetic_commands` toan LENH DIEU KHIEN router tat dinh xu duoc, nen do bang no la do STT -> router -> executor -> TTS va KHONG cham SLM. Doc manifest cua bo da dung truoc khi ket luan.",
+    "am_thanh_tong_hop": "Che do voice dung WAV Piper tong hop trong tests/fixtures/voice/. Do duoc DO TRE that, KHONG ket luan duoc gi ve WER nguoi noi that.",
+    "che_do_text_khong_co_stt_tts": "--che-do text bo qua STT va TTS. Ca hai co khoa toan cuc (voice.py:97, :192, num_threads=1) nen chung noi tiep bat ke van SLM dat bao nhieu. So cua che do text la CAN DUOI cua do tre luot thoai that.",
+    "lich_su_anh_huong_ket_qua": "Do tre phu thuoc slot nao dang giu tien to nao, tuc phu thuoc vai phut TRUOC do. Hai run cung cau hinh co the lech nhieu lan. Luon doc cau_hinh_llama trong manifest truoc khi so.",
+    "caddy_trong_duong_do": "Mac dinh do qua domain that, tuc CO Caddy va TLS trong duong. Dung --base-url http://127.0.0.1:8000/api/v1 de bo ra. Hai cach cho hai con so khac nhau; dung tron."
+  }
+}

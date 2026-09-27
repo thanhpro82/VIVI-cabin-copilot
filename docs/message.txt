@@ -1,0 +1,46 @@
+# 1) Ở thư mục gốc project                                                                       
+  .\scripts\setup_voice_models.ps1                                                                 
+                                                                                                   
+  Sau đó kiểm tra có đủ file:                                                                      
+                                                                                                   
+  Get-ChildItem .\models\voice\zipformer-30m-rnnt-6000h                                            
+  Get-ChildItem .\models\voice\vi_VN-piper.onnx                                                    
+                                                                                                   
+  Cần có 4 file STT:                                                                               
+                                                                                                   
+  encoder.int8.onnx                                                                                
+  decoder.int8.onnx                                                                                
+  joiner.int8.onnx                                                                                 
+  tokens.txt                                                                                       
+                                                                                                   
+  Cài Python dependency voice vào môi trường ảo:                                                   
+                                                                                                   
+  .\.venv\Scripts\python.exe -m pip install -e ".[voice]"                                          
+                                                                                                   
+  Nếu team dùng .venv311 thì đổi .venv thành .venv311.                                             
+                                                                                                   
+  Chạy test voice:                                                                                 
+                                                                                                   
+  $env:MQTT_ENABLED = "false"                                                                      
+  .\.venv\Scripts\python.exe -m pytest tests\test_services\test_voice.py -q                        
+                                                                                                   
+  Test model thật (nếu script/setup tải xong và có audio fixture):                                 
+
+  $env:MQTT_ENABLED = "false"                                                                      
+  .\.venv\Scripts\python.exe -m pytest tests\test_services\test_voice_integration.py -m integration
+  -q                                                                                               
+                                                                                                   
+  Chạy backend:                                                                                    
+                                                                                                   
+  $env:MQTT_ENABLED = "false"                                                                      
+  .\.venv\Scripts\python.exe -m uvicorn src.main:app --reload --port 8000                          
+                                                                                                   
+  Rồi frontend:                                                                                    
+                                                                                                   
+  cd frontend                                                                                      
+  npm ci                                                                                           
+  $env:NEXT_PUBLIC_USE_MOCK_TURN = "false"                                                         
+  npm run dev                                                                                      
+                                                                                                   
+  Mở http://localhost:3000, cấp quyền micro, chạm mic và nói lệnh. Hiện chưa có “Hey VIVI” thật;   
+  phải chạm nút mic để bắt đầu.

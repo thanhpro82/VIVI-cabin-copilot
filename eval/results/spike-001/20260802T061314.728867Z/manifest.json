@@ -1,0 +1,23 @@
+{
+  "run_type": "interactive_e2e_demo",
+  "profile_id": "qwen25-3b-q4",
+  "created_at_utc": "2026-08-02T06:13:58.821870+00:00",
+  "case_count": 1,
+  "artifact": {
+    "profile_id": "qwen25-3b-q4",
+    "path": "C:\\Users\\hoang\\Desktop\\DaotaoVingroup\\Cohort3\\Build\\P-192 - Local\\experiments\\offline_poc\\models\\qwen2.5-3b-instruct-q4_k_m.gguf",
+    "sha256": "626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+    "size_bytes": 2104932768,
+    "revision": "7dabda4d13d513e3e842b20f0d435c732f172cbe",
+    "license": "Qwen Research",
+    "quantization": "Q4_K_M",
+    "server_pid": 2520,
+    "base_url": "http://127.0.0.1:8080/v1"
+  },
+  "input_audio": {
+    "path": "C:\\Users\\hoang\\Desktop\\DaotaoVingroup\\Cohort3\\Build\\P-192 - Local\\eval\\results\\spike-001\\20260730T100148.330452Z\\audio\\RAG-001.wav",
+    "sha256": "62dcdde88a8e2359731f3d61ef6ca428fe676dcc3463271b113c79398c7d8628",
+    "scope": "synthetic-licensed-piper-poc"
+  },
+  "approval_mode": "interactive"
+}

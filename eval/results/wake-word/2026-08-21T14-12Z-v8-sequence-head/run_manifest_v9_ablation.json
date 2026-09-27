@@ -1,0 +1,16 @@
+{
+  "architecture": "sequence_sigmoid",
+  "checkpoint_selection": "maximum validation recall at the zero-false-activation threshold, scored under evaluate.py's streaming protocol; validation loss breaks ties",
+  "epochs": 200,
+  "gain_and_subhop_jitter": false,
+  "input_checksum_count": 5427,
+  "noise_augmentation": false,
+  "seed": 192,
+  "test_split_used_for_training_or_selection": false,
+  "threshold": 1.0,
+  "threshold_selection": "lowest threshold with zero false activations on the validation split, scored under evaluate.py's streaming protocol, taken from the selected epoch",
+  "validation_false_activations_at_threshold": 0,
+  "validation_loss": 0.6018210181168148,
+  "validation_recall_at_threshold": 0.51875,
+  "windows_per_clip": 10
+}

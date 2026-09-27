@@ -1,0 +1,36 @@
+{
+  "che_do": "khong_mqtt",
+  "moc": [
+    1,
+    2
+  ],
+  "on_dinh_s": 0.2,
+  "samples": [
+    {
+      "n": 0,
+      "pha": "nen",
+      "rss_mb": 36.64,
+      "peak_mb": 36.64,
+      "nguon": "/proc/self/status"
+    },
+    {
+      "n": 1,
+      "pha": "sau_on_dinh",
+      "rss_mb": 36.77,
+      "peak_mb": 36.77,
+      "nguon": "/proc/self/status"
+    },
+    {
+      "n": 2,
+      "pha": "sau_on_dinh",
+      "rss_mb": 36.78,
+      "peak_mb": 36.78,
+      "nguon": "/proc/self/status"
+    }
+  ],
+  "mb_moi_xe": 0.01,
+  "chan_mb": 36.76,
+  "mem_available_mb": 3452.2,
+  "he_so_an_toan": 0.7,
+  "suc_chua_uoc_tinh": 241653
+}

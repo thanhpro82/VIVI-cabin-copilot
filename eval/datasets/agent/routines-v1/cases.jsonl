@@ -1,0 +1,38 @@
+{"case_id": "RT-RUN001", "input_text": "Chạy routine đi làm", "y_dinh": "chay", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "đi làm"}
+{"case_id": "RT-RUN002", "input_text": "Bắt đầu routine về nhà", "y_dinh": "chay", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "về nhà"}
+{"case_id": "RT-RUN003", "input_text": "Thực hiện routine thư giãn", "y_dinh": "chay", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "thư giãn"}
+{"case_id": "RT-RUN004", "input_text": "chạy Routine Đi Làm", "y_dinh": "chay", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "đi làm"}
+{"case_id": "RT-RUN005", "input_text": "chạy routine đi làm đi", "y_dinh": "chay", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "đi làm"}
+{"case_id": "RT-RUN006", "input_text": "VIVI ơi chạy routine về nhà", "y_dinh": "chay", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "về nhà"}
+{"case_id": "RT-RUN007", "input_text": "bật routine thư giãn lên", "y_dinh": "chay", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "thư giãn"}
+{"case_id": "RT-RUN008", "input_text": "cho chạy routine đi làm", "y_dinh": "chay", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "đi làm"}
+{"case_id": "RT-RUN009", "input_text": "chạy giùm routine về nhà", "y_dinh": "chay", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "về nhà"}
+{"case_id": "RT-RUN010", "input_text": "chạy kịch bản đi làm", "y_dinh": "chay", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "đi làm"}
+{"case_id": "RT-PRE001", "input_text": "Xem trước routine đi làm", "y_dinh": "xem_truoc", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "đi làm"}
+{"case_id": "RT-PRE002", "input_text": "Routine về nhà gồm những gì", "y_dinh": "xem_truoc", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "về nhà"}
+{"case_id": "RT-PRE003", "input_text": "Routine thư giãn có gì", "y_dinh": "xem_truoc", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "thư giãn"}
+{"case_id": "RT-PRE004", "input_text": "cho tôi xem routine đi làm", "y_dinh": "xem_truoc", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "đi làm"}
+{"case_id": "RT-PRE005", "input_text": "routine đi làm làm những gì", "y_dinh": "xem_truoc", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "đi làm"}
+{"case_id": "RT-PRE006", "input_text": "kiểm tra routine về nhà trước đã", "y_dinh": "xem_truoc", "ngu_canh": "binh_thuong", "source": "tu_viet", "ten_tho": "về nhà"}
+{"case_id": "RT-YES001", "input_text": "Chạy đi", "y_dinh": "dong_y", "ngu_canh": "dang_xem_truoc", "source": "tu_viet"}
+{"case_id": "RT-YES002", "input_text": "Đồng ý", "y_dinh": "dong_y", "ngu_canh": "dang_xem_truoc", "source": "tu_viet"}
+{"case_id": "RT-YES003", "input_text": "Ừ", "y_dinh": "dong_y", "ngu_canh": "dang_xem_truoc", "source": "tu_viet"}
+{"case_id": "RT-YES004", "input_text": "Ok chạy", "y_dinh": "dong_y", "ngu_canh": "dang_xem_truoc", "source": "tu_viet"}
+{"case_id": "RT-YES005", "input_text": "Được, làm đi", "y_dinh": "dong_y", "ngu_canh": "dang_xem_truoc", "source": "tu_viet"}
+{"case_id": "RT-NO001", "input_text": "Không", "y_dinh": "tu_choi", "ngu_canh": "dang_xem_truoc", "source": "tu_viet"}
+{"case_id": "RT-NO002", "input_text": "Hủy", "y_dinh": "tu_choi", "ngu_canh": "dang_xem_truoc", "source": "tu_viet"}
+{"case_id": "RT-NO003", "input_text": "Thôi khỏi", "y_dinh": "tu_choi", "ngu_canh": "dang_xem_truoc", "source": "tu_viet"}
+{"case_id": "RT-NO004", "input_text": "Đừng chạy", "y_dinh": "tu_choi", "ngu_canh": "dang_xem_truoc", "source": "tu_viet"}
+{"case_id": "RT-SKIP001", "input_text": "Bỏ bước 2", "y_dinh": "bo_buoc", "ngu_canh": "dang_xem_truoc", "source": "tu_viet", "so_buoc": 2}
+{"case_id": "RT-SKIP002", "input_text": "Bỏ qua bước 3", "y_dinh": "bo_buoc", "ngu_canh": "dang_xem_truoc", "source": "tu_viet", "so_buoc": 3}
+{"case_id": "RT-SKIP003", "input_text": "Không cần bước 1", "y_dinh": "bo_buoc", "ngu_canh": "dang_xem_truoc", "source": "tu_viet", "so_buoc": 1}
+{"case_id": "RT-NEG001", "input_text": "Bật điều hòa 22 độ", "y_dinh": "khong_phai_routine", "ngu_canh": "binh_thuong", "source": "tu_viet"}
+{"case_id": "RT-NEG002", "input_text": "Đèn vàng hình cục pin là gì thế", "y_dinh": "khong_phai_routine", "ngu_canh": "binh_thuong", "source": "tu_viet"}
+{"case_id": "RT-NEG003", "input_text": "Hôm nay trời đẹp nhỉ", "y_dinh": "khong_phai_routine", "ngu_canh": "binh_thuong", "source": "tu_viet"}
+{"case_id": "RT-NEG004", "input_text": "Mở cửa sổ bên lái một nửa", "y_dinh": "khong_phai_routine", "ngu_canh": "binh_thuong", "source": "tu_viet"}
+{"case_id": "RT-NEG005", "input_text": "Tìm quán cà phê gần đây", "y_dinh": "khong_phai_routine", "ngu_canh": "binh_thuong", "source": "tu_viet"}
+{"case_id": "RT-NEG006", "input_text": "Chạy nhanh quá đấy", "y_dinh": "khong_phai_routine", "ngu_canh": "binh_thuong", "source": "tu_viet"}
+{"case_id": "RT-NEG007", "input_text": "Đi làm bằng xe này mất bao lâu", "y_dinh": "khong_phai_routine", "ngu_canh": "binh_thuong", "source": "tu_viet"}
+{"case_id": "RT-NEG008", "input_text": "Về nhà đường nào gần nhất", "y_dinh": "khong_phai_routine", "ngu_canh": "binh_thuong", "source": "tu_viet"}
+{"case_id": "RT-CTX001", "input_text": "Đồng ý", "y_dinh": "khong_phai_routine", "ngu_canh": "binh_thuong", "source": "tu_viet"}
+{"case_id": "RT-CTX002", "input_text": "Chạy đi", "y_dinh": "khong_phai_routine", "ngu_canh": "binh_thuong", "source": "tu_viet"}

@@ -1,0 +1,10 @@
+{
+  "Repository": "rhasspy/piper-voices",
+  "Revision": "3d796cc2f2c884b3517c527507e084f7bb245aea",
+  "RepoFilename": "vi/vi_VN/vais1000/medium/vi_VN-vais1000-medium.onnx.json",
+  "LocalFilename": "vi_VN-piper.onnx.json",
+  "License": "MIT",
+  "Sha256": "fafb9da1354ed4b77c31af228ed41fb41cd825c14cffa105454b25e6ae751ee0",
+  "SizeBytes": 4860,
+  "DownloadedAtUtc": "2026-08-07T13:06:45Z"
+}

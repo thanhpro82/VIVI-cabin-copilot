@@ -1,0 +1,18 @@
+{
+  "suite": "slm-dong-thoi",
+  "run_id": "20260823T113821.667870Z",
+  "run_uuid": "85315a17-25c6-45ea-af82-08046b4532aa",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.41",
+  "python": "3.11.16",
+  "git_branch": "",
+  "git_commit": "0f0a31fde96a72ac7b4a646d7770da3b31c60852",
+  "git_dirty": false,
+  "note": "Do tu trong container backend, dung QwenClassifier/QwenPlanner that. Bo sung cho deploy/vps/slm_classify_bench.py (tuan tu, N=1) va bao cao docs/reports/sp0-do-tre-tung-doan-2026-08-22.md (xen ke vai, mot client).",
+  "blind_spots": {
+    "mot_may_mot_lan": "MOT lan do tren MOT may. So de ra quyet dinh cau hinh, khong phai benchmark.",
+    "dong_thoi_that_su_khong_deu": "N request ban ra gan nhu cung luc bang ThreadPoolExecutor, KHONG phai mo phong nguoi dung that (ho den rai rac). Day la ca XAU NHAT, co y - no cho tran tren cua do tre, khong cho ky vong trung binh.",
+    "prefix_cache_lam_dep_so": "`cache_prompt: True` va tien to tinh nghia la vong sau re hon vong dau rat nhieu. Luot ham nong bi loai khoi thong ke, nhung cac vong con lai VAN huong loi tu KV cache am. Tren may vua restart llama-server, so that se te hon.",
+    "khong_do_STT_TTS": "Chi do llama-server. Mot luot that con qua STT/TTS - ca hai co khoa toan cuc (`voice.py:97`, `:192`, num_threads=1) nen cung noi tiep. Tong do tre nhieu nguoi se te hon con so o day.",
+    "tran_doi_chieu_la_cau_hinh_hien_tai": "Ti le vuot tran tinh theo `slm_classify_timeout_s`/`slm_timeout_s` DANG dat. Doi tran la doi ti le - doc `nguong_doi_chieu` trong metrics truoc khi so hai run."
+  }
+}

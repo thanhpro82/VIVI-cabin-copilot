@@ -1,0 +1,150 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+# `.venv*/` chứ không chỉ `.venv/`: pattern kết thúc bằng `/` chỉ khớp đúng thư mục
+# đó, nên `.venv311/` (venv Python 3.11 khớp CI — xem CLAUDE.md mục Commands) từng
+# lọt vào `git status` với hơn 1 GB nội dung. Giữ luôn tên cũ `venv/` cho ai đã lỡ dùng.
+venv/
+.venv*/
+env/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Secret MQTT do scripts/bootstrap_mqtt_secrets.ps1 sinh ra — chứa hash mật
+# khẩu của hai identity broker, tuyệt đối không commit.
+config/mosquitto/passwd
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (never commit large data)
+data/
+*.db
+*.sqlite3
+
+# Corpus so tay VF9 - 157MB, ~1898 file, chup tu om.vinfastauto.com.
+# src/rag/ingest/pipeline.py ghi ro noi dung khong duoc sao chep/phan phoi lai
+# neu khong co van ban cho phep. Chi track metadata du de tai lap index.
+VF9_2026_vi/*
+!VF9_2026_vi/manifest.json
+!VF9_2026_vi/README.md
+!VF9_2026_vi/corpus.sha256
+
+# Logs
+logs/
+*.log
+
+# Log + kết quả tạm của scripts/manual_control_surface_check.py. Bảng kết quả đã
+# nằm trong docs/reports/, còn đây là thứ sinh lại mỗi lần chạy.
+.acc-logs/
+
+# Test coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# Docker
+docker-compose.override.yml
+
+# Node (frontend)
+node_modules/
+.next/
+out/
+.nuxt/
+
+# Build
+*.pyc
+*.pyo
+
+# AI logs — tracked structure, ignored content
+.ai-log/*.jsonl
+.ai-log/archive/
+_pyrun.sh
+
+# Voice model assets (fetched/built locally, never committed)
+models/voice/*
+!models/voice/*.metadata.json
+!models/voice/*.sha256
+tools/whisper-cpp/
+
+# Trong so reranker (tai va verify tai cho, khong bao gio commit). 2,2 GB.
+# Giu lai sidecar de duong kiem toan ven van nam trong git.
+models/reranker/**
+!models/reranker/**/
+!models/reranker/**/SHA256SUMS
+!models/reranker/**/metadata.json
+
+# Isolated worktrees for subagent-driven plan execution
+.worktrees/
+
+# SPIKE-003: binary llama.cpp pin bang sidecar, khong commit binary
+tools/**/*.exe
+tools/**/*.dll
+tools/**/*.zip
+tools/**/*.lib
+eval/results/spike-003/server-last.log
+eval/results/spike-003/server-last.out.log
+# Trang thai lan chay cuoi, khong phai evidence: ban ghi that la truong device_name
+# trong manifest.json cua tung run.
+eval/results/spike-003/device-last.json
+
+# Subagent-driven-development scratch workspace (ledgers, briefs, review packages)
+.superpowers/
+
+# Wake-word: model.onnx, manifest.json va LICENSE.txt CO duoc track (1,2 MB),
+# khac voi models/voice/ hay data/rag/. Ly do: bo do phai co du ba file moi
+# chay, va bat nguoi dung image chep tay ba file la them mot buoc sai duoc
+# ngay truoc han nop. Danh doi da can nhac: mot model TRUOT cong recall (0.696
+# so voi 0.95) nam trong lich su git vinh vien -- chap nhan duoc vi manifest
+# tu khai so do, va eval/results/wake-word/ di kem lam bang chung.
+frontend/public/models/wake-word/*.bak
+frontend/public/ort-wasm/
+
+# Tai lieu TRINH BAY, khong phai tai lieu SAN PHAM.
+#
+# Script thuyet trinh va kich ban demo phuc vu mot buoi bao cao cu the: chung mo
+# ta cach ke chuyen truoc ban giam khao, khong mo ta he thong. Dac diem chung:
+# vong doi bang mot buoi, khong ai doc lai sau do, va noi dung se mau thuan voi
+# docs/ ngay khi san pham di tiep. De trong repo thi chung tro thanh mot nguon
+# "su that" thu hai lech pha voi docs/ -- dung thu ma README.md dang chong.
+#
+# Giu o may hoac kenh chung cua nhom. Con SO LIEU trong chung thi phai lay tu
+# eval/results/ va docs/, khong chep tay.
+docs/script_thuyet_trinh.md
+docs/kich_ban_demo_*.md
+
+# Bai dieu tra tam thoi + anh chup man hinh: 44 MB binary untracked nam ngay
+# canh cac file test can commit truoc han nop. Mot lan `git add -A` la ca dong
+# nay vao repo vinh vien, go ra phai rewrite history (da tung dinh mot lan,
+# xem muc 2026-08 trong WORKLOG.md).
+#
+# Ignore chu KHONG xoa: chung la bang chung, va vi untracked nen git khong giu
+# ban sao nao -- xoa la mat that. Ca nao dang lam evidence thi cheo vao
+# eval/results/<run-id>/ hoac docs/reports/ mot cach co chu dich, tung file.
+scratch_wake_diag/
+test_results/
+Ảnh/
+
+# Rac cua cong cu, khong phai san pham: payload review cua gh, lockfile skill.
+# (.agents/rules/ VAN duoc track -- xem .agents/rules/ai-log-hook.md.)
+.review-302.json
+skills-lock.json
+.agents/skills/

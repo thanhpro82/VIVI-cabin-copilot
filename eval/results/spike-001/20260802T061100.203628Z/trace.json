@@ -1,0 +1,11 @@
+{
+  "trace_id": "trace-6c4fc0d7-4a5e-4085-bf26-2a9c6db87a41",
+  "marks_ms": {
+    "audio_received": 0.0,
+    "stt_completed": 18527.994600008242,
+    "route_selected": 18532.046900014393,
+    "plan_and_safety_completed": 36472.646000096574,
+    "control_completed": 36472.68000000622,
+    "response_audio_completed": 39608.66000002716
+  }
+}

@@ -1,0 +1,90 @@
+name: MQTT contract tests
+
+# Tầng L2 — chạy trên Mosquitto thật với ACL và password thật. Đây là thứ duy
+# nhất chứng minh được QoS 1 duplicate, retain qua reconnect, Last Will,
+# clean_session và ACL; InMemoryBroker ở job `CI` về nguyên tắc không mô phỏng
+# nổi mấy thứ đó.
+#
+# Để RIÊNG một workflow, không gộp vào `CI`, vì hai lý do:
+#   1. Nó cần Docker và ~1 phút dựng broker — không đáng bắt mọi PR phải chờ.
+#   2. Nhóm test này mới viết và **chưa từng chạy** (máy soạn không bật được
+#      Docker daemon). Để chung sẽ chặn PR của cả nhóm vì lỗi của chính test.
+# Khi nó đã xanh ổn định vài lần, cân nhắc gộp vào `CI` hoặc thêm vào required checks.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [develop, main]
+  schedule:
+    # 02:00 UTC mỗi ngày — bắt hồi quy hạ tầng mà không ai phải nhớ chạy tay.
+    - cron: "0 2 * * *"
+
+jobs:
+  mqtt-contract:
+    # Dùng runner Linux self-hosted do BTC quản lý, có Docker daemon.
+    runs-on: self-hosted
+    timeout-minutes: 15
+
+    env:
+      APP_ENV: test
+      OPENAI_API_KEY: test-key
+      MQTT_CONTRACT_TESTS: "1"
+      MQTT_URL: mqtt://localhost:1883
+      MQTT_BACKEND_USERNAME: vivi-backend
+      MQTT_SIMULATOR_USERNAME: vehicle-simulator
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Sinh password và file passwd cho Mosquitto
+        shell: bash
+        run: |
+          set -euo pipefail
+          BACKEND_PASSWORD=$(openssl rand -hex 16)
+          SIMULATOR_PASSWORD=$(openssl rand -hex 16)
+          docker run --rm --user "$(id -u):$(id -g)" \
+            -v "$PWD/config/mosquitto:/work" eclipse-mosquitto:2 \
+            mosquitto_passwd -b -c /work/passwd vivi-backend "$BACKEND_PASSWORD"
+          docker run --rm --user "$(id -u):$(id -g)" \
+            -v "$PWD/config/mosquitto:/work" eclipse-mosquitto:2 \
+            mosquitto_passwd -b /work/passwd vehicle-simulator "$SIMULATOR_PASSWORD"
+          chmod 0644 config/mosquitto/passwd
+          echo "::add-mask::$BACKEND_PASSWORD"
+          echo "::add-mask::$SIMULATOR_PASSWORD"
+          echo "MQTT_BACKEND_PASSWORD=$BACKEND_PASSWORD"     >> "$GITHUB_ENV"
+          echo "MQTT_SIMULATOR_PASSWORD=$SIMULATOR_PASSWORD" >> "$GITHUB_ENV"
+
+      - name: Khởi động broker
+        shell: bash
+        run: |
+          docker compose up -d --wait mqtt
+          MQTT_CONTAINER=$(docker ps --filter label=com.docker.compose.service=mqtt \
+            --format '{{.ID}}' | head -n 1)
+          docker exec "$MQTT_CONTAINER" mosquitto_sub -h localhost -p 1883 \
+            -t 'v1/vehicles/+/state/snapshot' -E \
+            -u "$MQTT_BACKEND_USERNAME" -P "$MQTT_BACKEND_PASSWORD"
+
+      - name: Chạy tầng L2
+        shell: bash
+        run: |
+          mkdir -p reports
+          python -m pytest tests/test_vehicle/test_contract_mosquitto.py -v --tb=short --junitxml=reports/junit-contract.xml
+
+      - name: Log broker khi thất bại
+        if: failure()
+        run: docker compose logs mqtt
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: junit-contract
+          path: reports/junit-contract.xml
+          if-no-files-found: warn

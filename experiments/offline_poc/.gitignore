@@ -1,0 +1,10 @@
+.pytest_cache/
+models/*
+!models/*.metadata.json
+!models/*.sha256
+tools/*
+!tools/*.metadata.json
+!tools/*.sha256
+src/*.egg-info/
+**/__pycache__/
+*.pyc

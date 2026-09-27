@@ -1,0 +1,16 @@
+{
+  "cong_cung_manual_sang_control": 0,
+  "dung": 101,
+  "duong_tat": 34,
+  "ma_tran": {
+    "chitchat->chitchat": 30,
+    "chitchat->control": 4,
+    "chitchat->manual": 1,
+    "control->chitchat": 4,
+    "control->control": 23,
+    "control->manual": 3,
+    "manual->manual": 48,
+    "manual->offer": 1
+  },
+  "n": 114
+}

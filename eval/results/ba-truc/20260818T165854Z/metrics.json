@@ -1,0 +1,26 @@
+[
+  {
+    "cau_hinh": "luat",
+    "n": 39,
+    "do_tre_p50_ms": 0.1,
+    "do_tre_p95_ms": 0.3,
+    "chinh_xac_dat": 0.4615,
+    "chinh_xac_diem": 0.0587,
+    "tu_nhien_sach": 0.9231,
+    "khuyet_tat": {
+      "breadcrumb": 3
+    }
+  },
+  {
+    "cau_hinh": "thac",
+    "n": 39,
+    "do_tre_p50_ms": 598.4,
+    "do_tre_p95_ms": 1201.9,
+    "chinh_xac_dat": 0.4615,
+    "chinh_xac_diem": 0.0538,
+    "tu_nhien_sach": 0.9744,
+    "khuyet_tat": {
+      "breadcrumb": 1
+    }
+  }
+]

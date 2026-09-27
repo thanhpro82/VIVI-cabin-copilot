@@ -1,0 +1,25 @@
+{
+  "profile_id": "phowhisper-small",
+  "case_count": 30,
+  "wer_macro": 0.3067496392496392,
+  "cer_macro": 0.23601487110079614,
+  "latency": {
+    "count": 30,
+    "p50_ms": 6981.8216,
+    "p95_ms": 11179.8794
+  },
+  "warm_latency": {
+    "count": 29,
+    "p50_ms": 6981.8216,
+    "p95_ms": 9882.5087
+  },
+  "cold_first_ms": 16353.6865,
+  "model_load_ms": 5827.3508,
+  "process": {
+    "pid": 11488,
+    "rss_bytes_after": 1543561216,
+    "peak_rss_bytes": 1680764928,
+    "cpu_seconds_after": 840.75,
+    "scope": "benchmark_harness_process"
+  }
+}

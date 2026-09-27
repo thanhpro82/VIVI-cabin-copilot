@@ -1,0 +1,8 @@
+{
+  "command_dataset": "eval/datasets/agent/v3/cases.jsonl",
+  "manual_dataset": "eval/datasets/manual/v1/cases.jsonl",
+  "note": "manual/v1 do workstream RAG soạn cho mục đích khác nên độc lập với router, nhưng vẫn là người trong nhóm — không phải người dùng thật.",
+  "router": "DeterministicControlRouter",
+  "run_id": "20260815T051350.114687Z",
+  "slm_used": false
+}

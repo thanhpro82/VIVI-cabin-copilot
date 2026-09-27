@@ -1,0 +1,26 @@
+{
+  "blind_spots": {
+    "giong": "Piper tổng hợp, không phải người nói — không suy ra WER từ run này.",
+    "mang": "loopback trên một máy; không có độ trễ mạng, không có mất gói.",
+    "phan_cung": "một máy Windows dev. Con số byte phụ thuộc giọng và tần số lấy mẫu.",
+    "so_luot": "ba lượt, không phải phân bố. Đây là smoke test, không phải benchmark."
+  },
+  "git_branch": "feat/evidence-voice-payload",
+  "git_commit": "82e549804616afe0ed0897db759650be1458d33f",
+  "git_dirty": true,
+  "health_components": {
+    "backend": "ready",
+    "llm": "disabled",
+    "mqtt": "ready",
+    "rag_index": "ready",
+    "sqlite": "ready",
+    "stt": "ready",
+    "tts": "ready",
+    "vehicle_simulator": "ready"
+  },
+  "khung_mac_dinh_bytes": 1048576,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.9",
+  "run_id": "20260817T043442.858549Z",
+  "suite": "voice-payload"
+}

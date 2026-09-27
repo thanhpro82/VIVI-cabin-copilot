@@ -1,0 +1,104 @@
+{
+  "by_ac": {
+    "AC1-chain": {
+      "duration_s": 28.485,
+      "failed": 0,
+      "passed": 69,
+      "skipped": 0,
+      "total": 69
+    },
+    "AC1-chain+AC2-topic": {
+      "duration_s": 0.164,
+      "failed": 0,
+      "passed": 12,
+      "skipped": 0,
+      "total": 12
+    },
+    "AC1-chain+AC3-idempotency": {
+      "duration_s": 86.842,
+      "failed": 0,
+      "passed": 12,
+      "skipped": 0,
+      "total": 12
+    },
+    "AC1-chain+AC3-realtime": {
+      "duration_s": 46.581,
+      "failed": 0,
+      "passed": 5,
+      "skipped": 0,
+      "total": 5
+    },
+    "AC2-schema": {
+      "duration_s": 0.511,
+      "failed": 0,
+      "passed": 7,
+      "skipped": 0,
+      "total": 7
+    },
+    "AC3-idempotency": {
+      "duration_s": 0.551,
+      "failed": 0,
+      "passed": 14,
+      "skipped": 0,
+      "total": 14
+    },
+    "AC3-realtime": {
+      "duration_s": 0.054,
+      "failed": 0,
+      "passed": 6,
+      "skipped": 0,
+      "total": 6
+    },
+    "AC3-stale": {
+      "duration_s": 0.442,
+      "failed": 0,
+      "passed": 23,
+      "skipped": 0,
+      "total": 23
+    },
+    "AC3-state_version": {
+      "duration_s": 0.055,
+      "failed": 0,
+      "passed": 25,
+      "skipped": 0,
+      "total": 25
+    }
+  },
+  "by_layer": {
+    "L0-unit": {
+      "duration_s": 0.067,
+      "failed": 0,
+      "passed": 36,
+      "skipped": 0,
+      "total": 36
+    },
+    "L1-inmemory": {
+      "duration_s": 30.195,
+      "failed": 0,
+      "passed": 120,
+      "skipped": 0,
+      "total": 120
+    },
+    "L2-mosquitto": {
+      "duration_s": 86.842,
+      "failed": 0,
+      "passed": 12,
+      "skipped": 0,
+      "total": 12
+    },
+    "L3-two-process": {
+      "duration_s": 46.581,
+      "failed": 0,
+      "passed": 5,
+      "skipped": 0,
+      "total": 5
+    }
+  },
+  "overall": {
+    "duration_s": 163.685,
+    "failed": 0,
+    "passed": 173,
+    "skipped": 0,
+    "total": 173
+  }
+}

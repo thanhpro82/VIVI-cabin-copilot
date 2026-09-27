@@ -1,0 +1,46 @@
+{
+  "container": "vivi-backend-1",
+  "che_do": "phien_co_luot",
+  "cau_hoi": "Áp suất lốp tiêu chuẩn của xe là bao nhiêu?",
+  "moc": [
+    1,
+    5,
+    10,
+    25
+  ],
+  "on_dinh_s": 4.0,
+  "samples": [
+    {
+      "n": 0,
+      "pha": "nen",
+      "mem_mb": 1333.25
+    },
+    {
+      "n": 1,
+      "pha": "sau_on_dinh",
+      "mem_mb": 1334.27
+    },
+    {
+      "n": 5,
+      "pha": "sau_on_dinh",
+      "mem_mb": 1336.32
+    },
+    {
+      "n": 10,
+      "pha": "sau_on_dinh",
+      "mem_mb": 1338.37
+    },
+    {
+      "n": 25,
+      "pha": "sau_on_dinh",
+      "mem_mb": 1346.56
+    }
+  ],
+  "so_phien_da_tao": 25,
+  "so_luot_loi": 0,
+  "mb_moi_phien": 0.512,
+  "chan_mb": 1333.63,
+  "mem_available_mb": 3348.2,
+  "he_so_an_toan": 0.7,
+  "suc_chua_uoc_tinh": 4577
+}

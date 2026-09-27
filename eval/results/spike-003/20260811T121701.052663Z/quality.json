@@ -1,0 +1,92 @@
+{
+ "n": 64,
+ "parse_fail": 2,
+ "kind_accuracy": 0.812,
+ "tool_accuracy_on_plan": 0.714,
+ "plan_n": 28,
+ "misses": [
+  {
+   "case_id": "P-CMD-002",
+   "why": "tool=set_seat_heating muon=set_hvac_temperature"
+  },
+  {
+   "case_id": "P-CMD-003",
+   "why": "tool=set_hvac_power muon=set_window_position"
+  },
+  {
+   "case_id": "P-CMD-008",
+   "why": "tool=search_nearby muon=media_control"
+  },
+  {
+   "case_id": "P-CMD-009",
+   "why": "tool=set_hvac_power muon=media_control"
+  },
+  {
+   "case_id": "P-CMD-010",
+   "why": "parse_fail",
+   "text": "{\"kind\":\"plan\",\"schema_version\":\"1.0\",\"steps\":[{\"step_id\":\"step-1\",\"ordinal\":0,\"tool\":\"set_navigation\",\"args\":{\"navigati"
+  },
+  {
+   "case_id": "P-CMD-016",
+   "why": "tool=set_window_position muon=set_hvac_temperature"
+  },
+  {
+   "case_id": "P-CMD-018",
+   "why": "tool=search_nearby muon=media_control"
+  },
+  {
+   "case_id": "P-CMD-019",
+   "why": "tool=set_hvac_power muon=media_control"
+  },
+  {
+   "case_id": "P-CMD-025",
+   "why": "tool=set_hvac_power muon=set_hvac_temperature"
+  },
+  {
+   "case_id": "P-SOC-010",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-SOC-012",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-002",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-003",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-004",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-005",
+   "why": "parse_fail",
+   "text": "{\"kind\":\"chitchat\",\"reply\":\"Một hôm, một người đi xe hơi và gặp một con犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀牛犀"
+  },
+  {
+   "case_id": "P-OOS-006",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-007",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-008",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-009",
+   "why": "kind=plan muon=['chitchat']"
+  },
+  {
+   "case_id": "P-OOS-010",
+   "why": "kind=plan muon=['chitchat']"
+  }
+ ],
+ "label": "PROBE-NOT-EVIDENCE"
+}

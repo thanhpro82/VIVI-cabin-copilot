@@ -1,0 +1,359 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@import "leaflet/dist/leaflet.css";
+
+/* 1 dark theme duy nhất — không dùng prefers-color-scheme, không toggle sáng/tối (xem docs/ARCHITECTURE.md mục 2) */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg2);
+  --color-panel-solid: var(--panel-solid);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-dim: var(--ink-dim);
+  --color-accent: var(--accent);
+  --color-cyan: var(--cyan);
+  --color-violet: var(--violet);
+  --color-green: var(--green);
+  --color-amber: var(--amber);
+  --color-pink: var(--pink);
+  --color-indigo: var(--indigo);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-technical: var(--font-mono); /* IBM Plex Mono — dữ liệu/số liệu kỹ thuật; đặt tên khác "font-mono" mặc định của Tailwind để tránh đè ngầm */
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+/*
+ * Nền "vũ trụ" cho cả 3 route (/login, /driver, /engineer) — đặt 1 lần ở
+ * <body> thay vì lặp lại từng trang. Sao = nhiều lớp radial-gradient chấm
+ * nhỏ lặp lại (background-repeat tile), không phải ảnh tải về — nhẹ, không
+ * phá nguyên tắc offline-first. Tinh vân = đúng 3 màu nhấn sẵn có
+ * (--accent/--cyan/--violet) pha loãng qua color-mix(), không thêm hex mới
+ * (xem DESIGN_TOKENS.md). DriverShell trước đây tự vẽ 2 gradient tương tự
+ * bằng inline style — đã bỏ, dùng chung lớp này để nhất quán 3 trang.
+ */
+body {
+  /* Nhích sáng hơn --bg gốc một chút bằng color-mix ngay tại chỗ dùng — không
+     đổi token --bg trong tokens.css (token đó dùng khắp app, đổi thẳng ảnh
+     hưởng diện rộng ngoài phạm vi yêu cầu "nền sáng hơn" ở đây). */
+  background-color: color-mix(in srgb, var(--bg) 85%, var(--bg2) 15%);
+  background-image:
+    radial-gradient(1.6px 1.6px at 12% 22%, color-mix(in srgb, var(--ink) 90%, transparent), transparent 60%),
+    radial-gradient(1.2px 1.2px at 68% 58%, color-mix(in srgb, var(--ink) 70%, transparent), transparent 60%),
+    radial-gradient(1.6px 1.6px at 38% 78%, color-mix(in srgb, var(--ink) 60%, transparent), transparent 60%),
+    radial-gradient(1.2px 1.2px at 84% 14%, color-mix(in srgb, var(--ink) 80%, transparent), transparent 60%),
+    radial-gradient(1.4px 1.4px at 8% 62%, color-mix(in srgb, var(--ink) 55%, transparent), transparent 60%),
+    radial-gradient(1.2px 1.2px at 54% 42%, color-mix(in srgb, var(--ink) 60%, transparent), transparent 60%),
+    radial-gradient(1.6px 1.6px at 92% 82%, color-mix(in srgb, var(--ink) 70%, transparent), transparent 60%),
+    radial-gradient(1.2px 1.2px at 28% 8%, color-mix(in srgb, var(--ink) 55%, transparent), transparent 60%),
+    radial-gradient(ellipse 900px 600px at 15% 0%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 62%),
+    radial-gradient(ellipse 1100px 850px at 85% 100%, color-mix(in srgb, var(--cyan) 24%, transparent), transparent 66%),
+    radial-gradient(ellipse 750px 550px at 55% 45%, color-mix(in srgb, var(--violet) 13%, transparent), transparent 66%);
+  background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat;
+  background-size:
+    190px 190px, 230px 230px, 170px 170px, 250px 250px, 210px 210px, 180px 180px, 240px 240px, 200px 200px,
+    auto, auto, auto;
+  background-attachment: fixed;
+  animation: cosmic-drift 90s linear infinite;
+}
+
+@keyframes cosmic-drift {
+  from {
+    background-position:
+      0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0,
+      0 0, 0 0, 0 0;
+  }
+  to {
+    background-position:
+      190px 190px, -230px 230px, 170px -170px, -250px -250px, 210px 210px, -180px 180px, 240px -240px, -200px 200px,
+      0 0, 0 0, 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
+}
+
+/*
+ * Ignition ring — vòng sáng bezel-đồng-hồ-xe phía sau wordmark ở /login, quét
+ * sáng amber (Tài xế) → cyan (Kỹ sư) một lần khi trang mount, mô phỏng cảm
+ * giác bảng đồng hồ xe bật nguồn lúc cắm chìa khoá. Dùng conic-gradient +
+ * mask thay vì animate mesh/SVG phức tạp để nhẹ và responsive tự nhiên.
+ */
+@keyframes ignition-sweep-in {
+  from {
+    opacity: 0;
+    transform: scale(0.86) rotate(-18deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.ignition-ring {
+  background: conic-gradient(
+    from 200deg,
+    transparent 0deg,
+    var(--amber) 36deg,
+    transparent 130deg,
+    transparent 230deg,
+    var(--cyan) 324deg,
+    transparent 360deg
+  );
+  -webkit-mask-image: radial-gradient(
+    closest-side,
+    transparent 60%,
+    black 61%,
+    black 72%,
+    transparent 73%
+  );
+  mask-image: radial-gradient(
+    closest-side,
+    transparent 60%,
+    black 61%,
+    black 72%,
+    transparent 73%
+  );
+  filter: blur(2px);
+  animation: ignition-sweep-in 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ignition-ring {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*
+ * Car3DViewer — vòng sáng nở ra từ viền khi trạng thái cửa đổi (bám theo
+ * @keyframes car3dPulse của vivi_ivi_vf8style (1).html) — không đạt được
+ * bằng Tailwind utility thuần (xem CODING_STANDARDS.md mục Styling).
+ */
+.car3d-stage--pulse {
+  animation: car3d-pulse 500ms ease-out;
+}
+
+@keyframes car3d-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 14px rgba(56, 189, 248, 0);
+  }
+}
+
+/* Mô phỏng đèn pha bằng glow ở 2 vị trí đèn (model không tách mesh đèn riêng). */
+.car3d-headlight-glow {
+  background:
+    radial-gradient(circle at 22% 60%, rgba(255, 221, 140, 0.5), transparent 32%),
+    radial-gradient(circle at 78% 60%, rgba(255, 221, 140, 0.5), transparent 32%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .car3d-stage--pulse {
+    animation: none;
+  }
+}
+
+/*
+ * Nút mic ở VoiceOverlay đổi màu theo AssistantState (cyan/violet/amber/
+ * green — xem VoiceOverlay.tsx::micStateColor) — pulse này phải theo được
+ * đúng màu đang active, không hardcode 1 màu như car3d-pulse (đã cố định
+ * cyan vì Car3DViewer chỉ có 1 màu). Dùng `currentColor` trong box-shadow để
+ * tự lấy đúng màu `text-*` đang áp trên chính element, không thêm token mới.
+ */
+.voice-state-pulse {
+  animation: voice-state-pulse 500ms ease-out;
+}
+
+@keyframes voice-state-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 50%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 14px color-mix(in srgb, currentColor 0%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .voice-state-pulse {
+    animation: none;
+  }
+}
+
+/*
+ * VoiceOverlay — thanh sóng khi đang nghe (trạng thái "transcribing"). Trước đây
+ * chạy bằng keyframe cố định (nhảy y hệt nhau dù có tiếng nói hay không — issue
+ * #342). Giờ chiều cao đọc `--mic-level` (0..1, DriverShellProvider đẩy vào qua
+ * subscribeMicLevel, chuẩn hoá theo đỉnh RMS của chính lượt ghi — không phải
+ * thang tuyệt đối, vì autoGainControl nén biên độ thô) nhân với `--bar-scale`
+ * riêng của từng thanh (VoiceOverlay.tsx) để giữ dáng cao-thấp như một dải tần,
+ * dù cả 5 thanh cùng đọc một con số RMS.
+ */
+.voice-wave-bar {
+  height: calc(8px + var(--mic-level, 0) * var(--bar-scale, 1) * 22px);
+  transition: height 100ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .voice-wave-bar {
+    transition: none;
+    height: 16px;
+  }
+}
+
+/*
+ * Mic breathe — glow chậm phía sau nút mic hero ở Home (idle, chưa bấm), gợi
+ * cảm giác "đang chờ lệnh" của trợ lý giọng nói. Cùng ngôn ngữ thị giác với
+ * ignition-ring ở /login (radial glow) nhưng lặp lại (breathing) thay vì
+ * quét 1 lần — signature motif xuyên suốt app cho mọi nút mic tròn.
+ */
+.mic-breathe {
+  background: radial-gradient(circle, color-mix(in srgb, var(--cyan) 30%, transparent), transparent 70%);
+  animation: mic-breathe 2.6s ease-in-out infinite;
+}
+
+@keyframes mic-breathe {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mic-breathe {
+    animation: none;
+    opacity: 0.7;
+  }
+}
+
+/*
+ * Follow-up countdown ring (issue #343) — vòng tròn rút dần quanh badge nhỏ
+ * cạnh nút "Nghe tiếp →", báo cả "còn nghe" lẫn "còn bao lâu" trong cửa sổ
+ * nghe tiếp không cần "Hey Vi Vi". `animation-duration` đặt inline ở
+ * VoiceOverlay.tsx (bằng đúng FOLLOW_UP_WINDOW_MS import từ
+ * WakeWordController.ts, không lặp lại hằng số ở đây).
+ *
+ * r=12 trong VoiceOverlay.tsx ⇒ chu vi 2π×12 ≈ 75.4 — hai con số
+ * stroke-dashoffset dưới đây PHẢI khớp nếu đổi bán kính.
+ */
+.follow-up-ring-progress {
+  animation-name: follow-up-countdown;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes follow-up-countdown {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 75.4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .follow-up-ring-progress {
+    /* Mức tĩnh — vòng đầy, báo "cửa sổ đang mở" mà không chuyển động, không
+       biến mất (giữ đúng nếp của .voice-wave-bar/.mic-breathe ở trên). */
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+
+/*
+ * "Kính vũ trụ" cho mọi card dùng bg-panel-solid / bg-(--panel) — áp dụng qua
+ * attribute selector thay vì sửa từng file (16 nơi dùng 2 class này). Nền
+ * giữa ô đã trong suốt sẵn (token --panel-solid đổi ở tokens.css); ở đây chỉ
+ * thêm 2 quầng gradient mờ 2 góc đối diện để mắt vẫn phân biệt được ranh
+ * giới ô, cộng backdrop-filter: blur() để chữ/nút phía trên còn đọc được khi
+ * nền sao/tinh vân lộ ra phía sau. `:where()` giữ specificity 0, chỉ thêm
+ * background-image/backdrop-filter — không đụng background-color mà
+ * Tailwind bg-* đã set nên luôn tương thích, không cần !important.
+ */
+:where([class*="bg-panel-solid"], [class*="bg-(--panel)"]) {
+  background-image:
+    radial-gradient(160px 120px at 0% 0%, color-mix(in srgb, var(--ink) 9%, transparent), transparent 70%),
+    radial-gradient(180px 140px at 100% 100%, color-mix(in srgb, var(--cyan) 10%, transparent), transparent 70%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/*
+ * MapView (Leaflet) — chrome mặc định của Leaflet (nút zoom, dòng
+ * attribution) là nền trắng, lệch hẳn theme tối của app. Ghi đè bằng đúng
+ * token sẵn có, không thêm hex mới.
+ */
+.leaflet-container {
+  background: var(--bg2);
+  font-family: var(--font-body);
+}
+
+.leaflet-control-zoom a {
+  background: var(--panel-solid) !important;
+  color: var(--ink) !important;
+  border-color: var(--line) !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: color-mix(in srgb, var(--panel-solid) 80%, var(--ink)) !important;
+}
+
+.leaflet-control-attribution {
+  background: color-mix(in srgb, var(--panel-solid) 85%, transparent) !important;
+  color: var(--ink-dim) !important;
+}
+
+.leaflet-control-attribution a {
+  color: var(--ink-soft) !important;
+}
+
+/* Đảo màu nền bản đồ sáng thành nền tối. HAI lớp dùng chung ý tưởng này, mỗi
+ * lớp một bộ số riêng (khác biệt giải thích ở khối dưới):
+ *
+ *   `.vivi-offline-map`  — ảnh raster tĩnh của chế độ demo offline (issue #176)
+ *   `.vivi-dark-tiles`   — tile OSM chuẩn, tức đường mặc định kể từ khi CARTO bắt
+ *                          buộc API key và dán watermark lên tile (xem LeafletMap.tsx)
+ *
+ * Cả hai nguồn đều là nền SÁNG, còn IVI chỉ có một theme tối. Đây là phép đảo màu
+ * xấp xỉ, KHÔNG giống style CARTO trước đây — chỉ đủ để chấm cyan và đường kẻ phía
+ * trên vẫn đọc được trên nền.
+ *
+ * `hue-rotate(180deg)` đi kèm `invert` để màu không bị lộn tông: chỉ invert thì
+ * nước xanh thành cam. Cặp này là cách quen thuộc để giả dark-mode cho ảnh raster.
+ *
+ * Đặt trên container của lớp tile, KHÔNG phải trên cả bản đồ: marker, polyline và
+ * thanh attribution nằm ở pane khác nên giữ nguyên màu thật — đảo cả bản đồ thì chấm
+ * xe cyan thành đỏ cam. */
+.vivi-offline-map {
+  filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(1.1);
+}
+
+/* Tile OSM có thêm `saturate`, ảnh tĩnh thì không — hai con số khác nhau vì hai
+ * nguồn khác nhau, không phải quên đồng bộ. Tile OSM chuẩn vẽ đường theo cấp hạng
+ * bằng vàng/cam/hồng đậm; đảo màu xong chúng thành những vệt rực rỡ chạy khắp màn,
+ * lấn át chấm cyan của xe và đường kẻ lộ trình. Hạ bão hoà xuống 0.45 kéo nền về
+ * gần tông xám-xanh của CARTO `dark_all` cũ (đo bằng mắt trên khung Hà Nội zoom 14,
+ * 29/08). Ảnh `map-hanoi.webp` đã nhạt sẵn nên không cần, và đụng vào nó là đổi
+ * diện mạo chế độ demo offline mà không ai yêu cầu. */
+.vivi-dark-tiles {
+  filter: invert(1) hue-rotate(180deg) brightness(0.85) contrast(1.1) saturate(0.45);
+}

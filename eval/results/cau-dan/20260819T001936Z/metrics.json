@@ -1,0 +1,26 @@
+[
+  {
+    "cach": "mau (0 ms)",
+    "n": 39,
+    "p50_ms": 0.0,
+    "p95_ms": 0.0,
+    "ty_le_co_so": 0.0,
+    "tu_la_trung_binh": 0.0
+  },
+  {
+    "cach": "qwen0.5b cpu",
+    "n": 39,
+    "p50_ms": 765.5,
+    "p95_ms": 1416.6,
+    "ty_le_co_so": 0.0769,
+    "tu_la_trung_binh": 6.44
+  },
+  {
+    "cach": "qwen3b dGPU",
+    "n": 39,
+    "p50_ms": 408.7,
+    "p95_ms": 503.9,
+    "ty_le_co_so": 0.0,
+    "tu_la_trung_binh": 1.51
+  }
+]

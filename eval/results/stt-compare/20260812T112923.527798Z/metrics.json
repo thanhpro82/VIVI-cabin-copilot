@@ -1,0 +1,38 @@
+{
+  "total": 24,
+  "phowhisper": {
+    "avg_wer": 0.32202380952380955,
+    "avg_cer": 0.18851715895726792,
+    "avg_latency_ms": 932.8752583333331
+  },
+  "zipformer": {
+    "avg_wer": 0.1271494708994709,
+    "avg_cer": 0.05925008080180494,
+    "avg_latency_ms": 69.22619166666668
+  },
+  "by_domain": {
+    "tire_pressure": {
+      "total": 6,
+      "phowhisper_avg_wer": 0.3224206349206349,
+      "zipformer_avg_wer": 0.14351851851851852
+    },
+    "hvac": {
+      "total": 8,
+      "phowhisper_avg_wer": 0.39866071428571426,
+      "zipformer_avg_wer": 0.05952380952380952
+    },
+    "volume": {
+      "total": 5,
+      "phowhisper_avg_wer": 0.28095238095238095,
+      "zipformer_avg_wer": 0.2761904761904762
+    },
+    "baseline": {
+      "total": 5,
+      "phowhisper_avg_wer": 0.24,
+      "zipformer_avg_wer": 0.06666666666666667
+    }
+  },
+  "verdict": "zipformer_candidate",
+  "verdict_threshold_wer": 0.15,
+  "verdict_margin": 0.022850529100529093
+}

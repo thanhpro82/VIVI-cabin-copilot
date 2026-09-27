@@ -1,0 +1,16 @@
+{
+ "run_id": "20260811T120059.646673Z",
+ "tag": "rungA-cpu12-05b",
+ "backend": "cpu12",
+ "model": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+ "model_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+ "endpoint": "http://127.0.0.1:8093",
+ "n_predict": 160,
+ "grammar": false,
+ "n_cases": 16,
+ "decode_tps_median": 34.8,
+ "total_ms_p50": 4654.876,
+ "total_ms_p95": 5056.705,
+ "truncated": 0,
+ "server_peak_rss_mb": 559.4
+}

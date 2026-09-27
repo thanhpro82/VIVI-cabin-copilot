@@ -1,0 +1,64 @@
+{"case_id": "P-CMD-001", "input_text": "Nóng chảy mỡ rồi, làm mát cái xe đi", "expected": {"kind": "plan", "tool": "set_hvac_power"}}
+{"case_id": "P-CMD-002", "input_text": "Lạnh cóng cả người, cho ấm lên tí được không", "expected": {"kind": "plan", "tool": "set_hvac_temperature"}}
+{"case_id": "P-CMD-003", "input_text": "Ngột ngạt quá, cho tí khí trời vào", "expected": {"kind": "plan", "tool": "set_window_position"}}
+{"case_id": "P-CMD-004", "input_text": "Hạ giùm cái kính bên tài xuống nửa chừng", "expected": {"kind": "plan", "tool": "set_window_position"}}
+{"case_id": "P-CMD-005", "input_text": "Khép hết mấy cái kính lại giùm, bụi quá", "expected": {"kind": "plan", "tool": "set_window_position"}}
+{"case_id": "P-CMD-006", "input_text": "Lưng tôi đau, chỉnh ghế ngả ra sau chút", "expected": {"kind": "plan", "tool": "set_seat_position"}}
+{"case_id": "P-CMD-007", "input_text": "Ghế lạnh quá làm ấm cái lưng đi", "expected": {"kind": "plan", "tool": "set_seat_heating"}}
+{"case_id": "P-CMD-008", "input_text": "Cho cái gì đó nghe vui vui đi", "expected": {"kind": "plan", "tool": "media_control"}}
+{"case_id": "P-CMD-009", "input_text": "Ồn quá, vặn nhỏ xuống", "expected": {"kind": "plan", "tool": "media_control"}}
+{"case_id": "P-CMD-010", "input_text": "Nghe không rõ gì cả, to lên chút nữa", "expected": {"kind": "plan", "tool": "media_control"}}
+{"case_id": "P-CMD-011", "input_text": "Sắp hết xăng rồi, kiếm chỗ đổ gần đây", "expected": {"kind": "plan", "tool": "search_nearby"}}
+{"case_id": "P-CMD-012", "input_text": "Đói bụng quá, quanh đây có gì ăn không", "expected": {"kind": "plan", "tool": "search_nearby"}}
+{"case_id": "P-CMD-013", "input_text": "Chở tôi tới Vincom Đồng Khởi", "expected": {"kind": "plan", "tool": "set_navigation"}}
+{"case_id": "P-CMD-014", "input_text": "Thôi không đi nữa, huỷ lộ trình giùm", "expected": {"kind": "plan", "tool": "set_navigation"}}
+{"case_id": "P-CMD-015", "input_text": "Khoá hết cửa nẻo lại cho chắc", "expected": {"kind": "plan", "tool": "set_door_state"}}
+{"case_id": "P-CMD-016", "input_text": "Gió phà vào mặt khó chịu, chỉnh bớt đi", "expected": {"kind": "plan", "tool": "set_hvac_temperature"}}
+{"case_id": "P-CMD-017", "input_text": "Trong này bí bách quá đi mất", "expected": {"kind": "plan", "tool": "set_window_position"}}
+{"case_id": "P-CMD-018", "input_text": "Cho tôi chút nhạc nhẹ thư giãn", "expected": {"kind": "plan", "tool": "media_control"}}
+{"case_id": "P-CMD-019", "input_text": "Im lặng giùm cái, đang nghe điện thoại", "expected": {"kind": "plan", "tool": "media_control"}}
+{"case_id": "P-CMD-020", "input_text": "Ghế bên phụ sưởi giùm mức nhẹ thôi", "expected": {"kind": "plan", "tool": "set_seat_heating"}}
+{"case_id": "P-CMD-021", "input_text": "Đưa tôi về nhà", "expected": {"kind": "plan", "tool": "set_navigation"}}
+{"case_id": "P-CMD-022", "input_text": "Tìm giùm chỗ gửi xe gần nhất", "expected": {"kind": "plan", "tool": "search_nearby"}}
+{"case_id": "P-CMD-023", "input_text": "Hai lăm độ nghe nói là chuẩn, chỉnh vậy đi", "expected": {"kind": "plan", "tool": "set_hvac_temperature"}}
+{"case_id": "P-CMD-024", "input_text": "Kính bên phụ hé ra chút cho thoáng", "expected": {"kind": "plan", "tool": "set_window_position"}}
+{"case_id": "P-CMD-025", "input_text": "Cái điều hoà này thổi lạnh quá trời", "expected": {"kind": "plan", "tool": "set_hvac_temperature"}}
+{"case_id": "P-CMD-027", "input_text": "Ghế tôi cao quá, hạ thấp xuống chút", "expected": {"kind": "plan", "tool": "set_seat_position"}}
+{"case_id": "P-CMD-028", "input_text": "Bật giùm bài gì của Sơn Tùng đi", "expected": {"kind": "plan", "tool": "media_control"}}
+{"case_id": "P-CMD-029", "input_text": "Chỉ đường tới sân bay Tân Sơn Nhất", "expected": {"kind": "plan", "tool": "set_navigation"}}
+{"case_id": "P-CMD-030", "input_text": "Tắt giùm cái máy lạnh, đủ mát rồi", "expected": {"kind": "plan", "tool": "set_hvac_power"}}
+{"case_id": "P-SOC-001", "input_text": "Xin chào cabin copilot", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-002", "input_text": "Chào buổi sáng nhé", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-003", "input_text": "Cảm ơn nhé", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-004", "input_text": "Cảm ơn nhiều nha, bạn giỏi lắm", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-005", "input_text": "Bạn tên là gì vậy", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-006", "input_text": "Bạn có khoẻ không", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-007", "input_text": "Hôm nay trời đẹp nhỉ", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-008", "input_text": "Mệt quá bạn ơi", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-009", "input_text": "Buồn ngủ ghê, nói chuyện với tôi chút đi", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-010", "input_text": "Kẹt xe kinh khủng luôn", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-011", "input_text": "Tạm biệt nhé, hẹn gặp lại", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-012", "input_text": "Bạn làm được những gì", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-013", "input_text": "Hát cho tôi nghe một câu đi", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-014", "input_text": "Chúc mừng năm mới nha", "expected": {"kind": "chitchat"}}
+{"case_id": "P-SOC-015", "input_text": "Ê nói chuyện được không", "expected": {"kind": "chitchat"}}
+{"case_id": "P-OOS-001", "input_text": "Một cộng một bằng mấy", "expected": {"kind": "chitchat"}}
+{"case_id": "P-OOS-002", "input_text": "Tổng thống Mỹ hiện tại là ai", "expected": {"kind": "chitchat"}}
+{"case_id": "P-OOS-003", "input_text": "Đặt giùm tôi bàn ăn tối nay nhà hàng Ngon", "expected": {"kind": "chitchat"}}
+{"case_id": "P-OOS-004", "input_text": "Chuyển khoản cho vợ tôi 5 triệu", "expected": {"kind": "chitchat"}}
+{"case_id": "P-OOS-005", "input_text": "Kể tôi nghe một chuyện cười", "expected": {"kind": "chitchat"}}
+{"case_id": "P-OOS-006", "input_text": "Giá vàng hôm nay bao nhiêu", "expected": {"kind": "chitchat"}}
+{"case_id": "P-OOS-007", "input_text": "Viết giùm cái email xin nghỉ phép", "expected": {"kind": "chitchat"}}
+{"case_id": "P-OOS-008", "input_text": "Mai có mưa không ta", "expected": {"kind": "chitchat"}}
+{"case_id": "P-OOS-009", "input_text": "Gọi điện cho sếp tôi đi", "expected": {"kind": "chitchat"}}
+{"case_id": "P-OOS-010", "input_text": "Nhắc tôi mai họp lúc 9 giờ", "expected": {"kind": "chitchat"}}
+{"case_id": "P-AMB-001", "input_text": "Lạnh nhỉ", "expected": {"accept_kinds": ["plan", "chitchat"], "tool": "set_hvac_temperature"}}
+{"case_id": "P-AMB-002", "input_text": "Nóng ghê", "expected": {"accept_kinds": ["plan", "chitchat"], "tool": "set_hvac_temperature"}}
+{"case_id": "P-AMB-003", "input_text": "Tối quá", "expected": {"accept_kinds": ["plan", "chitchat"]}}
+{"case_id": "P-AMB-004", "input_text": "Ồn ào quá đi", "expected": {"accept_kinds": ["plan", "chitchat"], "tool": "media_control"}}
+{"case_id": "P-AMB-005", "input_text": "Mỏi lưng ghê", "expected": {"accept_kinds": ["plan", "chitchat"], "tool": "set_seat_position"}}
+{"case_id": "P-AMB-006", "input_text": "Không khí ngột ngạt thế", "expected": {"accept_kinds": ["plan", "chitchat"], "tool": "set_window_position"}}
+{"case_id": "P-AMB-007", "input_text": "Buồn quá", "expected": {"accept_kinds": ["plan", "chitchat"], "tool": "media_control"}}
+{"case_id": "P-AMB-008", "input_text": "Xa quá trời", "expected": {"accept_kinds": ["plan", "chitchat"]}}
+{"case_id": "P-AMB-009", "input_text": "Khát nước ghê", "expected": {"accept_kinds": ["plan", "chitchat"], "tool": "search_nearby"}}
+{"case_id": "P-AMB-010", "input_text": "Im ắng dễ sợ", "expected": {"accept_kinds": ["plan", "chitchat"], "tool": "media_control"}}

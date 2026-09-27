@@ -1,0 +1,36 @@
+{
+  "run_type": "tts_synthetic_benchmark",
+  "profile_id": "piper-vais1000-medium",
+  "created_at_utc": "2026-07-30T09:57:22.184608+00:00",
+  "case_count": 30,
+  "artifact": {
+    "profile_id": "piper-vais1000-medium",
+    "repository": "rhasspy/piper-voices",
+    "revision": "0d907f158acc877ddeebcbf827659ee13bea8bcd",
+    "repository_license": "MIT",
+    "dataset_license": "CC-BY-4.0",
+    "language": "vi_VN",
+    "sample_rate_hz": 22050,
+    "size_bytes": 63206515,
+    "model": {
+      "path": "piper-voices/vi/vi_VN/vais1000/medium/vi_VN-vais1000-medium.onnx",
+      "size_bytes": 63201294,
+      "sha256": "ec7c89e2c85f4d1edc24b6120c18aaf1bda614f06b511567eb9c7c0de15e2dab"
+    },
+    "checksum_manifest": "piper-vais1000-medium.sha256",
+    "attribution": "VAIS-1000 Vietnamese Speech Synthesis Corpus",
+    "downloaded_at_utc": "2026-07-30T09:42:00Z"
+  },
+  "protocol": {
+    "input": "fixed Vietnamese PoC prompts",
+    "audio_scope": "synthetic; not representative of human speech",
+    "process_model": "fresh Piper CLI process per utterance"
+  },
+  "process": {
+    "pid": 29260,
+    "rss_bytes_after": 43327488,
+    "peak_rss_bytes": 43421696,
+    "cpu_seconds_after": 0.46875,
+    "scope": "benchmark_harness_process"
+  }
+}

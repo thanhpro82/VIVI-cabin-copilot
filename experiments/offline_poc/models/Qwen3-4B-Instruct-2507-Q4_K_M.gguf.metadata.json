@@ -1,0 +1,10 @@
+﻿{
+    "Profile":  "qwen3-4b-q4",
+    "Repository":  "lmstudio-community/Qwen3-4B-Instruct-2507-GGUF",
+    "Revision":  "4edb920b6f14e3b9284d4502a6485103d72cde05",
+    "FileName":  "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "License":  "Apache-2.0",
+    "Sha256":  "8cdb57cbb880d313736a9bc4e3d3d2485f145b5e19cf33783746e753e82641fc",
+    "SizeBytes":  2497280448,
+    "DownloadedAtUtc":  "2026-08-19T02:43:36.6932905Z"
+}

@@ -1,0 +1,10 @@
+{
+  "trace_id": "trace-739fc8ea-f660-4ca3-b79c-a532b9d8f600",
+  "marks_ms": {
+    "audio_received": 0.0,
+    "stt_completed": 27367.3967999639,
+    "route_selected": 27375.50199998077,
+    "rag_completed": 40247.15000006836,
+    "response_audio_completed": 43733.284599962644
+  }
+}

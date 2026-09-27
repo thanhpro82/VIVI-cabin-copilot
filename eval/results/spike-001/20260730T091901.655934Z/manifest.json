@@ -1,0 +1,31 @@
+{
+  "run_type": "llm_microbenchmark",
+  "profile_id": "qwen25-05b-q4",
+  "created_at_utc": "2026-07-30T09:20:53.661472+00:00",
+  "case_count": 20,
+  "protocol": {
+    "temperature": 0,
+    "max_output_tokens": 192,
+    "max_repair_attempts": 1,
+    "categories": [
+      "control",
+      "nlu",
+      "plan"
+    ]
+  },
+  "artifact": {
+    "profile_id": "qwen25-05b-q4",
+    "path": "C:\\Users\\hoang\\Desktop\\DaotaoVingroup\\Cohort3\\Build\\P-192 - Local\\experiments\\offline_poc\\models\\qwen2.5-0.5b-instruct-q4_k_m.gguf",
+    "sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+    "size_bytes": 491400032,
+    "revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+    "license": "Apache-2.0",
+    "quantization": "Q4_K_M"
+  },
+  "process": {
+    "server_pid": 18720,
+    "rss_bytes_before": 542171136,
+    "peak_rss_bytes": 542212096,
+    "cpu_seconds_before": 1.859375
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.vivi.dev/schemas/sim-motion-set-v1.json",
+  "title": "SimMotionSet",
+  "description": "Harness channel, OUTSIDE the vehicle contract (ADR-024). Published by the backend to v1/sim/{vehicle_id}/motion/set; the simulator receives it and calls its own set_motion(), so the publisher of state/* stays the simulator identity and ADR-013 holds. Never routed to an actuator: motion is a read-only domain in the vehicle contract and has no command topic.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "speed_kph"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "speed_kph": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 200,
+      "description": "Ceiling is the director's-desk ceiling, not a VF9 spec figure: wide enough for every S2/S3 scenario, tight enough that a unit mix-up (m/s read as km/h) is rejected instead of silently published."
+    },
+    "gear": {
+      "enum": ["P", "R", "N", "D", null],
+      "default": null,
+      "description": "Absent or null means pick for me: D when speed_kph > 0, P when it is 0 — the same convention as SimulatorRuntime.set_motion(gear=None), so the on-screen slider and the console `speed 45` produce the same state."
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "cong_cung_manual_sang_control": 3,
+  "dung": 57,
+  "duong_tat": 25,
+  "ma_tran": {
+    "control->control": 18,
+    "control->manual": 2,
+    "manual->control": 3,
+    "manual->manual": 39
+  },
+  "n": 62
+}

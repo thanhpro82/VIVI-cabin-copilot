@@ -1,0 +1,1498 @@
+{
+  "base_url": "https://c4-app-192.io.vn/api/v1",
+  "origin": "https://c4-app-192.io.vn",
+  "che_do": "text",
+  "moc": [
+    1,
+    2,
+    3
+  ],
+  "vong": 3,
+  "tran_do_s": 60.0,
+  "nguong": {
+    "p50_ms": 2500.0,
+    "p95_ms": 4500.0
+  },
+  "cau_hinh_llama": {
+    "doc_duoc": true,
+    "endpoint": "http://127.0.0.1:8093",
+    "n_ctx": 2048,
+    "n_slots": 4,
+    "model_path": "/opt/vivi/models/slm/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "kv_unified": null
+  },
+  "healthz": {
+    "http": 200,
+    "than": {
+      "data": {
+        "status": "ready",
+        "checked_at": "2026-08-25T07:29:08.803937Z",
+        "components": {
+          "backend": {
+            "status": "ready",
+            "latency_ms": 18.03078
+          },
+          "llm": {
+            "status": "ready",
+            "latency_ms": 43.298106
+          },
+          "mqtt": {
+            "status": "ready",
+            "latency_ms": 11.32989
+          },
+          "vehicle_simulator": {
+            "status": "ready",
+            "latency_ms": 0.023374
+          },
+          "stt": {
+            "status": "ready",
+            "latency_ms": 109.083786
+          },
+          "tts": {
+            "status": "ready",
+            "latency_ms": 186.499397
+          },
+          "rag_index": {
+            "status": "ready",
+            "latency_ms": 182.4835
+          },
+          "sqlite": {
+            "status": "ready",
+            "latency_ms": 35.883608
+          }
+        },
+        "faults": []
+      },
+      "meta": {
+        "request_id": "req_9eb62f41ee7f"
+      },
+      "trace_id": "tr_f0e679452d75",
+      "schema_version": "1.0"
+    }
+  },
+  "so_wav": 0,
+  "ket_qua": {
+    "1": {
+      "so_mau_lo_ngan": 0,
+      "thong_ke": {
+        "n_mau": 24,
+        "n_thanh_cong": 24,
+        "so_loi": 0,
+        "so_cat_cut": 0,
+        "p50_ms": 895.1,
+        "p95_ms": 21998.9,
+        "max_ms": 28625.8,
+        "nguong_p50_ms": 2500.0,
+        "nguong_p95_ms": 4500.0,
+        "p50_dat": true,
+        "p95_dat": false,
+        "so_vuot_p95": 9,
+        "so_bi_tu_choi": 0,
+        "so_ra_plan": 8,
+        "so_biet_co_plan": 24
+      },
+      "theo_nhan": {
+        "chitchat": {
+          "n_mau": 3,
+          "n_thanh_cong": 3,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 292.6,
+          "p95_ms": 405.6,
+          "max_ms": 405.6,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 3
+        },
+        "dieu_khien": {
+          "n_mau": 6,
+          "n_thanh_cong": 6,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 249.4,
+          "p95_ms": 324.4,
+          "max_ms": 324.4,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 3,
+          "so_biet_co_plan": 6
+        },
+        "planner": {
+          "n_mau": 9,
+          "n_thanh_cong": 9,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 15419.0,
+          "p95_ms": 28625.8,
+          "max_ms": 28625.8,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 9,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 5,
+          "so_biet_co_plan": 9
+        },
+        "so_tay": {
+          "n_mau": 6,
+          "n_thanh_cong": 6,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 895.1,
+          "p95_ms": 1274.9,
+          "max_ms": 1274.9,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 6
+        }
+      },
+      "ban_ghi": [
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 324.4,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 276.9,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 1274.9,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "áp suất lốp tiêu chuẩn là bao nhiêu",
+          "ms_tong": 759.2,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "làm cho trong xe dễ chịu hơn tí đi",
+          "ms_tong": 28625.8,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "trong xe ngột ngạt quá, xử lý giúp tôi",
+          "ms_tong": 15419.0,
+          "http": 200,
+          "status": "waiting_approval",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "ồn quá tôi không tập trung được",
+          "ms_tong": 9254.9,
+          "http": 200,
+          "status": "clarify",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "planner"
+          ]
+        },
+        {
+          "nhan": "chitchat",
+          "text": "chào xe, hôm nay thế nào",
+          "ms_tong": 405.6,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 296.2,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 1006.4,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "áp suất lốp tiêu chuẩn là bao nhiêu",
+          "ms_tong": 881.1,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "làm cho trong xe dễ chịu hơn tí đi",
+          "ms_tong": 16299.1,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "trong xe ngột ngạt quá, xử lý giúp tôi",
+          "ms_tong": 17338.7,
+          "http": 200,
+          "status": "waiting_approval",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "ồn quá tôi không tập trung được",
+          "ms_tong": 7995.2,
+          "http": 200,
+          "status": "clarify",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "planner"
+          ]
+        },
+        {
+          "nhan": "chitchat",
+          "text": "chào xe, hôm nay thế nào",
+          "ms_tong": 291.4,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 186.6,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 909.1,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "áp suất lốp tiêu chuẩn là bao nhiêu",
+          "ms_tong": 775.1,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "làm cho trong xe dễ chịu hơn tí đi",
+          "ms_tong": 21998.9,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "trong xe ngột ngạt quá, xử lý giúp tôi",
+          "ms_tong": 15116.8,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "ồn quá tôi không tập trung được",
+          "ms_tong": 8633.3,
+          "http": 200,
+          "status": "waiting_approval",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "planner"
+          ]
+        },
+        {
+          "nhan": "chitchat",
+          "text": "chào xe, hôm nay thế nào",
+          "ms_tong": 292.6,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 219.3,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 222.0,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 1,
+          "cung_lo": [
+            "dieu_khien"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "so_mau_lo_ngan": 0,
+      "thong_ke": {
+        "n_mau": 24,
+        "n_thanh_cong": 24,
+        "so_loi": 0,
+        "so_cat_cut": 0,
+        "p50_ms": 1392.8,
+        "p95_ms": 31479.8,
+        "max_ms": 32439.3,
+        "nguong_p50_ms": 2500.0,
+        "nguong_p95_ms": 4500.0,
+        "p50_dat": true,
+        "p95_dat": false,
+        "so_vuot_p95": 9,
+        "so_bi_tu_choi": 0,
+        "so_ra_plan": 6,
+        "so_biet_co_plan": 24
+      },
+      "theo_nhan": {
+        "chitchat": {
+          "n_mau": 3,
+          "n_thanh_cong": 3,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 620.4,
+          "p95_ms": 677.8,
+          "max_ms": 677.8,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 3
+        },
+        "dieu_khien": {
+          "n_mau": 6,
+          "n_thanh_cong": 6,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 370.1,
+          "p95_ms": 527.9,
+          "max_ms": 527.9,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 3,
+          "so_biet_co_plan": 6
+        },
+        "planner": {
+          "n_mau": 9,
+          "n_thanh_cong": 9,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 21713.0,
+          "p95_ms": 32439.3,
+          "max_ms": 32439.3,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 9,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 3,
+          "so_biet_co_plan": 9
+        },
+        "so_tay": {
+          "n_mau": 6,
+          "n_thanh_cong": 6,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 1392.8,
+          "p95_ms": 1775.4,
+          "max_ms": 1775.4,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 6
+        }
+      },
+      "ban_ghi": [
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 527.9,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "dieu_khien",
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 356.6,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "dieu_khien",
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 1094.9,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "so_tay",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "áp suất lốp tiêu chuẩn là bao nhiêu",
+          "ms_tong": 1775.4,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "so_tay",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "làm cho trong xe dễ chịu hơn tí đi",
+          "ms_tong": 32439.3,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "trong xe ngột ngạt quá, xử lý giúp tôi",
+          "ms_tong": 26380.8,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "ồn quá tôi không tập trung được",
+          "ms_tong": 8459.5,
+          "http": 200,
+          "status": "waiting_approval",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "chitchat",
+          "text": "chào xe, hôm nay thế nào",
+          "ms_tong": 620.4,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 300.0,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "dieu_khien",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 1294.1,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "dieu_khien",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "áp suất lốp tiêu chuẩn là bao nhiêu",
+          "ms_tong": 1491.5,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "so_tay",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "làm cho trong xe dễ chịu hơn tí đi",
+          "ms_tong": 21713.0,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "so_tay",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "trong xe ngột ngạt quá, xử lý giúp tôi",
+          "ms_tong": 21604.0,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "ồn quá tôi không tập trung được",
+          "ms_tong": 12724.9,
+          "http": 200,
+          "status": "waiting_approval",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "chitchat",
+          "text": "chào xe, hôm nay thế nào",
+          "ms_tong": 331.9,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "chitchat",
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 444.2,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "chitchat",
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 1071.4,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "so_tay",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "áp suất lốp tiêu chuẩn là bao nhiêu",
+          "ms_tong": 1643.1,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "so_tay",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "làm cho trong xe dễ chịu hơn tí đi",
+          "ms_tong": 31479.8,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "trong xe ngột ngạt quá, xử lý giúp tôi",
+          "ms_tong": 26652.5,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "ồn quá tôi không tập trung được",
+          "ms_tong": 8768.5,
+          "http": 200,
+          "status": "waiting_approval",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "chitchat",
+          "text": "chào xe, hôm nay thế nào",
+          "ms_tong": 677.8,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 213.8,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "dieu_khien",
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 383.6,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "dieu_khien",
+            "dieu_khien"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "so_mau_lo_ngan": 6,
+      "thong_ke": {
+        "n_mau": 24,
+        "n_thanh_cong": 24,
+        "so_loi": 0,
+        "so_cat_cut": 0,
+        "p50_ms": 2059.7,
+        "p95_ms": 28278.6,
+        "max_ms": 35119.3,
+        "nguong_p50_ms": 2500.0,
+        "nguong_p95_ms": 4500.0,
+        "p50_dat": true,
+        "p95_dat": false,
+        "so_vuot_p95": 7,
+        "so_bi_tu_choi": 0,
+        "so_ra_plan": 4,
+        "so_biet_co_plan": 24
+      },
+      "theo_nhan": {
+        "chitchat": {
+          "n_mau": 3,
+          "n_thanh_cong": 3,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 736.9,
+          "p95_ms": 857.0,
+          "max_ms": 857.0,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 3
+        },
+        "dieu_khien": {
+          "n_mau": 6,
+          "n_thanh_cong": 6,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 726.8,
+          "p95_ms": 1096.7,
+          "max_ms": 1096.7,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 3,
+          "so_biet_co_plan": 6
+        },
+        "planner": {
+          "n_mau": 9,
+          "n_thanh_cong": 9,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 5881.2,
+          "p95_ms": 35119.3,
+          "max_ms": 35119.3,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 6,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 1,
+          "so_biet_co_plan": 9
+        },
+        "so_tay": {
+          "n_mau": 6,
+          "n_thanh_cong": 6,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 2661.9,
+          "p95_ms": 4535.8,
+          "max_ms": 4535.8,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 1,
+          "so_bi_tu_choi": 0,
+          "so_ra_plan": 0,
+          "so_biet_co_plan": 6
+        }
+      },
+      "ban_ghi": [
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 437.3,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "dieu_khien",
+            "dieu_khien",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 648.8,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "dieu_khien",
+            "dieu_khien",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 1417.3,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "dieu_khien",
+            "dieu_khien",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "áp suất lốp tiêu chuẩn là bao nhiêu",
+          "ms_tong": 1722.8,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "so_tay",
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "làm cho trong xe dễ chịu hơn tí đi",
+          "ms_tong": 35119.3,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "so_tay",
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "trong xe ngột ngạt quá, xử lý giúp tôi",
+          "ms_tong": 28278.6,
+          "http": 200,
+          "status": "waiting_approval",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "so_tay",
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "ồn quá tôi không tập trung được",
+          "ms_tong": 4088.8,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "chitchat",
+          "text": "chào xe, hôm nay thế nào",
+          "ms_tong": 857.0,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "planner",
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 804.9,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "dieu_khien",
+            "so_tay",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 2927.4,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "dieu_khien",
+            "so_tay",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "áp suất lốp tiêu chuẩn là bao nhiêu",
+          "ms_tong": 4535.8,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "dieu_khien",
+            "so_tay",
+            "so_tay"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "làm cho trong xe dễ chịu hơn tí đi",
+          "ms_tong": 5881.2,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "planner",
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "trong xe ngột ngạt quá, xử lý giúp tôi",
+          "ms_tong": 1002.8,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "planner",
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "ồn quá tôi không tập trung được",
+          "ms_tong": 6314.4,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "planner",
+            "planner",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "chitchat",
+          "text": "chào xe, hôm nay thế nào",
+          "ms_tong": 699.9,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "chitchat",
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 1096.7,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "chitchat",
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 2396.5,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "so_tay",
+            "so_tay",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "so_tay",
+          "text": "áp suất lốp tiêu chuẩn là bao nhiêu",
+          "ms_tong": 4088.9,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "so_tay",
+            "so_tay",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "làm cho trong xe dễ chịu hơn tí đi",
+          "ms_tong": 6400.6,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "so_tay",
+            "so_tay",
+            "planner"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "trong xe ngột ngạt quá, xử lý giúp tôi",
+          "ms_tong": 4795.3,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "planner",
+            "planner",
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "planner",
+          "text": "ồn quá tôi không tập trung được",
+          "ms_tong": 4252.6,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "planner",
+            "planner",
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "chitchat",
+          "text": "chào xe, hôm nay thế nào",
+          "ms_tong": 736.9,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 3,
+          "cung_lo": [
+            "planner",
+            "planner",
+            "chitchat"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 994.7,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "dieu_khien",
+            "dieu_khien"
+          ]
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 510.4,
+          "http": 200,
+          "status": "completed",
+          "bi_tu_choi": false,
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null,
+          "n_lo": 2,
+          "cung_lo": [
+            "dieu_khien",
+            "dieu_khien"
+          ]
+        }
+      ]
+    }
+  }
+}

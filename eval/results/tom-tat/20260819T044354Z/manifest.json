@@ -1,0 +1,11 @@
+{
+  "suite": "tom-tat",
+  "commit": "720b0cdc1ecde8b32fc03e2fb79f1f5edb8db021",
+  "branch": "feat/ba-truc",
+  "endpoint": "http://127.0.0.1:8093",
+  "hardware": {
+    "tier": "cpu",
+    "ngoai_le": "llama-server co the chay tren dGPU — xem log server"
+  },
+  "machine": "AMD64"
+}

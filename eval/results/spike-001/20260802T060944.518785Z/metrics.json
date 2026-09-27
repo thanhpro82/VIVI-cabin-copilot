@@ -1,0 +1,16 @@
+{
+  "profile_id": "qwen25-3b-q4",
+  "case_id": "CTRL-002",
+  "route": "control",
+  "outcome": "completed",
+  "stage_ms": {
+    "stt": 19190.19059999846,
+    "routing": 12.247400009073317,
+    "llm_or_rag": 16806.2122,
+    "graph_and_tool": 17053.203799994662,
+    "tts": 2928.145100013353
+  },
+  "system_total_ms": 39309.75529993884,
+  "human_wait_ms": 6.556999986059964,
+  "wall_total_ms": 39316.3122999249
+}

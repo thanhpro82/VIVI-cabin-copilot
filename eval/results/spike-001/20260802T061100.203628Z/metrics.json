@@ -1,0 +1,16 @@
+{
+  "profile_id": "qwen25-3b-q4",
+  "case_id": "RAG-001",
+  "route": "control",
+  "outcome": "execution_failed",
+  "stage_ms": {
+    "stt": 18527.817599941045,
+    "routing": 3.8515999913215637,
+    "llm_or_rag": 17849.9167,
+    "graph_and_tool": 17919.59710000083,
+    "tts": 3135.974399978295
+  },
+  "system_total_ms": 39608.673300012015,
+  "human_wait_ms": 0.0,
+  "wall_total_ms": 39608.673300012015
+}

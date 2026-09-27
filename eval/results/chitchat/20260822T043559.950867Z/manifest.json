@@ -1,0 +1,9 @@
+{
+  "case_count": 25,
+  "cau_hinh": "hai server: classify 8094 iGPU, chitchat 8093 dGPU",
+  "chitchat": "QwenChitchat",
+  "classifier": "QwenClassifier",
+  "dataset": "eval/datasets/agent/chitchat-v1/cases.jsonl",
+  "note": "SP-2. Hai cong cung: manual->control = 0 va bay->chitchat = 0. Ca source=tu_viet la tripwire, khong phai thuoc.",
+  "run_id": "20260822T043559.950867Z"
+}

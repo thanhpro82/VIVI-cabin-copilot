@@ -1,0 +1,15 @@
+{
+  "profile_id": "qwen25-3b-q4",
+  "case_id": "RAG-001",
+  "route": "rag",
+  "outcome": "grounded",
+  "stage_ms": {
+    "stt": 27366.984199965373,
+    "routing": 7.97089992556721,
+    "llm_or_rag": 12865.429600002244,
+    "tts": 3485.8653000555933
+  },
+  "system_total_ms": 43733.31030004192,
+  "human_wait_ms": 0.0,
+  "wall_total_ms": 43733.31030004192
+}

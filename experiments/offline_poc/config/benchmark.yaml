@@ -1,0 +1,18 @@
+cpu_limit: 4
+memory_limit_gib: 8
+cold_runs: 5
+warm_runs: 20
+candidates:
+  - profile_id: qwen25-05b-q4
+    model_path: models/qwen2.5-0.5b-instruct-q4_k_m.gguf
+    quantization: Q4_K_M
+    required: true
+  - profile_id: qwen25-3b-q4
+    model_path: models/qwen2.5-3b-instruct-q4_k_m.gguf
+    quantization: Q4_K_M
+    required: true
+  - profile_id: qwen25-3b-q8
+    model_path: models/qwen2.5-3b-instruct-q8_0.gguf
+    quantization: Q8_0
+    required: false
+

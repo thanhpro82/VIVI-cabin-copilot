@@ -1,0 +1,39 @@
+{
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "kind": {"const": "plan"},
+        "schema_version": {"const": "1.0"},
+        "steps": {
+          "type": "array", "minItems": 1, "maxItems": 3,
+          "items": {
+            "type": "object",
+            "properties": {
+              "step_id": {"type": "string"},
+              "ordinal": {"type": "integer"},
+              "tool": {"enum": ["set_hvac_temperature", "set_hvac_power", "set_seat_heating",
+                                 "set_seat_position", "set_window_position", "set_door_state",
+                                 "media_control", "set_navigation", "search_nearby"]},
+              "args": {"type": "object"},
+              "depends_on": {"type": "array", "items": {"type": "string"}}
+            },
+            "required": ["step_id", "ordinal", "tool", "args", "depends_on"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["kind", "schema_version", "steps"],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "kind": {"const": "chitchat"},
+        "reply": {"type": "string", "maxLength": 240}
+      },
+      "required": ["kind", "reply"],
+      "additionalProperties": false
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+services:
+  # Broker chỉ bind 127.0.0.1 làm debug binding — docs/devops.md yêu cầu
+  # broker không bao giờ expose ra interface non-loopback.
+  #
+  # MQTT_HOST_PORT chỉ đổi cổng loopback phía host; trong network edge_internal
+  # các service vẫn nối tới `mqtt:1883`. Đặt biến này khi máy đã có sẵn broker
+  # khác giữ cổng 1883 (RabbitMQ với plugin MQTT, EMQX, ...).
+  mqtt:
+    image: eclipse-mosquitto:2
+    ports:
+      - "127.0.0.1:${MQTT_HOST_PORT:-1883}:1883"
+    volumes:
+      - ./config/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./config/mosquitto/acl:/mosquitto/config/acl:ro
+      - ./config/mosquitto/passwd:/mosquitto/config/passwd:ro
+      - mosquitto_data:/mosquitto/data
+    restart: unless-stopped
+    networks:
+      - edge_internal
+    # `-E` = thoát ngay khi broker đã SUBACK, KHÔNG chờ message nào tới.
+    #
+    # Bản trước dùng `-t '$SYS/#' -C 1 -W 3`, tức chờ nhận đủ một message trong 3
+    # giây. Nó không bao giờ đạt: `config/mosquitto/acl` chỉ cấp cho
+    # `vivi-backend` bốn topic `v1/vehicles/...`, không có `$SYS`, và Mosquitto
+    # chặn **im lặng** — client không nhận lỗi nào, chỉ là không có gì tới. Hết
+    # 3 giây, `exit 27`, container mãi mãi `unhealthy`, và vì cả `backend` lẫn
+    # `vehicle-simulator` đều `depends_on: condition: service_healthy` nên
+    # `docker compose up` không khởi được service nào ngoài broker.
+    #
+    # Sâu hơn: KHÔNG topic nào mà identity backend được đọc có traffic đảm bảo
+    # lúc broker vừa lên (`state/*` và `health` chỉ có sau khi simulator chạy,
+    # mà simulator lại đang đợi healthcheck này). Nên mọi biến thể "chờ nhận
+    # một message" đều sai về nguyên tắc, không riêng gì `$SYS`.
+    #
+    # `-E` chứng minh đúng thứ docs/devops.md khai làm readiness evidence cho
+    # service này: broker đang nghe và **xác thực đạt** (sai mật khẩu → exit 5).
+    # Nó KHÔNG chứng minh ACL — Mosquitto vẫn SUBACK thành công cho subscribe bị
+    # từ chối. ACL có tầng riêng lo: tests/test_vehicle/test_contract_mosquitto.py.
+    healthcheck:
+      test: ["CMD-SHELL", "mosquitto_sub -h localhost -p 1883 -t 'v1/vehicles/+/state/snapshot' -E -u $$MQTT_BACKEND_USERNAME -P $$MQTT_BACKEND_PASSWORD || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+    environment:
+      MQTT_BACKEND_USERNAME: ${MQTT_BACKEND_USERNAME:-vivi-backend}
+      MQTT_BACKEND_PASSWORD: ${MQTT_BACKEND_PASSWORD:-}
+
+  vehicle-simulator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["python", "-m", "src.vehicle_sim"]
+    env_file:
+      - .env
+    environment:
+      MQTT_URL: mqtt://mqtt:1883
+    depends_on:
+      mqtt:
+        condition: service_healthy
+    restart: unless-stopped
+    # Tắt healthcheck kế thừa từ image. `Dockerfile` là file **dùng chung** cho cả
+    # `backend` lẫn service này, và HEALTHCHECK nướng trong đó là của backend: nó gọi
+    # `urlopen http://localhost:8000/api/v1/status`. Xe ảo chạy `python -m
+    # src.vehicle_sim`, không phục vụ HTTP, nên check đó **không bao giờ pass** —
+    # container lên rồi bị đánh `unhealthy`, và `docker compose up --wait` thất bại
+    # dù xe ảo đã nạp xong và đã nối broker (xem log: "Xe ảo ... sẵn sàng").
+    #
+    # Không thay bằng một check MQTT riêng: `docs/devops.md` và healthcheck của broker
+    # đều theo nguyên tắc "chỉ chứng minh connect + auth, không chờ message tới". Sẵn
+    # sàng thực sự của xe ảo đã có đường đo đúng nghĩa — thành phần `vehicle_simulator`
+    # trong `GET /healthz` kiểm heartbeat còn tươi qua identity riêng
+    # (`src/services/health.py`). Dựng thêm một check MQTT ở đây chỉ là lặp lại điều đó
+    # bằng công cụ tệ hơn.
+    #
+    # Cũng KHÔNG dùng `disable: true`: `docker compose up --wait` từ chối chờ một
+    # service không có healthcheck ("has no healthcheck configured") nên cả lệnh thất
+    # bại. Check dưới đây đọc `/proc/1/cmdline` và chỉ khẳng định **đúng một điều**:
+    # PID 1 vẫn là tiến trình xe ảo, tức nó chưa chết. Nó KHÔNG chứng minh xe ảo đang
+    # nối broker hay đang phát heartbeat — điều đó thuộc `GET /healthz`. Ghi rõ ở đây
+    # để không ai đọc "healthy" thành "xe ảo đang hoạt động đúng".
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import pathlib,sys; sys.exit(0 if b"src.vehicle_sim" in pathlib.Path("/proc/1/cmdline").read_bytes() else 1)
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    networks:
+      - edge_internal
+    # Không public port — docs/technical_spec.md.
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      MQTT_URL: mqtt://mqtt:1883
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      mqtt:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - edge_internal
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/status')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  edge_internal:
+    driver: bridge
+
+volumes:
+  mosquitto_data:

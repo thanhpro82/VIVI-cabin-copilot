@@ -1,0 +1,24 @@
+{
+  "architecture": "sequence_sigmoid",
+  "embeddingPath": "/models/wake-word/embedding_model.onnx",
+  "embeddingSha256": "70d164290c1d095d1d4ee149bc5e00543250a7316b59f31d056cff7bd3075c1f",
+  "evaluationReportPath": "/eval/results/wake-word/2026-08-21T14-12Z-v8-sequence-head/README.md",
+  "hopSamples": 1600,
+  "labels": [
+    "wake",
+    "non_wake"
+  ],
+  "license": "LicenseRef-VIVI-Academic-Only",
+  "melspectrogramPath": "/models/wake-word/melspectrogram.onnx",
+  "melspectrogramSha256": "ba2b0e0f8b7b875369a2c89cb13360ff53bac436f2895cced9f479fa65eb176f",
+  "modelPath": "/models/wake-word/model.onnx",
+  "modelVersion": "vivi-wake-v8-seed192-recall-0.696",
+  "refractoryMs": 2000,
+  "sampleRate": 16000,
+  "schemaVersion": "1.0",
+  "sequenceLength": 16,
+  "sha256": "fa5320149cdf1569b7f1516965a1f5608e305a4947e34121e31e0fc04d0d3ebe",
+  "threshold": 0.9995,
+  "trainingRunId": "vivi-wake-v8-seed192",
+  "windowSamples": 32000
+}

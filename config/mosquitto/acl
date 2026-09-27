@@ -1,0 +1,27 @@
+# Topic ACL — docs/devops.md và docs/mqtt_spec.md
+#
+# Backend publish lệnh và chỉ đọc state/event/health.
+# Simulator đọc lệnh và chỉ publish state/event/health.
+# Không client nào publish được lên topic của client kia.
+
+#
+# `v1/sim/` là kênh HARNESS, ngoài hợp đồng xe — ADR-024. Backend nhắn, xe ảo
+# tự gọi set_motion() rồi tự publish state như mọi thay đổi khác, nên publisher
+# của state/* vẫn là identity simulator và ADR-013 còn nguyên.
+#
+# Liệt kê ĐÍCH DANH `motion/set`, không dùng `v1/sim/+/#`: wildcard ở đây là cấp
+# phép trước cho mọi topic harness chưa ai kịp nghĩ nó nên tồn tại hay không.
+
+user vivi-backend
+topic write  v1/vehicles/+/commands/#
+topic read   v1/vehicles/+/events/#
+topic read   v1/vehicles/+/state/#
+topic read   v1/vehicles/+/health
+topic write  v1/sim/+/motion/set
+
+user vehicle-simulator
+topic read   v1/vehicles/+/commands/#
+topic write  v1/vehicles/+/events/#
+topic write  v1/vehicles/+/state/#
+topic write  v1/vehicles/+/health
+topic read   v1/sim/+/motion/set

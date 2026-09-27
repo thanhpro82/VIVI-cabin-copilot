@@ -1,0 +1,41 @@
+# Chuan hoa xuong dong va phan loai binary.
+#
+# Vi sao can: `core.autocrlf=true` la mac dinh tren nhieu may Windows trong nhom.
+# Khong co file nay, git tu doan text/binary bang heuristic, va moi lan checkout
+# co the doi byte cua file — lam sai checksum trong `*.sha256` va lam ban diff.
+# Toan bo 759 file text trong repo hien da la LF (do 2026-08-15), nen cac rule
+# duoi day chi *khoa* trang thai dang co, khong sinh ra thay doi noi dung nao.
+
+# Mac dinh: file nao git nhan la text thi luu LF trong repo.
+* text=auto eol=lf
+
+# Khai bao tuong minh cho cac duoi quan trong, de khong phu thuoc heuristic.
+*.py     text eol=lf
+*.json   text eol=lf
+*.jsonl  text eol=lf
+*.md     text eol=lf
+*.ps1    text eol=lf
+*.sha256 text eol=lf
+
+# Binary: khong bao gio doi xuong dong, khong bao gio merge theo dong.
+# `.wav` la quan trong nhat — 149 file dataset audio cua SPIKE-001, checksum
+# cua chung nam trong eval/datasets va bao cao evidence.
+*.wav    binary
+# Asset che do demo offline (issue #176): nhac CC BY va anh nen ban do.
+# Phai co truoc file nhi phan DAU TIEN — them sau thi git da kip doan sai
+# va lam hong file tren may `core.autocrlf=true`, y het bay ma `.wav` da dinh.
+*.mp3    binary
+*.webp   binary
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.ico    binary
+*.bin    binary
+# Bang test ghep lenh (docs/kich_ban_test_ghep_lenh.xlsx) — zip, hong ngay neu
+# `* text=auto eol=lf` doi CRLF ben trong.
+*.xlsx   binary
+
+# Ngoai le, phai dat SAU cac rule tren de thang:
+# manifest.json dung CRLF tu nguon; giu nguyen byte de checksum trong
+# VF9_2026_vi/corpus.sha256 con dung sau khi checkout tren may khac.
+VF9_2026_vi/manifest.json -text

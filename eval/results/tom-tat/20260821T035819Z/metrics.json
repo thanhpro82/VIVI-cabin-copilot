@@ -1,0 +1,103 @@
+[
+  {
+    "cau_hinh": "trich (moc)",
+    "n": 39,
+    "tran_cau": 3,
+    "p50_ms": 0.3,
+    "p95_ms": 0.8,
+    "chinh_xac_dat": 0.641,
+    "chinh_xac_diem": 0.0826,
+    "tu_nhien_sach": 1.0,
+    "ky_tu_tb": 220.2,
+    "ty_le_bac": 0.0,
+    "bac_theo_cong": {}
+  },
+  {
+    "cau_hinh": "khong san",
+    "n": 39,
+    "tran_cau": 3,
+    "p50_ms": 1056.8,
+    "p95_ms": 1437.2,
+    "chinh_xac_dat": 0.6154,
+    "chinh_xac_diem": 0.094,
+    "tu_nhien_sach": 1.0,
+    "ky_tu_tb": 204.5,
+    "ty_le_bac": 0.8462,
+    "bac_theo_cong": {
+      "chen_tu_quan_he": 18,
+      "lech_phan_cuc": 5,
+      "khong_phai_day_con": 5,
+      "mat_dieu_kien": 3,
+      "mat_tu_noi_mang_nghia": 2
+    }
+  },
+  {
+    "cau_hinh": "san 0.70",
+    "n": 39,
+    "tran_cau": 3,
+    "p50_ms": 1055.1,
+    "p95_ms": 1519.7,
+    "chinh_xac_dat": 0.6154,
+    "chinh_xac_diem": 0.0794,
+    "tu_nhien_sach": 1.0,
+    "ky_tu_tb": 218.8,
+    "ty_le_bac": 0.9744,
+    "bac_theo_cong": {
+      "nen_qua_tay": 32,
+      "chen_tu_quan_he": 4,
+      "mat_dieu_kien": 1,
+      "khong_phai_day_con": 1
+    }
+  },
+  {
+    "cau_hinh": "san 0.80",
+    "n": 39,
+    "tran_cau": 3,
+    "p50_ms": 1038.4,
+    "p95_ms": 1505.0,
+    "chinh_xac_dat": 0.6154,
+    "chinh_xac_diem": 0.0794,
+    "tu_nhien_sach": 1.0,
+    "ky_tu_tb": 218.8,
+    "ty_le_bac": 0.9744,
+    "bac_theo_cong": {
+      "nen_qua_tay": 33,
+      "chen_tu_quan_he": 4,
+      "khong_phai_day_con": 1
+    }
+  },
+  {
+    "cau_hinh": "san 0.85",
+    "n": 39,
+    "tran_cau": 3,
+    "p50_ms": 4207.1,
+    "p95_ms": 5874.6,
+    "chinh_xac_dat": 0.6154,
+    "chinh_xac_diem": 0.0794,
+    "tu_nhien_sach": 1.0,
+    "ky_tu_tb": 218.8,
+    "ty_le_bac": 0.9744,
+    "bac_theo_cong": {
+      "nen_qua_tay": 36,
+      "chen_tu_quan_he": 1,
+      "khong_phai_day_con": 1
+    }
+  },
+  {
+    "cau_hinh": "san 0.90",
+    "n": 39,
+    "tran_cau": 3,
+    "p50_ms": 4891.1,
+    "p95_ms": 8728.9,
+    "chinh_xac_dat": 0.641,
+    "chinh_xac_diem": 0.0826,
+    "tu_nhien_sach": 1.0,
+    "ky_tu_tb": 220.2,
+    "ty_le_bac": 1.0,
+    "bac_theo_cong": {
+      "nen_qua_tay": 37,
+      "chen_tu_quan_he": 1,
+      "khong_phai_day_con": 1
+    }
+  }
+]

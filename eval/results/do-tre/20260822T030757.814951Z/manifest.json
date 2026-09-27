@@ -1,0 +1,13 @@
+{
+  "run_id": "20260822T030757.814951Z",
+  "muc_dich": "SP-0 spike do do tre tung doan tren may demo",
+  "model": "qwen2.5-3b-instruct-q4_k_m",
+  "endpoint": "http://127.0.0.1:8093",
+  "flags": {
+    "SLM_ENABLED": true,
+    "TOM_TAT_ENABLED": true,
+    "CHON_CAU_THAC_ENABLED": true
+  },
+  "gateway": "InProcessVehicleGateway (khong MQTT)",
+  "ghi_chu": "e2e KHONG gom STT/TTS (do rieng); xe in-process nen stage tool khong co do tre broker."
+}

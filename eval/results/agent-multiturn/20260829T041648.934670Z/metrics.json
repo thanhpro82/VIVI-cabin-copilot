@@ -1,0 +1,39 @@
+{
+  "by_nhom": {
+    "an-toan": {
+      "dat": 5,
+      "total": 5
+    },
+    "clarify-ghep": {
+      "dat": 5,
+      "total": 5
+    },
+    "offer-nhan": {
+      "dat": 5,
+      "total": 5
+    },
+    "offer-phu-song": {
+      "dat": 0,
+      "total": 2
+    },
+    "offer-tu-choi": {
+      "dat": 2,
+      "total": 2
+    }
+  },
+  "case_accuracy": 0.8947,
+  "da_sua": [
+    "MT-OFFER-001",
+    "MT-OFFER-002",
+    "MT-OFFER-003",
+    "MT-OFFER-004",
+    "MT-OFFER-005",
+    "MT-TUCHOI-001",
+    "MT-TUCHOI-002"
+  ],
+  "dat": 17,
+  "di_lui": [],
+  "luot_dat": 35,
+  "tong_luot": 39,
+  "total": 19
+}

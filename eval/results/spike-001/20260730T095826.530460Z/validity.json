@@ -1,0 +1,9 @@
+{
+  "status": "superseded",
+  "usable_for_summary": false,
+  "invalid_dimensions": [
+    "Piper child-process peak RSS"
+  ],
+  "reason": "Latency and RTF were valid, but memory covered only the harness process.",
+  "superseded_by": "20260730T100148.330452Z"
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.vivi.dev/schemas/action-plan-v1.json",
+  "title": "ActionPlan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "plan_id",
+    "vehicle_state_version",
+    "requires_approval",
+    "steps"
+  ],
+  "properties": {
+    "plan_id": {"type": "string", "minLength": 1},
+    "vehicle_state_version": {"type": "integer", "minimum": 0},
+    "requires_approval": {"type": "boolean"},
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "step_id",
+          "tool",
+          "args",
+          "safety_level",
+          "depends_on"
+        ],
+        "properties": {
+          "step_id": {"type": "string", "minLength": 1},
+          "tool": {"type": "string", "minLength": 1},
+          "args": {"type": "object"},
+          "safety_level": {"enum": ["S0", "S1", "S2", "S3"]},
+          "depends_on": {
+            "type": "array",
+            "items": {"type": "string"},
+            "uniqueItems": true
+          }
+        }
+      }
+    }
+  }
+}
+

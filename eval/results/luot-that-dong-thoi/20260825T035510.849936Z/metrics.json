@@ -1,0 +1,455 @@
+{
+  "base_url": "https://c4-app-192.io.vn/api/v1",
+  "che_do": "text",
+  "moc": [
+    1,
+    2,
+    3
+  ],
+  "vong": 3,
+  "tran_do_s": 60.0,
+  "nguong": {
+    "p50_ms": 2500.0,
+    "p95_ms": 4500.0
+  },
+  "cau_hinh_llama": {
+    "doc_duoc": true,
+    "endpoint": "http://127.0.0.1:8093",
+    "n_ctx": 2048,
+    "n_slots": 4,
+    "model_path": "/opt/vivi/models/slm/qwen2.5-3b-instruct-q4_k_m.gguf",
+    "kv_unified": null
+  },
+  "healthz": {
+    "http": 200,
+    "than": {
+      "data": {
+        "status": "ready",
+        "checked_at": "2026-08-25T03:54:14.053889Z",
+        "components": {
+          "backend": {
+            "status": "ready",
+            "latency_ms": 28.040282
+          },
+          "llm": {
+            "status": "ready",
+            "latency_ms": 67.297087
+          },
+          "mqtt": {
+            "status": "ready",
+            "latency_ms": 9.149823
+          },
+          "vehicle_simulator": {
+            "status": "ready",
+            "latency_ms": 0.031307
+          },
+          "stt": {
+            "status": "ready",
+            "latency_ms": 185.793009
+          },
+          "tts": {
+            "status": "ready",
+            "latency_ms": 221.123133
+          },
+          "rag_index": {
+            "status": "ready",
+            "latency_ms": 259.64966
+          },
+          "sqlite": {
+            "status": "ready",
+            "latency_ms": 33.161399
+          }
+        },
+        "faults": []
+      },
+      "meta": {
+        "request_id": "req_65978f4d4ece"
+      },
+      "trace_id": "tr_266d9b4e167a",
+      "schema_version": "1.0"
+    }
+  },
+  "so_wav": 0,
+  "ket_qua": {
+    "1": {
+      "thong_ke": {
+        "n_mau": 3,
+        "n_thanh_cong": 3,
+        "so_loi": 0,
+        "so_cat_cut": 0,
+        "p50_ms": 329.9,
+        "p95_ms": 1047.8,
+        "max_ms": 1047.8,
+        "nguong_p50_ms": 2500.0,
+        "nguong_p95_ms": 4500.0,
+        "p50_dat": true,
+        "p95_dat": true,
+        "so_vuot_p95": 0
+      },
+      "theo_nhan": {
+        "dieu_khien": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 265.0,
+          "p95_ms": 329.9,
+          "max_ms": 329.9,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0
+        },
+        "so_tay": {
+          "n_mau": 1,
+          "n_thanh_cong": 1,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 1047.8,
+          "p95_ms": 1047.8,
+          "max_ms": 1047.8,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0
+        }
+      },
+      "ban_ghi": [
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 329.9,
+          "http": 200,
+          "status": "completed",
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 200.2,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 1047.8,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        }
+      ]
+    },
+    "2": {
+      "thong_ke": {
+        "n_mau": 6,
+        "n_thanh_cong": 6,
+        "so_loi": 0,
+        "so_cat_cut": 0,
+        "p50_ms": 1501.8,
+        "p95_ms": 19206.6,
+        "max_ms": 19206.6,
+        "nguong_p50_ms": 2500.0,
+        "nguong_p95_ms": 4500.0,
+        "p50_dat": true,
+        "p95_dat": false,
+        "so_vuot_p95": 2
+      },
+      "theo_nhan": {
+        "chitchat": {
+          "n_mau": 1,
+          "n_thanh_cong": 1,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 19034.7,
+          "p95_ms": 19034.7,
+          "max_ms": 19034.7,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 1
+        },
+        "dieu_khien": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 448.9,
+          "p95_ms": 532.3,
+          "max_ms": 532.3,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0
+        },
+        "planner": {
+          "n_mau": 1,
+          "n_thanh_cong": 1,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 19206.6,
+          "p95_ms": 19206.6,
+          "max_ms": 19206.6,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 1
+        },
+        "so_tay": {
+          "n_mau": 2,
+          "n_thanh_cong": 2,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 1501.8,
+          "p95_ms": 1787.4,
+          "max_ms": 1787.4,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0
+        }
+      },
+      "ban_ghi": [
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 532.3,
+          "http": 200,
+          "status": "completed",
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 365.5,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 1216.1,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "so_tay",
+          "text": "áp suất lốp tiêu chuẩn là bao nhiêu",
+          "ms_tong": 1787.4,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "planner",
+          "text": "làm cho trong xe dễ chịu hơn tí đi",
+          "ms_tong": 19206.6,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "chitchat",
+          "text": "chào xe, hôm nay thế nào",
+          "ms_tong": 19034.7,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        }
+      ]
+    },
+    "3": {
+      "thong_ke": {
+        "n_mau": 9,
+        "n_thanh_cong": 9,
+        "so_loi": 0,
+        "so_cat_cut": 0,
+        "p50_ms": 1424.3,
+        "p95_ms": 29674.8,
+        "max_ms": 29674.8,
+        "nguong_p50_ms": 2500.0,
+        "nguong_p95_ms": 4500.0,
+        "p50_dat": true,
+        "p95_dat": false,
+        "so_vuot_p95": 3
+      },
+      "theo_nhan": {
+        "chitchat": {
+          "n_mau": 1,
+          "n_thanh_cong": 1,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 29507.2,
+          "p95_ms": 29507.2,
+          "max_ms": 29507.2,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 1
+        },
+        "dieu_khien": {
+          "n_mau": 4,
+          "n_thanh_cong": 4,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 858.2,
+          "p95_ms": 1577.1,
+          "max_ms": 1577.1,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": true,
+          "so_vuot_p95": 0
+        },
+        "planner": {
+          "n_mau": 1,
+          "n_thanh_cong": 1,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 29674.8,
+          "p95_ms": 29674.8,
+          "max_ms": 29674.8,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": false,
+          "p95_dat": false,
+          "so_vuot_p95": 1
+        },
+        "so_tay": {
+          "n_mau": 3,
+          "n_thanh_cong": 3,
+          "so_loi": 0,
+          "so_cat_cut": 0,
+          "p50_ms": 1424.3,
+          "p95_ms": 29332.1,
+          "max_ms": 29332.1,
+          "nguong_p50_ms": 2500.0,
+          "nguong_p95_ms": 4500.0,
+          "p50_dat": true,
+          "p95_dat": false,
+          "so_vuot_p95": 1
+        }
+      },
+      "ban_ghi": [
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 1577.1,
+          "http": 200,
+          "status": "completed",
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 413.5,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 1424.3,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "so_tay",
+          "text": "áp suất lốp tiêu chuẩn là bao nhiêu",
+          "ms_tong": 29332.1,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "planner",
+          "text": "làm cho trong xe dễ chịu hơn tí đi",
+          "ms_tong": 29674.8,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "chitchat",
+          "text": "chào xe, hôm nay thế nào",
+          "ms_tong": 29507.2,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "bật điều hoà",
+          "ms_tong": 1302.9,
+          "http": 200,
+          "status": "completed",
+          "co_plan": true,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "dieu_khien",
+          "text": "đóng cửa sổ",
+          "ms_tong": 283.9,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        },
+        {
+          "nhan": "so_tay",
+          "text": "xe này sạc nhanh mất bao lâu",
+          "ms_tong": 1184.4,
+          "http": 200,
+          "status": "completed",
+          "co_plan": false,
+          "cat_cut": false,
+          "loi": null
+        }
+      ]
+    }
+  }
+}

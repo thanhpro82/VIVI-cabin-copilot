@@ -1,0 +1,21 @@
+{
+  "suite": "slm-dong-thoi",
+  "run_id": "20260823T120422.023604Z",
+  "run_uuid": "e77fa2dd-7a02-48ae-90eb-953db2520934",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.41",
+  "python": "3.11.16",
+  "git_branch": "",
+  "git_commit": "0f0a31fde96a72ac7b4a646d7770da3b31c60852",
+  "git_dirty": false,
+  "ghim_slot": false,
+  "note": "Do tu trong container backend, dung dung prompt/schema import tu src/agents/slm.py. Bo sung cho deploy/vps/slm_classify_bench.py (tuan tu, N=1) va bao cao docs/reports/sp0-do-tre-tung-doan-2026-08-22.md (xen ke vai, mot client).",
+  "blind_spots": {
+    "mot_may_mot_lan": "MOT lan do tren MOT may. So de ra quyet dinh cau hinh, khong phai benchmark.",
+    "du_lieu_bi_cat_cut": "Luot cham tran 30s duoc danh dau `cat_cut`. Gia tri that la '>= 30s, chua biet'. Moi o co `so_cat_cut > 0` thi p50/p95/max va ti le vuot tran deu la CAN DUOI.",
+    "p95_o_mau_nho_chinh_la_max": "Voi `--vong 3`, muc N=1 chi co 3 mau nen 'p95' chinh la gia tri lon nhat. Dung doc no nhu mot phan vi that.",
+    "dong_thoi_khong_deu": "N request ban ra gan nhu cung luc, KHONG mo phong nguoi dung that (ho den rai rac). Day la ca XAU NHAT, co y: cho tran tren cua do tre, khong cho ky vong trung binh.",
+    "lich_su_anh_huong_ket_qua": "Do tre phu thuoc slot nao dang giu tien to nao, tuc phu thuoc vai phut TRUOC do. Hai run cung cau hinh co the lech 4x. Luon doc `so_lan_nap_nguoi` truoc khi so hai run.",
+    "khong_do_STT_TTS": "Chi do llama-server. Luot that con qua STT/TTS - ca hai co khoa toan cuc (`voice.py:97`, `:192`, num_threads=1) nen cung noi tiep. Tong do tre se te hon.",
+    "n_predict_la_literal": "`_N_PREDICT` chep tay tu `slm.py`. Doi n_predict o do ma quen o day thi script do mot cau hinh KHONG con ton tai. Kiem lai khi slm.py doi."
+  }
+}

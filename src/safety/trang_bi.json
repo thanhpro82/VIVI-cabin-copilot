@@ -1,0 +1,941 @@
+{
+  "phien_ban_so_tay": "VF9_23-25_VN_VI_2.4",
+  "ghi_chu": "Curate tay từ 147 lần nhắc điều kiện trang bị trên 116/482 chunk. Xem docs/khao_sat_trang_bi.md để biết cách đếm và cách phân loại ba loại (nếu có). `cum_tu` là cụm đứng NGAY TRƯỚC dấu điều kiện trong sổ tay, không phải mọi cách gọi tính năng — xem docstring src/safety/trang_bi.py.",
+  "trang_bi": [
+    {
+      "id": "lop_du_phong",
+      "ten": "Lốp dự phòng",
+      "nhom": "cuu_ho",
+      "loai_tru": [
+        "bo_bom_hoi"
+      ],
+      "cum_tu": [
+        "lốp dự phòng",
+        "bánh xe dự phòng",
+        "lốp xe dự phòng",
+        "lốp dự phòng và dụng cụ"
+      ],
+      "muc": [
+        "Vành và bánh xe",
+        "Sửa chữa",
+        "Phụ tùng và phụ kiện",
+        "Khoang chứa đồ",
+        "Thông số kỹ thuật"
+      ],
+      "vi_sao": "Chỉ đường tài xế xe thủng lốp ra khoang sau lấy lốp dự phòng mà xe không có là bỏ họ lại giữa đường. Trang bị này cũng khoá tra_lop_du_phong(): 420 kPa là số của một bánh KHÔNG tồn tại trên xe dùng bộ bơm hơi."
+    },
+    {
+      "id": "bo_bom_hoi",
+      "ten": "Bộ bơm hơi và vá lốp",
+      "nhom": "cuu_ho",
+      "loai_tru": [
+        "lop_du_phong"
+      ],
+      "cum_tu": [
+        "bộ công cụ bơm",
+        "bộ bơm hơi xe ô tô",
+        "kích nâng xe và vá lốp",
+        "bộ dụng cụ sửa xe"
+      ],
+      "muc": [
+        "Phụ tùng và phụ kiện",
+        "Sửa chữa",
+        "Khoang chứa đồ"
+      ],
+      "vi_sao": "Mặt còn lại của cùng một lựa chọn. Sổ tay mô tả hai quy trình xử lý thủng lốp khác hẳn nhau; đọc nhầm quy trình là hỏng cả lượt."
+    },
+    {
+      "id": "den_suong_mu_truoc",
+      "ten": "Đèn sương mù phía trước",
+      "nhom": "chieu_sang",
+      "loai_tru": [],
+      "cum_tu": [
+        "đèn sương mù phía trước",
+        "đèn sương mù trước bật/tắt",
+        "đèn sương mù"
+      ],
+      "muc": [
+        "Đèn ngoại thất",
+        "Hệ thống điện",
+        "Khu vực điều khiển xe"
+      ],
+      "vi_sao": "Sổ tay còn ràng buộc chéo: đèn pha thích ứng chỉ bật được khi đèn sương mù TẮT. Không biết xe có đèn sương mù hay không thì câu điều kiện ấy vô nghĩa với tài xế."
+    },
+    {
+      "id": "den_suong_mu_sau",
+      "ten": "Đèn sương mù phía sau",
+      "nhom": "chieu_sang",
+      "loai_tru": [],
+      "cum_tu": [
+        "đèn sương mù phía sau",
+        "đèn sương mù sau bật/tắt",
+        "phản quang phía sau hoặc đèn sương mù phía sau"
+      ],
+      "muc": [
+        "Đèn ngoại thất",
+        "Hệ thống điện",
+        "Khu vực điều khiển xe"
+      ],
+      "vi_sao": "ADR-020 đã chốt set_headlight_mode không có off; nhánh đèn là chỗ hệ thống trả lời nhiều hơn làm được, nên câu trả lời phải đúng về việc xe CÓ đèn ấy hay không."
+    },
+    {
+      "id": "den_goc_cua",
+      "ten": "Đèn chiếu sáng góc cua",
+      "nhom": "chieu_sang",
+      "loai_tru": [],
+      "cum_tu": [
+        "đèn chiếu sáng góc cua"
+      ],
+      "muc": [
+        "Đèn ngoại thất"
+      ],
+      "vi_sao": "Đi kèm đèn sương mù trước trong cùng một mệnh đề điều kiện của sổ tay, nhưng là một trang bị riêng."
+    },
+    {
+      "id": "den_phanh_giua",
+      "ten": "Đèn báo phanh ở giữa",
+      "nhom": "chieu_sang",
+      "loai_tru": [],
+      "cum_tu": [
+        "đèn báo phanh ở giữa"
+      ],
+      "muc": [
+        "Tổng quan về xe"
+      ],
+      "vi_sao": "Xuất hiện trong bảng tổng quan ngoại thất với dấu sao điều kiện."
+    },
+    {
+      "id": "acc",
+      "ten": "Kiểm soát hành trình thích ứng (ACC)",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "hệ thống kiểm soát hành trình thích ứng"
+      ],
+      "muc": [
+        "Kiểm soát hành trình",
+        "Trợ giúp lái xe"
+      ],
+      "vi_sao": "Cửa ngõ của cả cụm hỗ trợ lái: trợ lái cao tốc và giữ làn đều mô tả bản thân là mở rộng của ACC."
+    },
+    {
+      "id": "isa",
+      "ten": "Điều chỉnh tốc độ thông minh",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "điều chỉnh tốc độ thông minh"
+      ],
+      "muc": [
+        "Kiểm soát hành trình"
+      ],
+      "vi_sao": "Sổ tay mở đầu mục này bằng đúng chữ Nếu có, hai lần liên tiếp."
+    },
+    {
+      "id": "tsr",
+      "ten": "Nhận biết biển báo giao thông",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "nhận biết biển báo giao thông"
+      ],
+      "muc": [
+        "Kiểm soát hành trình"
+      ],
+      "vi_sao": "Tính năng độc lập, có mục riêng và điều kiện riêng."
+    },
+    {
+      "id": "hda",
+      "ten": "Hỗ trợ lái trên cao tốc",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "hỗ trợ lái trên cao tốc",
+        "kiểm soát đi giữa làn đường"
+      ],
+      "muc": [
+        "Trợ giúp lái xe"
+      ],
+      "vi_sao": "Nhóm tính năng cao tốc; sổ tay liệt kê các thành phần con cũng có điều kiện riêng."
+    },
+    {
+      "id": "lka",
+      "ten": "Hệ thống trợ làn (LDW/LKA/ELK)",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "hệ thống trợ làn",
+        "hỗ trợ giữ làn đường khẩn cấp (elk)"
+      ],
+      "muc": [
+        "Trợ giúp lái xe"
+      ],
+      "vi_sao": "Một trang bị gói ba viết tắt; tách nhỏ hơn thì tài xế không khai báo nổi."
+    },
+    {
+      "id": "lca",
+      "ten": "Hỗ trợ chuyển làn tự động",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "hỗ trợ chuyển làn tự động"
+      ],
+      "muc": [
+        "Trợ giúp lái xe"
+      ],
+      "vi_sao": "Có mục riêng kèm CẢNH BÁO riêng, nên phải trả lời đúng việc xe có hay không."
+    },
+    {
+      "id": "dms",
+      "ten": "Hệ thống giám sát người lái (DMS)",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "hệ thống giám sát người lái",
+        "camera giám sát người lái"
+      ],
+      "muc": [
+        "Trợ giúp lái xe",
+        "Tổng quan về xe"
+      ],
+      "vi_sao": "Có camera trong cabin hay không là câu hỏi riêng tư, không chỉ là câu hỏi tính năng."
+    },
+    {
+      "id": "fcw",
+      "ten": "Cảnh báo va chạm phía trước (FCW)",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "cảnh báo va chạm phía trước (fcw)"
+      ],
+      "muc": [
+        "Hệ thống cảnh báo va chạm"
+      ],
+      "vi_sao": "Trang bị an toàn chủ động: nói xe có khi không có là hứa một lớp bảo vệ không tồn tại."
+    },
+    {
+      "id": "aeb",
+      "ten": "Phanh khẩn cấp tự động (AEB)",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "phanh tự động khẩn cấp",
+        "phanh khẩn cấp tự động phía trước",
+        "phanh khẩn cấp tự động phía sau (r-aeb)"
+      ],
+      "muc": [
+        "Hệ thống cảnh báo va chạm"
+      ],
+      "vi_sao": "Gộp F-AEB và R-AEB thành một trang bị: sổ tay cho chúng ba mục riêng nhưng cùng một điều kiện trang bị, và tài xế khai báo được một chứ khó khai báo ba."
+    },
+    {
+      "id": "bsd",
+      "ten": "Cảnh báo điểm mù (BSD)",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "hệ thống cảnh báo điểm mù"
+      ],
+      "muc": [
+        "Hệ thống cảnh báo va chạm"
+      ],
+      "vi_sao": "Trang bị an toàn chủ động, có mục riêng."
+    },
+    {
+      "id": "rcta",
+      "ten": "Cảnh báo giao thông phía sau",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "cảnh báo giao thông phía sau"
+      ],
+      "muc": [
+        "Hệ thống cảnh báo va chạm"
+      ],
+      "vi_sao": "Trang bị an toàn chủ động, có mục riêng."
+    },
+    {
+      "id": "dow",
+      "ten": "Cảnh báo mở cửa (DOW)",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "cảnh báo mở cửa",
+        "cảnh báo mở cửa (dow)"
+      ],
+      "muc": [
+        "Hệ thống cảnh báo va chạm"
+      ],
+      "vi_sao": "Trang bị an toàn chủ động, có mục riêng."
+    },
+    {
+      "id": "ho_tro_do_xe",
+      "ten": "Hỗ trợ đỗ xe trước và sau",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "hỗ trợ đỗ xe trước &sau",
+        "hỗ trợ đỗ xe"
+      ],
+      "muc": [
+        "Hỗ trợ đỗ xe",
+        "Khu vực điều khiển xe"
+      ],
+      "vi_sao": "Cảm biến siêu âm có hay không quyết định cả một nhóm nút trên màn hình đỗ xe."
+    },
+    {
+      "id": "camera_lui",
+      "ten": "Camera quan sát phía sau",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "camera quan sát phía sau"
+      ],
+      "muc": [
+        "Hỗ trợ đỗ xe"
+      ],
+      "vi_sao": "Tách khỏi camera 360: một xe có camera lùi mà không có 360 là cấu hình phổ biến."
+    },
+    {
+      "id": "camera_360",
+      "ten": "Giám sát xung quanh 360 độ",
+      "nhom": "adas",
+      "loai_tru": [],
+      "cum_tu": [
+        "giám sát xung quanh 360 độ"
+      ],
+      "muc": [
+        "Hỗ trợ đỗ xe"
+      ],
+      "vi_sao": "Có mục riêng, nhiều camera, và một chế độ xem riêng trên màn hình."
+    },
+    {
+      "id": "ghe_vip",
+      "ten": "Ghế VIP hàng ghế thứ hai",
+      "nhom": "ghe",
+      "loai_tru": [],
+      "cum_tu": [
+        "nếu được trang bị ghế vip",
+        "bệ tỳ tay trung tâm giữa hàng ghế thứ hai",
+        "bảng điều khiển trung tâm hàng thứ hai"
+      ],
+      "muc": [
+        "Khoang chứa đồ",
+        "Điện thoại & Chiếu",
+        "Ghế"
+      ],
+      "vi_sao": "Một trang bị khoá tới ba câu trả lời khác nhau: bệ tỳ tay hàng hai, cổng USB hàng hai, và cách chỉnh ghế giữa hàng hai."
+    },
+    {
+      "id": "nho_vi_tri_ghe",
+      "ten": "Nhớ vị trí ghế",
+      "nhom": "ghe",
+      "loai_tru": [],
+      "cum_tu": [
+        "nhớ vị trí ghế"
+      ],
+      "muc": [
+        "Ghế",
+        "Màn hình cảm ứng"
+      ],
+      "vi_sao": "Gắn với tính năng cá nhân hoá hồ sơ người lái; không có nó thì cả quy trình lưu vị trí là vô nghĩa."
+    },
+    {
+      "id": "massage_ghe",
+      "ten": "Massage ghế ngồi",
+      "nhom": "ghe",
+      "loai_tru": [],
+      "cum_tu": [
+        "massage ghế ngồi"
+      ],
+      "muc": [
+        "Ghế"
+      ],
+      "vi_sao": "Sổ tay mở đầu mục bằng đúng chữ Nếu được trang bị."
+    },
+    {
+      "id": "dieu_hoa_ghe",
+      "ten": "Ghế sưởi và làm mát",
+      "nhom": "ghe",
+      "loai_tru": [],
+      "cum_tu": [
+        "điều khiển ghế (điều chỉnh mức độ làm mát & sưởi)"
+      ],
+      "muc": [
+        "Điều hòa"
+      ],
+      "vi_sao": "Là một nút trên trang điều hòa, có điều kiện riêng."
+    },
+    {
+      "id": "chinh_tua_lung_dien",
+      "ten": "Chỉnh tựa lưng bằng điện",
+      "nhom": "ghe",
+      "loai_tru": [],
+      "cum_tu": [
+        "điều chỉnh tựa lưng"
+      ],
+      "muc": [
+        "Ghế"
+      ],
+      "vi_sao": "Sổ tay mô tả công tắc bốn phần chỉ có trên xe được trang bị."
+    },
+    {
+      "id": "cot_lai_chinh_dien",
+      "ten": "Cột lái chỉnh điện",
+      "nhom": "vo_lang",
+      "loai_tru": [
+        "cot_lai_chinh_tay"
+      ],
+      "cum_tu": [
+        "cột lái điện có thể điều chỉnh"
+      ],
+      "muc": [
+        "Vô lăng"
+      ],
+      "vi_sao": "Loại trừ nhau với cột lái chỉnh tay: hai quy trình chỉnh vô lăng khác hẳn nhau, đọc nhầm là tài xế mò một nút không có."
+    },
+    {
+      "id": "cot_lai_chinh_tay",
+      "ten": "Cột lái chỉnh tay",
+      "nhom": "vo_lang",
+      "loai_tru": [
+        "cot_lai_chinh_dien"
+      ],
+      "cum_tu": [
+        "điều chỉnh thủ công cột lái"
+      ],
+      "muc": [
+        "Vô lăng"
+      ],
+      "vi_sao": "Mặt còn lại của cùng một lựa chọn với cột lái chỉnh điện. Sổ tay mô tả hai quy trình chỉnh vô lăng khác hẳn nhau — một bên bấm công tắc, một bên kéo cần khoá — nên đọc nhầm là tài xế mò một nút không có trong lúc đang chỉnh tư thế lái."
+    },
+    {
+      "id": "suoi_vo_lang",
+      "ten": "Sưởi vô lăng",
+      "nhom": "vo_lang",
+      "loai_tru": [],
+      "cum_tu": [
+        "sưởi vô lăng",
+        "điều khiển vô lăng có sưởi"
+      ],
+      "muc": [
+        "Vô lăng",
+        "Điều hòa"
+      ],
+      "vi_sao": "Có mục riêng và một nút riêng trên trang điều hòa."
+    },
+    {
+      "id": "man_hinh_sau",
+      "ten": "Màn hình cảm ứng hàng ghế sau",
+      "nhom": "khoang_lai",
+      "loai_tru": [],
+      "cum_tu": [
+        "cả màn hình cảm ứng phía trước và phía sau",
+        "cả hai màn hình trước và sau",
+        "màn hình cảm ứng phía sau",
+        "cả màn hình trước và sau",
+        "màn hình trước và sau",
+        "màn hình cảm ứng phía trước và phía sau",
+        "hai màn hình trước và sau"
+      ],
+      "muc": [
+        "Màn hình cảm ứng",
+        "Cài đặt",
+        "Ghế",
+        "Thông tin giải trí",
+        "Dây đai an toàn"
+      ],
+      "vi_sao": "Điều kiện được nhắc lại nhiều nhất trong cả sổ tay — mười lần. Mỗi lần nó đứng trong một câu hướng dẫn thao tác, nên đọc nguyên văn cho xe không có màn hình sau là chỉ tài xế bấm vào chỗ trống."
+    },
+    {
+      "id": "hud",
+      "ten": "Màn hình hiển thị trên kính lái (HUD)",
+      "nhom": "khoang_lai",
+      "loai_tru": [],
+      "cum_tu": [
+        "màn hình hiển thị trên kính lái (hud)"
+      ],
+      "muc": [
+        "Navigation (HNAV)"
+      ],
+      "vi_sao": "Chỉ dẫn điều hướng hiển thị ở đâu phụ thuộc hoàn toàn vào trang bị này."
+    },
+    {
+      "id": "sac_khong_day_sau",
+      "ten": "Sạc không dây hàng ghế sau",
+      "nhom": "khoang_lai",
+      "loai_tru": [],
+      "cum_tu": [
+        "bảng điều khiển phía trước và phía sau",
+        "miếng sạc không dây phía trước và phía sau",
+        "phía trước phía sau"
+      ],
+      "muc": [
+        "Điện thoại & Chiếu",
+        "Cài đặt"
+      ],
+      "vi_sao": "Sạc không dây trước là tiêu chuẩn, sau là tuỳ chọn — sổ tay chỉ đánh dấu điều kiện lên vế sau."
+    },
+    {
+      "id": "o_cam_ac_220v",
+      "ten": "Ổ cắm điện AC 220V",
+      "nhom": "khoang_lai",
+      "loai_tru": [],
+      "cum_tu": [
+        "ổ cắm điện ac"
+      ],
+      "muc": [
+        "Điện thoại & Chiếu"
+      ],
+      "vi_sao": "Câu trả lời cắm được thiết bị 220V hay không đổi hoàn toàn theo trang bị này."
+    },
+    {
+      "id": "loc_ion",
+      "ten": "Bộ lọc ion điều hòa",
+      "nhom": "khoang_lai",
+      "loai_tru": [],
+      "cum_tu": [
+        "bật/tắt bộ lọc ion"
+      ],
+      "muc": [
+        "Điều hòa"
+      ],
+      "vi_sao": "Một nút trên trang điều hòa, có điều kiện riêng."
+    },
+    {
+      "id": "dieu_hoa_hang_ba",
+      "ten": "Điều hòa tự động hàng ghế thứ ba",
+      "nhom": "khoang_lai",
+      "loai_tru": [],
+      "cum_tu": [
+        "tự động hàng ghế 3"
+      ],
+      "muc": [
+        "Điều hòa"
+      ],
+      "vi_sao": "Nhánh điều hòa là nhánh hệ thống điều khiển được thật, nên sai ở đây tốn hơn sai ở nhánh chỉ đọc."
+    },
+    {
+      "id": "guong_tu_lam_mo",
+      "ten": "Gương chiếu hậu tự động làm mờ",
+      "nhom": "guong",
+      "loai_tru": [],
+      "cum_tu": [
+        "gương chiếu hậu bên trong với tính năng tự động làm mờ"
+      ],
+      "muc": [
+        "Gương"
+      ],
+      "vi_sao": "Sổ tay mở đầu mục bằng Nếu được trang bị."
+    },
+    {
+      "id": "guong_nghieng_khi_lui",
+      "ten": "Gương tự động nghiêng khi lùi",
+      "nhom": "guong",
+      "loai_tru": [],
+      "cum_tu": [
+        "gương tự động nghiêng khi lùi"
+      ],
+      "muc": [
+        "Gương"
+      ],
+      "vi_sao": "Sổ tay mở đầu mục bằng Nếu được trang bị."
+    },
+    {
+      "id": "auto_hold",
+      "ten": "Tự động giữ phanh (Auto Hold)",
+      "nhom": "lai_xe",
+      "loai_tru": [],
+      "cum_tu": [
+        "tự động giữ phanh (auto hold - ah)"
+      ],
+      "muc": [
+        "Dừng và phanh xe"
+      ],
+      "vi_sao": "Tính năng phanh: hướng dẫn dùng một tính năng giữ xe đứng yên mà xe không có là chỉ dẫn nguy hiểm."
+    },
+    {
+      "id": "phanh_tai_sinh_tat",
+      "ten": "Mức phanh tái sinh Tắt",
+      "nhom": "lai_xe",
+      "loai_tru": [],
+      "cum_tu": [
+        "bao gồm tắt"
+      ],
+      "muc": [
+        "Dừng và phanh xe"
+      ],
+      "vi_sao": "Không phải phần cứng mà là một mức trong danh sách; sổ tay đánh dấu điều kiện lên đúng một mức."
+    },
+    {
+      "id": "moc_keo",
+      "ten": "Móc kéo rơ moóc",
+      "nhom": "lai_xe",
+      "loai_tru": [],
+      "cum_tu": [
+        "trong khi kéo",
+        "kéo xe",
+        "nếu xe"
+      ],
+      "muc": [
+        "Kiểm soát hành trình",
+        "Hỗ trợ đỗ xe"
+      ],
+      "vi_sao": "Đổi cả giới hạn tải trọng lẫn điều kiện dùng ACC."
+    },
+    {
+      "id": "tui_khi_giua_hang_truoc",
+      "ten": "Túi khí giữa hàng ghế trước",
+      "nhom": "an_toan",
+      "loai_tru": [],
+      "cum_tu": [
+        "túi khí giữa hàng ghế trước"
+      ],
+      "muc": [
+        "Túi khí"
+      ],
+      "vi_sao": "Trang bị an toàn bị động: liệt kê một túi khí không có là hứa một lớp bảo vệ không tồn tại."
+    },
+    {
+      "id": "tui_khi_dau_goi",
+      "ten": "Túi khí đầu gối",
+      "nhom": "an_toan",
+      "loai_tru": [],
+      "cum_tu": [
+        "túi khí đầu gối"
+      ],
+      "muc": [
+        "Túi khí"
+      ],
+      "vi_sao": "Trang bị an toàn bị động, cùng lý do với túi khí giữa hàng ghế trước: liệt kê một túi khí không có là hứa một lớp bảo vệ không tồn tại, và đó là lời hứa người ta chỉ phát hiện sai lúc va chạm."
+    },
+    {
+      "id": "canh_bao_bo_quen_tre",
+      "ten": "Phát hiện trẻ em bị bỏ quên trong xe",
+      "nhom": "an_toan",
+      "loai_tru": [],
+      "cum_tu": [
+        "phát hiện sự hiện diện của trẻ em",
+        "hệ thống cảnh bảo bỏ quên trẻ nhỏ bị tắt"
+      ],
+      "muc": [
+        "Cài đặt",
+        "Khu vực điều khiển xe"
+      ],
+      "vi_sao": "Trang bị an toàn bị động với hậu quả cực đoan; không được để tài xế tin là có."
+    },
+    {
+      "id": "can_gat_mo_cua_khan_cap_sau",
+      "ten": "Cần gạt mở cửa khẩn cấp hàng ghế sau",
+      "nhom": "an_toan",
+      "loai_tru": [],
+      "cum_tu": [
+        "cửa phái trước và cửa phía sau"
+      ],
+      "muc": [
+        "Cửa"
+      ],
+      "vi_sao": "Quy trình thoát hiểm khi mất điện. Chỉ sai chỗ cần gạt trong tình huống ấy là hỏng đúng lúc quan trọng nhất."
+    },
+    {
+      "id": "thue_pin",
+      "ten": "Gói thuê pin",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "thuê pin",
+        "thỏa thuận cho thuê pin",
+        "thông tin thuê pin",
+        "lỗi cho thuê pin",
+        "kế hoạch thuê ắc quy của mình"
+      ],
+      "muc": [
+        "Hướng dẫn sử dụng",
+        "Ứng dụng VinFast",
+        "Hướng dẫn sạc",
+        "Thông tin về pin"
+      ],
+      "vi_sao": "Không phải phần cứng mà là hợp đồng — nhưng nó đổi câu trả lời về bảo hành pin, về quyền sở hữu, và về một loại lỗi sạc riêng. Giữ trong hồ sơ vì tài xế biết mình có ký hay không."
+    },
+    {
+      "id": "tro_ly_ao",
+      "ten": "Trợ lý ảo trên xe",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "trợ lý giọng nói",
+        "trợ lý ảo",
+        "hey vinfast / alexa",
+        "trạng thái alexa",
+        "bật trợ lý giọng nói.",
+        "hey vinfast / alexa ”",
+        "tính năng trợ lý giọng nói được trang bị hoặc không"
+      ],
+      "muc": [
+        "Cài đặt",
+        "Thông tin giải trí",
+        "Màn hình cảm ứng",
+        "Ứng dụng VinFast"
+      ],
+      "vi_sao": "Sổ tay nói thẳng tính năng này được trang bị hoặc không tùy theo thị trường và phiên bản — lần duy nhất nó tự nêu cả hai chiều tuỳ biến."
+    },
+    {
+      "id": "dieu_khien_tu_xa",
+      "ten": "Điều khiển xe từ xa qua ứng dụng",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "điều khiển từ xa",
+        "liên kết chìa khóa điều khiển từ xa",
+        "mà không cần mở điện thoại"
+      ],
+      "muc": [
+        "Ứng dụng VinFast",
+        "Điều khiển xe từ xa",
+        "Màn hình cảm ứng"
+      ],
+      "vi_sao": "Khoá cả nhóm quy trình kích hoạt bằng Ứng dụng VinFast của chế độ Cắm trại, Thú cưng và Người lạ."
+    },
+    {
+      "id": "ung_dung_vinfast",
+      "ten": "Ứng dụng VinFast ghép nối với xe",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "ứng dụng vinfast",
+        "thông qua ứng dụng vinfast"
+      ],
+      "muc": [
+        "Màn hình cảm ứng",
+        "Ứng dụng VinFast"
+      ],
+      "vi_sao": "Sáu lần nhắc, nhiều thứ nhì sổ tay. Nó là ĐƯỜNG kích hoạt cho bốn chế độ cabin; không ghép ứng dụng thì cả nhóm quy trình ấy là ngõ cụt."
+    },
+    {
+      "id": "khoang_do_cua",
+      "ten": "Khoang chứa đồ ở cửa",
+      "nhom": "khoang_lai",
+      "loai_tru": [],
+      "cum_tu": [
+        "khoang chứa đồ ở cửa"
+      ],
+      "muc": [
+        "Tổng quan về xe",
+        "Khoang chứa đồ"
+      ],
+      "vi_sao": "Bảng tổng quan nội thất đánh dấu sao điều kiện lên đúng mục này."
+    },
+    {
+      "id": "den_bao_cong_sac",
+      "ten": "Đèn báo trạng thái cổng sạc",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "đèn báo sạc",
+        "đèn trạng thái cổng sạc",
+        "đèn cổng sạc"
+      ],
+      "muc": [
+        "Tổng quan về xe",
+        "Hướng dẫn sạc"
+      ],
+      "vi_sao": "Sổ tay bảo tài xế quan sát trạng thái sạc trên đèn cổng sạc. Không có đèn thì câu ấy chỉ vào chỗ trống, giữa lúc người ta đang cắm sạc."
+    },
+    {
+      "id": "chi_bao_tien_trinh_sac",
+      "ten": "Chỉ báo tiến trình sạc bằng đèn đặc trưng",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "chỉ báo tiến trình sạc"
+      ],
+      "muc": [
+        "Thông tin về pin"
+      ],
+      "vi_sao": "Bốn lần nhắc, có quy trình bật/tắt riêng trong ứng dụng pin."
+    },
+    {
+      "id": "nut_mo_cong_sac",
+      "ten": "Nút mở cổng sạc trên màn hình",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "nút mở cổng sạc"
+      ],
+      "muc": [
+        "Thông tin về pin"
+      ],
+      "vi_sao": "Cách mở nắp cổng sạc đổi hẳn theo trang bị này."
+    },
+    {
+      "id": "muc_tieu_sac",
+      "ten": "Đặt mục tiêu sạc",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "để thay đổi mục tiêu sạc"
+      ],
+      "muc": [
+        "Ứng dụng VinFast"
+      ],
+      "vi_sao": "Câu hỏi \"sạc tới bao nhiêu phần trăm thì dừng\" chỉ trả lời được khi biết xe có đặt được mục tiêu sạc hay không."
+    },
+    {
+      "id": "nhan_dien_tram_sac",
+      "ten": "Nhận diện trạm sạc",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "nhận diện trạm sạc"
+      ],
+      "muc": [
+        "Hướng dẫn sạc"
+      ],
+      "vi_sao": "Một lớp kiểm tra tương thích trước khi cắm; có hay không đổi cả quy trình an toàn khi sạc."
+    },
+    {
+      "id": "cap_nhat_ota",
+      "ten": "Cập nhật phần mềm qua mạng",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "cập nhật phần mềm"
+      ],
+      "muc": [
+        "Ứng dụng VinFast"
+      ],
+      "vi_sao": "Xe không có OTA thì mọi hướng dẫn cập nhật đều sai địa chỉ."
+    },
+    {
+      "id": "khoa_tu_dong_khi_roi_xe",
+      "ten": "Khóa tự động khi rời xe",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "khóa tự động khi rời xe"
+      ],
+      "muc": [
+        "Chìa khóa"
+      ],
+      "vi_sao": "Một hành vi an ninh; tài xế tin nhầm là xe tự khóa thì bỏ xe mở."
+    },
+    {
+      "id": "mo_capo_tu_man_hinh",
+      "ten": "Mở nắp ca-pô từ màn hình trung tâm",
+      "nhom": "khoang_lai",
+      "loai_tru": [],
+      "cum_tu": [
+        "để mở nắp ca-pô phía trước qua màn hình trung tâm"
+      ],
+      "muc": [
+        "Khoang phía trước và phía sau"
+      ],
+      "vi_sao": "Sổ tay có hai quy trình mở ca-pô khác nhau; chỉ nhầm là tài xế mò một nút không tồn tại."
+    },
+    {
+      "id": "ghe_giua_hang_hai",
+      "ten": "Ghế giữa hàng ghế thứ hai",
+      "nhom": "ghe",
+      "loai_tru": [],
+      "cum_tu": [
+        "điều chỉnh ghế giữa hàng ghế thứ hai",
+        "để gập ghế giữa hàng ghế thứ 2 xuống"
+      ],
+      "muc": [
+        "Ghế"
+      ],
+      "vi_sao": "Xe bảy chỗ và sáu chỗ khác nhau đúng ở ghế này; cả hai quy trình chỉnh và gập đều gắn điều kiện."
+    },
+    {
+      "id": "ca_nhan_hoa_ho_so",
+      "ten": "Cá nhân hóa hồ sơ người lái",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "cuộn xuống để xem thêm tính năng điều khiển từ xa. cá nhân hóa"
+      ],
+      "muc": [
+        "Màn hình cảm ứng"
+      ],
+      "vi_sao": "Lưu vị trí vô lăng, gương, ghế theo hồ sơ. Gắn với nho_vi_tri_ghe nhưng là một trang bị riêng."
+    },
+    {
+      "id": "che_do_nguoi_la",
+      "ten": "Chế độ Người lạ",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "chế độ người lạ"
+      ],
+      "muc": [
+        "Màn hình cảm ứng"
+      ],
+      "vi_sao": "Bốn chế độ cabin đứng riêng vì sổ tay cho mỗi chế độ một mệnh đề điều kiện riêng. Gộp chúng lại là ta khẳng định một điều sổ tay không nói."
+    },
+    {
+      "id": "che_do_thu_cung",
+      "ten": "Chế độ Thú cưng",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "chế độ thú cưng"
+      ],
+      "muc": [
+        "Màn hình cảm ứng"
+      ],
+      "vi_sao": "Bốn chế độ cabin đứng riêng vì sổ tay cho mỗi chế độ một mệnh đề điều kiện riêng; gộp lại là khẳng định một điều sổ tay không nói. Riêng chế độ này hậu quả nặng nếu tin nhầm: người ta để thú cưng lại trong xe đóng kín."
+    },
+    {
+      "id": "che_do_nap",
+      "ten": "Chế độ Nghỉ ngơi (Nap Mode)",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "chế độ nghỉ ngơi (nap mode)"
+      ],
+      "muc": [
+        "Hệ thống ứng dụng giải trí đa dụng"
+      ],
+      "vi_sao": "Bốn chế độ cabin đứng riêng vì sổ tay cho mỗi chế độ một mệnh đề điều kiện riêng. (Chế độ Cắm trại từng có trong danh mục nháp rồi bị gỡ: khảo sát không tìm ra mệnh đề điều kiện nào gắn với riêng nó.)"
+    },
+    {
+      "id": "nhac_bao_duong",
+      "ten": "Nhắc nhở bảo dưỡng",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "nhắc nhở bảo dưỡng"
+      ],
+      "muc": [
+        "Lịch bảo dưỡng"
+      ],
+      "vi_sao": "Tài xế tin xe sẽ tự nhắc mà xe không có tính năng ấy thì bỏ lỡ cả lịch bảo dưỡng."
+    },
+    {
+      "id": "ho_tro_ben_thu_ba",
+      "ten": "Dịch vụ hỗ trợ từ bên thứ ba",
+      "nhom": "dich_vu",
+      "loai_tru": [],
+      "cum_tu": [
+        "chăm sóc khách hàng hoặc bên thứ ba"
+      ],
+      "muc": [
+        "Dịch vụ hỗ trợ"
+      ],
+      "vi_sao": "Nằm trong quy trình gọi cứu hộ; chỉ sai đầu mối lúc tai nạn là chỉ sai đúng lúc tệ nhất."
+    },
+    {
+      "id": "tuy_chinh_nut_trip",
+      "ten": "Tùy chỉnh nút Trip",
+      "nhom": "khoang_lai",
+      "loai_tru": [],
+      "cum_tu": [
+        "mở rộng"
+      ],
+      "muc": [
+        "Cài đặt"
+      ],
+      "vi_sao": "Mục Cài đặt xe chỉ hiện thêm nhóm Mở rộng trên xe được trang bị."
+    }
+  ]
+}

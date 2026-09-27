@@ -1,0 +1,24 @@
+# Caddy cho VIVI — VPS LANIT 103.146.23.41
+#
+# 2026-08-22: chu site chuyen sang CACH A — `c4-app-192.io.vn` tran (khong tien
+# to) tro thang ve may nay, `112.213.89.150` (hosting cu) da go bo. `www` va
+# `vivi.` cung tro ve may nay nhung KHONG dung — chi mot Caddyfile duoc cap
+# chung chi cho ten tran, tranh chiem hai lan trong han muc Let's Encrypt.
+#
+# Tat ca ve MOT origin: nho vay frontend co the dung duong dan tuong doi va WS
+# suy tu window.location — xem runbook muc 7b.3.
+
+c4-app-192.io.vn {
+	handle /api/v1/* {
+		reverse_proxy 127.0.0.1:8000
+	}
+	handle /ws/* {
+		reverse_proxy 127.0.0.1:8000
+	}
+	handle /healthz {
+		reverse_proxy 127.0.0.1:8000
+	}
+	handle {
+		reverse_proxy 127.0.0.1:3000
+	}
+}

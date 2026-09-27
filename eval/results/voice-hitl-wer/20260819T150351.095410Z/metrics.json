@@ -1,0 +1,11 @@
+{
+  "total": 100,
+  "avg_wer": 0.065,
+  "avg_cer": 0.04784126984126984,
+  "approve_expected_total": 40,
+  "miss_count": 2,
+  "miss_rate": 0.05,
+  "reject_expected_total": 60,
+  "false_accept_count": 0,
+  "false_accept_rate": 0.0
+}
